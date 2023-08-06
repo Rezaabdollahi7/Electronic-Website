@@ -6,7 +6,8 @@
     font-family: 'IRANSans';
     src: url('../fonts/IRANSans.woff2') format('woff2'),
         url('../fonts/IRANSans.woff') format('woff'),
-        url('../fonts/') format('truetype');
+        url('../fonts/IRANSans_Bold.ttf') format('truetype'),
+        url('../fonts/IRANSans_Medium.ttf') format('truetype');
 }
 
 *,
@@ -20,6 +21,19 @@ header nav {
     box-shadow: 0 8px 32px 0 rgba(39, 19, 19, 0.37);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.slogan-wrapper{
+    background: url('../images/22.png');
+    background-position: center;
+    /* background-size: cover; */
+}
+.slogan-section {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }

@@ -10,10 +10,10 @@
 
 </head>
 
-<body class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
-    <header>
+<body class=" h-screen">
+    <header class="flex justify-center">
         <!-- Navbar goes here -->
-        <nav class="  w-[92%] mx-auto ">
+        <nav class="  w-[92%] mx-auto absolute z-10 ">
             <div class="max-w-6xl mx-auto px-4">
                 <div class="flex justify-between">
                     <div class="flex space-x-7">
@@ -91,10 +91,25 @@
                             8013 549 0919
                             <ion-icon name="call-outline" class="align-[-3px] h-4"></ion-icon>
                         </button>
-                    </li>        
+                    </li>
                 </ul>
             </div>
+        </nav>
     </header>
+    <!-- end of header -->
+    
+    <section class="slogan-wrapper   w-[100vw] h-[90vh] md:h-[100vh] flex items-center justify-center">
+        <div class="slogan-section flex flex-col-reverse md:flex-row h-[60%] w-[70%] md:h-[70%]">
+            <div class="md:w-1/2 flex flex-col justify-center items-center">
+                <h1 class="text-2xl  md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-200">فروش تخصصی قطعات الکترونیکی</h1>
+                <p class="mt-8 text-secondary-900">اعتماد شما، انگیزه ما برای ارائه بهترین خدمات الکترونیکی است</p>
+                <button class="mt-14 bg-purple-600  px-4 py-4 rounded-xl text-white font-bold hover:bg-purple-500 animate-bounce duration-1000 ">دیدن محصولات</button>
+            </div>  
+            <div class="md:w-1/2 flex justify-center items-center">
+                <img src="./images/12.png" alt="عکس قطعه الکترونیکی" class="rounded-md w-[90%]  max-w-full h-auto opacity-80">
+            </div>  
+        </div>
+    </section>
 
 
 
