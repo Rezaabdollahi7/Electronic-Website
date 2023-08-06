@@ -1,0 +1,17 @@
+{
+  "name": "electronic_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./public/css/style.css -o ./public/css/tailwind.css --watch "
+  },
+  "author": "sreza",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "tw-elements": "^1.0.0-beta3"
+  }
+}
