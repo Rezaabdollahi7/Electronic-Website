@@ -15,7 +15,9 @@ body {
     font-family: 'IRANSans';
     direction: rtl;
 }
-
+img{
+    object-fit: cover;
+}
 header nav {
     background: rgba(255, 255, 255, 0.65);
     box-shadow: 0 8px 32px 0 rgba(39, 19, 19, 0.37);
@@ -37,3 +39,5 @@ header nav {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+
