@@ -39,5 +39,7 @@ header nav {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
-
+.custom-rounded{
+    border-radius: 14px 12px 12px 0;
+}
 
