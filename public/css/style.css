@@ -59,6 +59,7 @@ header nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    place-self: center;
     justify-content: center;
     transition: all 1S ease;
     box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
@@ -95,7 +96,7 @@ img {
     }
 
     .card {
-        max-width: 10em;
+        width: 80%;
         margin-top: 1em;
     }
 }
