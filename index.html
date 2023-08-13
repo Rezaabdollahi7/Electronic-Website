@@ -212,11 +212,32 @@
     <section class="banners w-full flex flex-col md:flex-row md:px-4 justify-center items-center mt-8 ">
         <img class="w-[95%] md:w-[40vw]  rounded-md" src="./public/images/banner-img/capacitor-banner.jpg" alt="بنر خازن">
         <img class="w-[95%] md:w-[40vw] mt-5 md:mt-0  md:mr-6 rounded-md" src="./public/images/banner-img/resistor-banner.jpg" alt="بنر مقاومت">
-
     </section>
+    <!-- end banners -->
 
-
-
+        <div class="wrapper w-[95%] my-32 mx-auto ">
+            <div id="search-container" class="my-4  flex justify-center items-center">
+                <input class="bg-transparent w-[40%] border-b-2 border-purple-400 py-4 px-2 focus:bg-purple-100/60" type="search" id="search-input" placeholder="Search product name here.." />
+                <button id="search" class="py-4 px-8 ml-4 bg-blue-600 text-white rounded-md mt-2">Search</button>
+            </div>
+            <div id="buttons" class="my-4  flex flex-col md:flex-row justify-center items-center">
+               
+                <button class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer bg-lime-200 text-lime-800 rounded-lg py-4 px-4 border-[1px] border-lime-950 " onclick="filterProduct('all')">همه ی محصولات</button>
+                <button class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer bg-lime-200 text-lime-800 rounded-lg py-4 px-4 border-[1px] border-lime-950" onclick="filterProduct('capacitor')">
+                    خازن
+                </button>
+                <button class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer bg-lime-200 text-lime-800 rounded-lg py-4 px-4 border-[1px] border-lime-950" onclick="filterProduct('diod')">
+                    دیود
+                </button>
+                <button class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer bg-lime-200 text-lime-800 rounded-lg py-4 px-4 border-[1px] border-lime-950" onclick="filterProduct('ic')">
+                    آی سی
+                </button>
+                <button class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer bg-lime-200 text-lime-800 rounded-lg py-4 px-4 border-[1px] border-lime-950" onclick="filterProduct('res')">
+                    مقاومت
+                </button>
+            </div>
+            <div id="products" class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8  lg:grid-cols-4 lg:gap-6 py-3 px-2"></div>
+        </div>
 
 
 
@@ -234,7 +255,7 @@
 
 
         <!-- item 1 -->
-        <div class="featurs-item w-full flex flex-col md:flex-row justify-between items-center mt-20 rounded-xl p-4 hover:bg-stone-100">
+        <div class="featurs-item w-full flex flex-col md:flex-row justify-between items-center mt-12 rounded-xl p-4 hover:bg-stone-100">
 
             <div class="feature-logo flex justify-center items-center">
                 <div

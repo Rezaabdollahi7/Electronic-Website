@@ -43,3 +43,66 @@ header nav {
     border-radius: 14px 12px 12px 0;
 }
 
+
+
+
+
+
+
+.card {
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid gray; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1S ease;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+.container h5 {
+    font-weight: 500;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+}
+
+ .card-desc {
+    margin: 20px 0;
+
+        /* background-color: red; */
+ }
+ 
