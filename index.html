@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CNC</title>
+    <!-- tailwind styles -->
     <link rel="stylesheet" href="./public/css/tailwind.css">
+    <!-- favicon -->
     <link rel="shortcut icon" href="./public/icons/companyLogo/19.png" type="image/x-icon">
+    <!-- custom sass -->
+    <link rel="stylesheet" href="./public/css/mySass/min/customSass.min.css">
+
 </head>
 
 <body class=" h-screen">
@@ -215,7 +220,7 @@
     </section>
     <!-- end banners -->
 
-        <div class="wrapper w-[95%] my-32 mx-auto ">
+        <div id="products-filter-wrapper" class=" wrapper w-[95%] my-32 mx-auto ">
             <div id="search-container" class="my-4  flex justify-center items-center">
                 <input class="bg-transparent w-[40%] border-b-2 border-purple-400 py-4 px-2 focus:bg-purple-100/60" type="search" id="search-input" placeholder="Search product name here.." />
                 <button id="search" class="py-4 px-8 ml-4 bg-blue-600 text-white rounded-md mt-2">Search</button>
