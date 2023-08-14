@@ -148,3 +148,15 @@ header nav {
     margin: 20px 0;
   }
 }
+// ===========================================
+//             features
+// ==========================================
+.featurs-wrapper .feature-number{
+  color: white;
+}
+.featurs-wrapper .featurs-item:hover .feature-number{
+  color: rgba(0, 0, 0, 0.83);
+}
+.featurs-wrapper .featurs-item:hover h3 ,.feature-number{
+    color: black;
+}
