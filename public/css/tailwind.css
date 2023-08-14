@@ -998,6 +998,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-bottom: 2rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .-ml-\[1\.5rem\] {
   margin-left: -1.5rem;
 }
@@ -1677,6 +1682,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-20 {
   width: 5rem;
+}
+
+.w-\[\] {
+  width: ;
 }
 
 .min-w-0 {
@@ -5295,6 +5304,22 @@ input[type="range"]:active::-webkit-slider-thumb {
     margin-top: 4rem;
   }
 
+  .md\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
+  .md\:mr-16 {
+    margin-right: 4rem;
+  }
+
+  .md\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .md\:ml-28 {
+    margin-left: 7rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -5333,6 +5358,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .md\:w-10 {
     width: 2.5rem;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:grid-cols-2 {
