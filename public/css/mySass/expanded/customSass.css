@@ -2,6 +2,8 @@
 body {
   font-family: "IRANSans";
   direction: rtl;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -13,21 +15,60 @@ img {
   border-radius: 14px 12px 12px 0;
 }
 
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-centering {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-img-fluide {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 header nav {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgb(255, 255, 255);
   box-shadow: 0 8px 32px 0 rgba(39, 19, 19, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+header nav .desktop-menu-wrapper li {
+  position: relative;
+}
+header nav .desktop-menu-wrapper li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2.5px;
+  background-color: purple;
+  transition: width 0.5s ease;
+}
+header nav .desktop-menu-wrapper li:hover::after {
+  width: 100%;
+}
 
 .slogan-wrapper {
-  background: url("../../../images/22.png");
   background-position: center;
 }
 .slogan-wrapper .slogan-section {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgb(255, 255, 255);
+  padding: 0 24px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);

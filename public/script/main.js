@@ -8,19 +8,29 @@ headerMobileToggleBtn.addEventListener("click", () => {
 });
 
 
-
+// ============================================================================================
 // Get the button:
 let callUsbutton = document.getElementById("callUsBtn");
-const scroolVal = 40;
+let callUsBtnNumber = document.getElementById("callUsBtnNumber");
+let callUsBtn_animate = document.querySelectorAll(".callUsBtn-animate");
+const scroolVal = 20;
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > scroolVal || document.documentElement.scrollTop > scroolVal) {
-        console.log("iam here")
+    if (document.body.scrollTop > scroolVal || document.documentElement.scrollTop > scroolVal) {        
         callUsbutton.style.display = "block";
+        callUsBtnNumber.classList.remove("hidden")
+        for (i = 0; i < callUsBtn_animate.length; i++) {
+            callUsBtn_animate[i].classList.add("hidden");
+        }
+
     } else {
-        callUsbutton.style.display = "none";
+        callUsBtnNumber.classList.add("hidden");
+        for(i=0 ; i<callUsBtn_animate.length;i++){
+            callUsBtn_animate[i].classList.remove("hidden");
+        }
+
     }
 }
 
@@ -41,7 +51,7 @@ let products = {
             desc: "خازن"
         },
         {
-            productName: "خازن SMD الکترولیتی آلومینیومی 220 میکروفاراد 16 ولت RVE1C221M0607",
+            productName: "خازن SMD 220 میکروفاراد 16 ولت RVE1C221M0607",
             category: "capacitor",
             price: "30",
             image: "./public/images/product-images/capacitor/2.webp",
@@ -265,3 +275,6 @@ document.getElementById("search").addEventListener("click", () => {
 window.onload = () => {
     filterProduct("all");
 };
+
+
+AOS.init();
