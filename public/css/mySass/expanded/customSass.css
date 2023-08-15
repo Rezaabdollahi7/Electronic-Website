@@ -86,6 +86,12 @@ nav .desktop-menu-wrapper li:hover::after {
   transition: all 1s ease;
   box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
 }
+#products-filter-wrapper .card.horizontal {
+  flex-direction: row;
+  padding: 0;
+  max-width: unset;
+  width: 100%;
+}
 #products-filter-wrapper .image-container {
   text-align: center;
 }
@@ -95,12 +101,18 @@ nav .desktop-menu-wrapper li:hover::after {
      object-fit: contain;
   height: 15em;
 }
+#products-filter-wrapper .card.horizontal img {
+  height: 8rem;
+}
 #products-filter-wrapper .container {
   padding-top: 1em;
   color: #110f29;
 }
 #products-filter-wrapper .container h5 {
   font-weight: 500;
+}
+#products-filter-wrapper .card.horizontal .container {
+  margin-right: 10%;
 }
 #products-filter-wrapper .hide {
   display: none;
@@ -129,6 +141,7 @@ nav .desktop-menu-wrapper li:hover::after {
   color: rgba(0, 0, 0, 0.83);
 }
 
-.featurs-wrapper .featurs-item:hover h3, .feature-number {
+.featurs-wrapper .featurs-item:hover h3,
+.feature-number {
   color: black;
 }/*# sourceMappingURL=customSass.css.map */

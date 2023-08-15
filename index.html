@@ -30,23 +30,23 @@
                 aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- Hamburger icon -->
                 <ion-icon name="grid-outline" size="large" style="color:black"></ion-icon>
-                    <a class="my-2 lg:ml-2 lg:mr-5  flex items-center text-cyan-600 lg:mb-0 lg:mt-0 font-bold " href="#">
-                        CNC
-                        <img src="./public/icons/companyLogo/19.png" alt="Logo" class="w-12  md:h-10 md:w-10 mr-2">
-                    </a>
+                <a class="my-2 lg:ml-2 lg:mr-5  flex items-center text-cyan-600 lg:mb-0 lg:mt-0 font-bold " href="#">
+                    CNC
+                    <img src="./public/icons/companyLogo/19.png" alt="Logo" class="w-12  md:h-10 md:w-10 mr-2">
+                </a>
             </button>
 
             <!-- Collapsible navigation container -->
             <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto md:mr-[9%] "
                 id="navbarSupportedContent1" data-te-collapse-item>
                 <!-- Logo -->
-                <a class="mb-4 ml-2 mr-5 mt-3 hidden md:flex items-center text-black lg:mb-0 lg:mt-0"
-                    href="#">
+                <a class="mb-4 ml-2 mr-5 mt-3 hidden md:flex items-center text-black lg:mb-0 lg:mt-0" href="#">
                     <img src="./public/icons/companyLogo/19.png" alt="Logo" class="w-12  md:h-10 md:w-10 mr-2">
                     CNC
                 </a>
                 <!-- right navigation links -->
-                <ul class=" desktop-menu-wrapper list-style-none flex flex-col pl-0 lg:flex-row text-black" data-te-navbar-nav-ref>
+                <ul class=" desktop-menu-wrapper list-style-none flex flex-col pl-0 lg:flex-row text-black"
+                    data-te-navbar-nav-ref>
                     <li class="text-center mb-5 lg:mr-8 pb-2 lg:mb-0 lg:pr-0" data-te-nav-item-ref>
                         <!-- Dashboard link -->
                         <a class=" text-black hover:text-slate-500      [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
@@ -86,8 +86,7 @@
 
 
     <!--! start slogan content -->
-    <section class="slogan-wrapper mx-auto mt-[7%]  w-[90%] h-[80%] flex items-center justify-center "
-        >
+    <section class="slogan-wrapper mx-auto mt-[7%]  w-[90%] h-[80%] flex items-center justify-center ">
         <div class="slogan-section mt-[40px] md:mt-16  flex flex-col-reverse md:flex-row h-[83%] w-[85%] md:h-[81%]">
             <div class="md:w-1/2 flex flex-col justify-center items-center pb-4 md:pb-0">
                 <h1 class="text-center pr-4 text-2xl   md:text-4xl mt-8 md:mt-0 font-extrabold text-violet-700">
@@ -166,11 +165,8 @@
                     <button
                         class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                         type="button" data-te-target="#carouselExampleCaptions" data-te-slide="prev">
-                        <span class="hidden bg-yellow-400 rounded-lg  justify-center items-center h-8 w-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="h-6 w-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                            </svg>
+                        <span class="hidden md:flex bg-yellow-400 rounded-lg  justify-center items-center h-8 w-8">
+                            <ion-icon name="caret-back-circle-outline" class="w-6" size="large"></ion-icon>
                         </span>
                         <span
                             class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
@@ -179,11 +175,9 @@
                     <button
                         class="absolute bottom-0 right-0 top-0 z-[1]  flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                         type="button" data-te-target="#carouselExampleCaptions" data-te-slide="next">
-                        <span class="hidden  h-8 w-8 bg-yellow-400 rounded-lg  justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="h-6 w-6 ">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                            </svg>
+                        <span class="hidden md:flex bg-yellow-400 rounded-lg  justify-center items-center h-8 w-8">
+                           
+                            <ion-icon name="caret-forward-circle-outline" class="w-6" size="large"></ion-icon>
                         </span>
                         <span
                             class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
@@ -196,8 +190,7 @@
 
 
     <!--! start banners -->
-    <section class="banners w-[92%] flex flex-col md:flex-row  mx-auto justify-center items-center mt-16 "
-        >
+    <section class="banners w-[92%] flex flex-col md:flex-row  mx-auto justify-center items-center mt-16 ">
         <img class="w-[95%] md:w-[44vw]  rounded-md" src="./public/images/banner-img/capacitor-banner.jpg"
             alt="بنر خازن">
         <img class="w-[95%] md:w-[44vw] mt-5 md:mt-0  md:mr-6 rounded-md"
@@ -206,23 +199,31 @@
     <!--! end banners -->
 
     <!-- ! start product filters -->
-    <div id="products-filter-wrapper" class=" wrapper w-[92%] my-32 mx-auto " >
+    <div id="products-filter-wrapper" class=" wrapper w-[92%] my-32 mx-auto ">
         <div id="search-container" class="my-4  flex justify-center items-center">
-            <div class="custom-search-container w-[88%] md:w-[40%] relative">
+            <div class="custom-search-container w-[88%] md:mr-[27%] md:w-[40%] relative">
                 <button id="search" class=" ml-4 absolute text-white rounded-md mt-2 right-[4%] top-[7%]">
                     <ion-icon name="search-outline" size="large"></ion-icon>
                 </button>
                 <input
                     class="bg-transparent border-2 border-white text-white rounded-[1.75rem] w-full py-4 pr-12 md:pr-40 focus:outline-2 focus:outline-purple-500 outline-offset-4"
                     type="search" id="search-input" placeholder=" اسم محصول مورد نظر را وارد کنید ..." />
-
             </div>
+            <section class="card-case hidden mr-[10%] md:flex items-center text-white">
+                مرتب سازی به صورت :
+                <ion-icon name="list-outline" size="large" style="color:white" class="w-8 mr-2" id="card-state-vertical"
+                    onclick="cardState('horizontal')"></ion-icon>
+                <ion-icon name="apps-outline" size="large" style="color:white" class="w-8 mr-2"
+                    id="card-state-horizontal" onclick="cardState('vertical')"></ion-icon>
+            </section>
 
         </div>
         <div class="category-wrapper flex flex-col md:flex-row ">
             <div id="buttons"
                 class="my-4  flex flex-col   items-center ml-[2%] md:w-[16%] border border-white rounded-lg mt-[2%]">
-                <p class="text-xl text-white my-8 select-none font-bold">دسته بندی محصولات</p>
+                <p
+                    class="text-xl  my-8 select-none font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                    دسته بندی محصولات</p>
 
                 <span class="text-cyan-400  select-none font-bold text-2xl pr-2 ">Siemens </span>
                 <button
@@ -258,9 +259,8 @@
     </div>
     <!-- ! end of product filters -->
 
-
     <!-- ! start featurs section -->
-    <section class="featurs-wrapper w-[80%] mx-auto md:w-full flex flex-col md:px-[20%] mt-8" >
+    <section class="featurs-wrapper w-[80%] mx-auto md:w-full flex flex-col md:px-[20%] mt-8">
         <div class="featurs-slogan text-center flex items-center justify-center">
             <h3 class="text-4xl text-white  border-indigo-500 border-b-4 w-max pb-2 px-3"> خدمات ما</h3>
         </div>
@@ -337,7 +337,7 @@
     <!-- ! end featurs -->
 
     <!-- ! start footer -->
-    <footer class="w-full p-5 py-20  mt-28 bg-slate-800 border-t-2 " >
+    <footer class="w-full p-5 py-20  mt-28 bg-slate-800 border-t-2 ">
 
 
 

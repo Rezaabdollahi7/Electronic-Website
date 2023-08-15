@@ -268,6 +268,35 @@ document.getElementById("search").addEventListener("click", () => {
 window.onload = () => {
     filterProduct("all");
 };
+// ==================================================================
 
 
-AOS.init();
+
+let pageWidth = window.innerWidth;
+if(pageWidth < 600){
+    cardState("horizontal")
+}
+
+
+function cardState(e){
+    if(e==="horizontal"){
+        let products_section = document.getElementById("products");
+        products_section.classList.remove("lg:grid-cols-4")
+        products_section.classList.remove("md:grid-cols-2")
+        let cards = document.querySelectorAll(".card");
+        cards.forEach((e) => {
+            e.classList.add("horizontal")
+        });
+    }
+    // ! vertical عمودی 
+    else{
+        let products_section = document.getElementById("products");
+        products_section.classList.add("lg:grid-cols-4")
+        products_section.classList.add("md:grid-cols-2")
+        let cards = document.querySelectorAll(".card");
+        cards.forEach((e) => {
+            e.classList.remove("horizontal")
+        });
+
+    }
+}
