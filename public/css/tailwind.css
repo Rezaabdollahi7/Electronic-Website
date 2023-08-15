@@ -854,6 +854,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   left: auto;
 }
 
+.top-\[0\] {
+  top: 0;
+}
+
 .\!z-40 {
   z-index: 40 !important;
 }
@@ -1254,6 +1258,22 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
+.mr-\[4vw\] {
+  margin-right: 4vw;
+}
+
+.mt-\[10\%\] {
+  margin-top: 10%;
+}
+
+.mt-\[7\%\] {
+  margin-top: 7%;
 }
 
 .box-border {
@@ -1743,6 +1763,14 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-\[94\%\] {
   width: 94%;
+}
+
+.w-\[85\%\] {
+  width: 85%;
+}
+
+.w-\[88\%\] {
+  width: 88%;
 }
 
 .min-w-0 {
@@ -3147,6 +3175,18 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-left: 0px;
 }
 
+.pr-16 {
+  padding-right: 4rem;
+}
+
+.pr-12 {
+  padding-right: 3rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4246,6 +4286,16 @@ input[type="range"]:active::-webkit-slider-thumb {
 .hover\:text-neutral-900:hover {
   --tw-text-opacity: 1;
   color: rgb(23 23 23 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -5538,6 +5588,10 @@ input[type="range"]:active::-webkit-slider-thumb {
     margin-right: 9%;
   }
 
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -5562,6 +5616,10 @@ input[type="range"]:active::-webkit-slider-thumb {
     height: 2.5rem;
   }
 
+  .md\:h-\[81\%\] {
+    height: 81%;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -5584,6 +5642,18 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .md\:w-\[44vw\] {
     width: 44vw;
+  }
+
+  .md\:w-\[16\%\] {
+    width: 16%;
+  }
+
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
   }
 
   .md\:grid-cols-2 {
@@ -5651,6 +5721,14 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .md\:pt-2\.5 {
     padding-top: 0.625rem;
+  }
+
+  .md\:pr-40 {
+    padding-right: 10rem;
+  }
+
+  .md\:pr-16 {
+    padding-right: 4rem;
   }
 
   .md\:text-start {
@@ -5758,6 +5836,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .lg\:pr-2 {
     padding-right: 0.5rem;
+  }
+
+  .lg\:pr-0 {
+    padding-right: 0px;
   }
 
   .lg\:text-xl {
