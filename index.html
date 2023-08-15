@@ -18,96 +18,82 @@
 </head>
 
 <body class=" h-screen bg-slate-900">
-    <!-- start header -->
-    <header class="flex justify-center" data-aos="zoom-in" data-aos-duration="1500">
-        <!-- Navbar goes here -->
-        <nav class="  w-[92%] mx-auto absolute z-10 ">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="flex justify-between">
-                    <div class="flex ">
-                        <div>
-                            <!-- Website Logo -->
-                            <a href="#" class="flex items-center py-4 px-2">
-                                <img src="./public/icons/companyLogo/19.png" alt="Logo" class="w-12  md:h-10 md:w-10 mr-2">
 
-                            </a>
-                        </div>
+    <!-- Main navigation container -->
+    <nav class="flex-no-wrap relative mt-4 md:mt-0 flex w-[92%] rounded-lg mx-auto items-center justify-between bg-white py-0 shadow-md shadow-black/5  lg:flex-wrap lg:justify-start lg:py-4"
+        data-te-navbar-ref>
+        <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <!-- Hamburger button for mobile view -->
+            <button
+                class=" border-0 bg-transparent flex items-center justify-between w-full px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                type="button" data-te-collapse-init data-te-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Hamburger icon -->
+                <ion-icon name="grid-outline" size="large" style="color:black"></ion-icon>
+                    <a class="my-2 lg:ml-2 lg:mr-5  flex items-center text-cyan-600 lg:mb-0 lg:mt-0 font-bold " href="#">
+                        CNC
+                        <img src="./public/icons/companyLogo/19.png" alt="Logo" class="w-12  md:h-10 md:w-10 mr-2">
+                    </a>
+            </button>
 
-                        <!-- Primary Navbar items -->
-                        <div class="hidden md:flex items-center desktop-menu-wrapper">
-                            <li class="list-none md:mr-8 pb-2"><a class="hover:text-gray-500  relative m-0"
-                                    href="#">خانه</a></li>
-                            <li class="list-none md:mr-8 pb-2"><a class="hover:text-gray-500  relative m-0"
-                                    href="#">درباره ما</a> </li>
-                            <li class="list-none md:mr-8 pb-2"><a class="hover:text-gray-500  relative m-0"
-                                    href="#">خدمات</a></li>
-                            <li class="list-none md:mr-8 pb-2"><a class="hover:text-gray-500  relative m-0"
-                                    href="#">محصولات</a></li>
-                            <li class="list-none md:mr-8 pb-2"><a class="hover:text-gray-500  relative m-0"
-                                    href="#">تماس باما</a></li>
-                            <li class="list-none md:mr-8 pb-2"><a class="hover:text-gray-500   relative m-0" href="#">
-                                    تازه ترینها </a></li>
-                        </div>
-                    </div>
-                    <!-- Secondary Navbar items -->
-                    <div class="hidden md:flex items-center space-x-3 ">
-
-                        <button type="button" data-te-ripple-init data-te-ripple-color="light"
-                            class="inline-block rounded-md bg-cyan-500  px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                            8013 549 0919
-                            <ion-icon name="call-outline" class="align-[-3px] h-4"></ion-icon>
-                        </button>
-                    </div>
-                    <!-- Mobile menu button -->
-                    <div class="md:hidden flex items-center">
-                        <button class="outline-none mobile-menu-button">
-                            <ion-icon name="grid-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-            <!-- mobile menu -->
-            <div class="hidden mobile-menu"  data-aos="zoom-in" data-aos-duration="1500">
-                <ul class="flex flex-col items-center">
-                    <li class="list-none mb-7"><a
-                            class="hover:text-gray-500  mr-5  hover:underline hover:underline-gray-700 hover:underline-offset-8 hover:decoration-2 duration-200"
-                            href="#">خانه</a></li>
-                    <li class="list-none mb-7"><a
-                            class="hover:text-gray-500  mr-5  hover:underline hover:underline-gray-700 hover:underline-offset-8 hover:decoration-2 duration-200"
-                            href="#">درباره ما</a></li>
-                    <li class="list-none mb-7"><a
-                            class="hover:text-gray-500 mr-5  hover:underline hover:underline-gray-700 hover:underline-offset-8 hover:decoration-2 duration-200"
-                            href="#">خدمات</a></li>
-                    <li class="list-none mb-7"><a
-                            class="hover:text-gray-500 mr-5  hover:underline hover:underline-gray-700 hover:underline-offset-8 hover:decoration-2 duration-200"
-                            href="#">محصولات</a></li>
-                    <li class="list-none mb-7"><a
-                            class="hover:text-gray-500 mr-5  hover:underline hover:underline-gray-700 hover:underline-offset-8 hover:decoration-2 duration-200"
-                            href="#">تماس با ما</a></li>
-                    <li class="list-none mb-7"><a
-                            class="hover:text-gray-500 mr-5  hover:underline hover:underline-gray-700 hover:underline-offset-8 hover:decoration-2 duration-200"
-                            href="#"> تازه ترین ها </a></li>
-                    <li class="list-none mb-7">
-                        <button type="button" data-te-ripple-init data-te-ripple-color="light"
-                            class="hidden  rounded-md bg-cyan-500  px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                            8013 549 0919
-                            <ion-icon name="call-outline" class="align-[-3px] h-4"></ion-icon>
-                        </button>
+            <!-- Collapsible navigation container -->
+            <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto md:mr-[9%] "
+                id="navbarSupportedContent1" data-te-collapse-item>
+                <!-- Logo -->
+                <a class="mb-4 ml-2 mr-5 mt-3 hidden md:flex items-center text-black lg:mb-0 lg:mt-0"
+                    href="#">
+                    <img src="./public/icons/companyLogo/19.png" alt="Logo" class="w-12  md:h-10 md:w-10 mr-2">
+                    CNC
+                </a>
+                <!-- right navigation links -->
+                <ul class="list-style-none flex flex-col pl-0 lg:flex-row text-black" data-te-navbar-nav-ref>
+                    <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                        <!-- Dashboard link -->
+                        <a class=" text-black lg:mr-8   lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                            href="#" data-te-nav-link-ref>خانه</a>
+                    </li>
+                    <!-- Team link -->
+                    <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                        <a class=" text-black    lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            href="#" data-te-nav-link-ref>درباره ما</a>
+                    </li>
+                    <!-- Projects link -->
+                    <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                        <a class=" text-black    lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            href="#" data-te-nav-link-ref>محصولات</a>
+                    </li>
+                    <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                        <a class=" text-black    lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            href="#" data-te-nav-link-ref>تماس با ما</a>
+                    </li>
+                    <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                        <a class=" text-black    lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            href="#" data-te-nav-link-ref>تازه ترین ها</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-    <!-- end of header -->
 
-    <!-- start slogan content -->
-    <section class="slogan-wrapper   w-[100vw] h-[90vh] md:h-[100vh] flex items-center justify-center " data-aos="zoom-in" data-aos-duration="1500" >
+            <!-- left elements -->
+            <div class="relative flex items-center ml-[10%]">
+                <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                    class="lg:inline-block rounded-md bg-cyan-500 px-4 py-2 hidden md:px-6 md:pb-2 md:pt-2.5 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                    8013 549 0919
+                    <ion-icon name="call-outline" class="align-[-3px] h-4"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--! start slogan content -->
+    <section class="slogan-wrapper mx-auto w-[90%] h-[80%] flex items-center justify-center "
+        >
         <div class="slogan-section mt-[-40px] md:mt-16  flex flex-col-reverse md:flex-row h-[63%] w-[80%] md:h-[70%]">
             <div class="md:w-1/2 flex flex-col justify-center items-center pb-4 md:pb-0">
                 <h1 class="text-center pr-4 text-2xl   md:text-4xl mt-8 md:mt-0 font-extrabold text-violet-700">
                     فروش تخصصی قطعات الکترونیکی</h1>
-                <p class="mt-8 text-sm text-center lg:text-xl text-secondary-900">اعتماد شما، انگیزه ما برای ارائه بهترین خدمات
+                <p class="mt-8 text-sm text-center lg:text-xl text-secondary-900">اعتماد شما، انگیزه ما برای ارائه
+                    بهترین خدمات
                     الکترونیکی است</p>
                 <button
                     class="mt-6 md:mt-14 bg-purple-600  px-2 py-2 lg:px-4 lg:py-4 rounded-xl text-white lg:font-bold hover:bg-purple-500 animate-bounce duration-1000 ">دیدن
@@ -206,76 +192,75 @@
             </div>
         </div>
     </section>
-    <!-- end of slogan content -->
+    <!--  ! end of slogan content -->
 
 
-    <!-- start banners -->
-    <section class="banners w-full flex flex-col md:flex-row md:px-4 justify-center items-center mt-8 " data-aos="zoom-in" data-aos-duration="1500">
-        <img class="w-[95%] md:w-[40vw]  rounded-md" src="./public/images/banner-img/capacitor-banner.jpg"
+    <!--! start banners -->
+    <section class="banners w-[92%] flex flex-col md:flex-row  mx-auto justify-center items-center mt-16 "
+        >
+        <img class="w-[95%] md:w-[44vw]  rounded-md" src="./public/images/banner-img/capacitor-banner.jpg"
             alt="بنر خازن">
-        <img class="w-[95%] md:w-[40vw] mt-5 md:mt-0  md:mr-6 rounded-md"
+        <img class="w-[95%] md:w-[44vw] mt-5 md:mt-0  md:mr-6 rounded-md"
             src="./public/images/banner-img/resistor-banner.jpg" alt="بنر مقاومت">
     </section>
-    <!-- end banners -->
+    <!--! end banners -->
 
-    <!-- start product filters -->
-    <div id="products-filter-wrapper" class=" wrapper w-[95%] my-32 mx-auto " data-aos="zoom-in" data-aos-duration="1500">
+    <!-- ! start product filters -->
+    <div id="products-filter-wrapper" class=" wrapper w-[95%] my-32 mx-auto " >
         <div id="search-container" class="my-4  flex justify-center items-center">
             <div class="custom-search-container  w-[40%] relative">
                 <button id="search" class=" ml-4 absolute text-white rounded-md mt-2 right-[4%] top-[7%]">
                     <ion-icon name="search-outline" size="large"></ion-icon>
                 </button>
-                <input class="bg-transparent border-2 border-white rounded-[1.75rem] w-full py-4 pr-40 focus:outline-2 focus:outline-purple-500 outline-offset-4" type="search"
-                    id="search-input" placeholder=" اسم محصول مورد نظر را وارد کنید ..." />
-             
+                <input
+                    class="bg-transparent border-2 border-white rounded-[1.75rem] w-full py-4 pr-40 focus:outline-2 focus:outline-purple-500 outline-offset-4"
+                    type="search" id="search-input" placeholder=" اسم محصول مورد نظر را وارد کنید ..." />
+
             </div>
-         
+
         </div>
         <div class="category-wrapper flex ">
-                <div id="buttons" class="my-4  flex flex-col   items-center ml-[2%] w-[16%] border border-white rounded-lg mt-[2%]">
-                    <p class="text-xl text-white my-8 select-none font-bold">دسته بندی محصولات</p>
+            <div id="buttons"
+                class="my-4  flex flex-col   items-center ml-[2%] w-[16%] border border-white rounded-lg mt-[2%]">
+                <p class="text-xl text-white my-8 select-none font-bold">دسته بندی محصولات</p>
 
-                    <span class="text-cyan-400  select-none font-bold text-2xl pr-2 ">Siemens </span>
-                    <button
-                        class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer  text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950 "
-                        onclick="filterProduct('all')">همه ی محصولات</button>
-                    <button
-                        class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
-                        onclick="filterProduct('capacitor')">
-                        خازن
-                    </button>
-                    <button
-                        class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
-                        onclick="filterProduct('diod')">
-                        دیود
-                    </button>
-                    <button
-                        class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
-                        onclick="filterProduct('ic')">
-                        آی سی
-                    </button>
-                    <button
-                        class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
-                        onclick="filterProduct('res')">
-                        مقاومت
-                    </button>
-                </div>
-                <!-- end category buttons -->
-                <div id="products" class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8  lg:grid-cols-4 lg:gap-6 py-3 px-2 w-[80%] ">
-                </div>
+                <span class="text-cyan-400  select-none font-bold text-2xl pr-2 ">Siemens </span>
+                <button
+                    class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer  text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950 "
+                    onclick="filterProduct('all')">همه ی محصولات</button>
+                <button
+                    class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
+                    onclick="filterProduct('capacitor')">
+                    خازن
+                </button>
+                <button
+                    class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
+                    onclick="filterProduct('diod')">
+                    دیود
+                </button>
+                <button
+                    class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
+                    onclick="filterProduct('ic')">
+                    آی سی
+                </button>
+                <button
+                    class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
+                    onclick="filterProduct('res')">
+                    مقاومت
+                </button>
+            </div>
+            <!-- end category buttons -->
+            <div id="products"
+                class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8  lg:grid-cols-4 lg:gap-6 py-3 px-2 w-[80%] ">
+            </div>
         </div>
- 
+
     </div>
-    <!-- end of product filters -->
+    <!-- ! end of product filters -->
 
 
-
-
-
-
-
-    <!-- start featurs section -->
-    <section class="featurs-wrapper w-[80%] mx-auto md:w-full flex flex-col md:px-[20%] mt-8" data-aos="zoom-in" data-aos-duration="1500">
+    <!-- ! start featurs section -->
+    <section class="featurs-wrapper w-[80%] mx-auto md:w-full flex flex-col md:px-[20%] mt-8" >
         <div class="featurs-slogan text-center flex items-center justify-center">
             <h3 class="text-4xl text-white  border-indigo-500 border-b-4 w-max pb-2 px-3"> خدمات ما</h3>
         </div>
@@ -283,11 +268,11 @@
 
 
         <!-- item 1 -->
-        <div class="featurs-item md:w-full flex flex-col md:flex-row justify-between items-center mt-12 rounded-2xl  p-4 hover:bg-stone-100 border-2 border-white">
+        <div
+            class="featurs-item md:w-full flex flex-col md:flex-row justify-between items-center mt-12 rounded-2xl  p-4 hover:bg-stone-100 border-2 border-white">
 
             <div class="feature-logo flex justify-center items-center">
-                <div
-                    class="feature-number text-8xl text-slate-300 ml-3  transition-all deuration-1000 select-none">
+                <div class="feature-number text-8xl text-slate-300 ml-3  transition-all deuration-1000 select-none">
                     01</div>
 
                 <div class="feature-icon">
@@ -305,7 +290,8 @@
         <!-- end first item -->
 
         <!-- item 2 -->
-        <div class="featurs-item md:w-full flex flex-col md:flex-row-reverse justify-between items-center mt-20 rounded-2xl p-4 hover:bg-stone-100  border-2 border-white">
+        <div
+            class="featurs-item md:w-full flex flex-col md:flex-row-reverse justify-between items-center mt-20 rounded-2xl p-4 hover:bg-stone-100  border-2 border-white">
 
             <div class="feature-logo flex justify-center items-center flex-row-reverse">
                 <div
@@ -327,7 +313,8 @@
         <!-- end item 2 -->
 
         <!-- item 3 -->
-        <div class="featurs-item md:w-full flex flex-col md:flex-row justify-between items-center mt-20 rounded-2xl  p-4 hover:bg-stone-100 border-2 border-white">
+        <div
+            class="featurs-item md:w-full flex flex-col md:flex-row justify-between items-center mt-20 rounded-2xl  p-4 hover:bg-stone-100 border-2 border-white">
 
             <div class="feature-logo flex justify-center items-center ">
                 <div
@@ -347,11 +334,12 @@
         </div>
 
     </section>
+    <!-- ! end featurs -->
 
-    <!-- start footer -->
-    <footer class="w-full p-5 py-20  mt-28 bg-slate-800 border-t-2 "data-aos="zoom-in " data-aos-duration="1500">
+    <!-- ! start footer -->
+    <footer class="w-full p-5 py-20  mt-28 bg-slate-800 border-t-2 " >
 
-     
+
 
         <div class="ul-items-wrapper grid grid-cols-1 md:grid-cols-4 gap-4 mt-12">
             <!-- company info -->
@@ -361,9 +349,11 @@
                         <h3 class="select-none">CNC DIGITAL</h3>
                         <img class="w-20 h-20" src="./public/icons/companyLogo/19.png" alt="عکس لوگوی شرکت">
                     </div>
-                    <p class="company-text mt-4 text-justify">فروشگاه اینترنتی CNC در زمینه فروش قطعات الکترونیکی ، طراحی، ساخت، تولید و تعمیرات فعالیت می‌کند. این وبسایت علاوه
-                    بر فروش آنلاین به بررسی قطعات و محصولات الکترونیکی، ارائه اطلاعات فنی قطعات، تولید محتوای تخصصی ویدئو و ترجمه مقالات
-                    تخصصی در حوزه الکترونیک می پردازد.
+                    <p class="company-text mt-4 text-justify">فروشگاه اینترنتی CNC در زمینه فروش قطعات الکترونیکی ،
+                        طراحی، ساخت، تولید و تعمیرات فعالیت می‌کند. این وبسایت علاوه
+                        بر فروش آنلاین به بررسی قطعات و محصولات الکترونیکی، ارائه اطلاعات فنی قطعات، تولید محتوای تخصصی
+                        ویدئو و ترجمه مقالات
+                        تخصصی در حوزه الکترونیک می پردازد.
                     </p>
                 </div>
             </ul>
@@ -377,11 +367,11 @@
                 <li class="mt-5"><a href="#" class="mt-1 text-slate-400"> تضمین کیفیت محصولات</a></li>
             </ul>
             <ul class="text-center mt-6 md:mt-0 text-white">
-                <li class="tittle-li text-3xl"><a href=""> شرایط ما  </a></li>
+                <li class="tittle-li text-3xl"><a href=""> شرایط ما </a></li>
                 <li class="mt-5"><a href="#" class="mt-1 text-slate-400"> تماس با ما </a></li>
                 <li class="mt-5"><a href="#" class="mt-1 text-slate-400">درباره ما </a></li>
                 <li class="mt-5"><a href="#" class="mt-1 text-slate-400"> شرایط و قوانین</a></li>
-                <li class="mt-5"><a href="#" class="mt-1 text-slate-400"> سیاست حریم خصوصی  </a></li>
+                <li class="mt-5"><a href="#" class="mt-1 text-slate-400"> سیاست حریم خصوصی </a></li>
             </ul>
             <!-- contact -->
             <ul class="text-center md:pl-[30%] mt-6 md:mt-0 text-white">
@@ -410,10 +400,10 @@
 
         <!-- start copy right section -->
         <div class="w-full flex items-center justify-center text-white mt-20">
-            <span class="text-sm">کلیه حقوق این وبسایت متعلق به شرکت  CNC     می باشد.</span>
+            <span class="text-sm">کلیه حقوق این وبسایت متعلق به شرکت CNC می باشد.</span>
         </div>
     </footer>
-    <!-- end of footer -->
+    <!-- ! end of footer -->
 
 
     <!-- call us absolute button -->
@@ -421,8 +411,10 @@
         class="fixed  bottom-[7%] left-[3%] z-80  h-12 border-0  text-white bg-lime-600 cursor-pointer p-2 custom-rounded outline outline-2 outline-offset-2 outline-lime-600"
         onclick="topFunction()" id="callUsBtn" title="Go to top">
         <div class="wrapper flex justify-center items-center relative">
-            <span class="callUsBtn-animate animate-ping absolute  h-full w-full rounded-full bg-blue-300 scale-[3] opacity-75"></span>
-            <span class="callUsBtn-animate animate-ping absolute  h-full w-full rounded-full bg-blue-300 scale-[4] opacity-75"></span>
+            <span
+                class="callUsBtn-animate animate-ping absolute  h-full w-full rounded-full bg-blue-300 scale-[3] opacity-75"></span>
+            <span
+                class="callUsBtn-animate animate-ping absolute  h-full w-full rounded-full bg-blue-300 scale-[4] opacity-75"></span>
             <span class="ml-1 hidden" id="callUsBtnNumber">
                 0830 182 0912
             </span>
@@ -447,13 +439,19 @@
         } from "tw-elements";
 
         initTE({ Carousel });
+        // Initialization for ES Users
+        import {
+            Collapse,
+            Dropdown,
+            initTE,
+        } from "tw-elements";
+
+        initTE({ Collapse, Dropdown });
     </script>
     <!-- aos library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
     <!-- custom js -->
-    <script src="./public/script/main.js">
-        
-    </script>
+    <script src="./public/script/main.js"></script>
 </body>
 
 </html>
