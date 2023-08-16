@@ -195,4 +195,8 @@ nav .desktop-menu-wrapper li:hover::after {
 .featurs-wrapper .featurs-item:hover h3,
 .feature-number {
   color: black;
+}
+
+.swiper {
+  z-index: -1;
 }/*# sourceMappingURL=customSass.css.map */
