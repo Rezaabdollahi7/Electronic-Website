@@ -191,21 +191,39 @@ for (let i of products.data) {
     let container = document.createElement("div");
     container.classList.add("container");
     //product name
+    let nameLabel = document.createElement("span");
+    nameLabel.classList.add("product-name-label");
+    nameLabel.innerText = "نام محصول : " ;
+
     let name = document.createElement("h5");
     name.classList.add("product-name");
     name.innerText = i.productName.toUpperCase();
+    container.appendChild(nameLabel)
     container.appendChild(name);
 
 
+    //product desc
+    let descLabel = document.createElement("span");
+    descLabel.classList.add("cat-label");
+    descLabel.innerText = "دسته بندی  : ";
+    container.appendChild(descLabel);
+
     let desc = document.createElement("h6");
-    desc.classList.add("card-desc");
-    desc.innerText = "دسته بندی :    " + i.desc;
+    desc.classList.add("card-cat");
+    desc.innerText = i.desc;
     container.appendChild(desc);
 
-    //price
-    let price = document.createElement("h6");
-    price.innerText = "$" + i.price;
-    container.appendChild(price);
+    //see more btn
+    let seeMoreBtn = document.createElement("button");
+    seeMoreBtn.classList.add("see-more-btn");
+    seeMoreBtn.innerText = "مشاهده جزئیات بیشتر";
+    container.appendChild(seeMoreBtn);
+
+    //buy btn
+    let buyBtn = document.createElement("button");
+    buyBtn.classList.add("buy-btn");
+    buyBtn.innerText = "برای خرید تماس بگیرید";
+    container.appendChild(buyBtn);
 
     card.appendChild(container);
     document.getElementById("products").appendChild(card);

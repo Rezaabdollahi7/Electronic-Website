@@ -19,7 +19,8 @@
 
 <body class=" h-screen bg-slate-900">
 
-    <!-- Main navigation container -->
+
+    <!--! Main navigation container -->
     <nav class="flex-no-wrap fixed z-10 mt-4 top-[0] md:mt-0 flex w-[92%] rounded-lg mr-[4vw] items-center justify-between bg-white py-0   lg:flex-wrap lg:justify-start lg:py-4"
         data-te-navbar-ref>
         <div class="flex w-full flex-wrap items-center justify-between px-3">
@@ -83,7 +84,7 @@
             </div>
         </div>
     </nav>
-
+    <!-- ! end nav -->
 
     <!--! start slogan content -->
     <section class="slogan-wrapper mx-auto mt-[7%]  w-[90%] h-[80%] flex items-center justify-center ">
@@ -211,9 +212,9 @@
             </div>
             <section class="card-case hidden mr-[10%] md:flex items-center text-white">
                 مرتب سازی به صورت :
-                <ion-icon name="list-outline" size="large" style="color:white" class="w-8 mr-2" id="card-state-vertical"
+                <ion-icon name="list-outline" size="large" style="color:white" class="w-8 mr-2 cursor-pointer" id="card-state-vertical"
                     onclick="cardState('horizontal')"></ion-icon>
-                <ion-icon name="apps-outline" size="large" style="color:white" class="w-8 mr-2"
+                <ion-icon name="apps-outline" size="large" style="color:white" class="w-8 mr-2 cursor-pointer"
                     id="card-state-horizontal" onclick="cardState('vertical')"></ion-icon>
             </section>
 
