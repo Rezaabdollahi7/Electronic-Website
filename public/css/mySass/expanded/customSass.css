@@ -92,6 +92,12 @@ nav .desktop-menu-wrapper li:hover::after {
   max-width: unset;
   width: 100%;
 }
+#products-filter-wrapper .card.horizontal img {
+  height: 16rem;
+}
+#products-filter-wrapper .card.horizontal .container {
+  margin-right: 10%;
+}
 #products-filter-wrapper .image-container {
   text-align: center;
 }
@@ -101,9 +107,6 @@ nav .desktop-menu-wrapper li:hover::after {
      object-fit: contain;
   height: 15em;
 }
-#products-filter-wrapper .card.horizontal img {
-  height: 8rem;
-}
 #products-filter-wrapper .container {
   padding-top: 1em;
   color: #110f29;
@@ -111,11 +114,49 @@ nav .desktop-menu-wrapper li:hover::after {
 #products-filter-wrapper .container h5 {
   font-weight: 500;
 }
-#products-filter-wrapper .card.horizontal .container {
-  margin-right: 10%;
-}
 #products-filter-wrapper .hide {
   display: none;
+}
+#products-filter-wrapper .product-name-label,
+#products-filter-wrapper .cat-label {
+  font-size: 14px;
+  color: #94a3b8;
+}
+#products-filter-wrapper .product-name {
+  margin-bottom: 1rem;
+}
+#products-filter-wrapper .card-cat {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 3px 14px;
+  background-color: #3b82f6;
+  color: #fff;
+  border-radius: 4px;
+  margin: 5px 0;
+  border: 1px solid #7e22ce;
+  transition: all 0.5s;
+}
+#products-filter-wrapper .card-cat:hover {
+  background-color: #7e22ce;
+}
+#products-filter-wrapper .see-more-btn,
+#products-filter-wrapper .buy-btn {
+  width: 99%;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin: 10px auto;
+  background-color: #f9fafb;
+  border: 1px solid black;
+}
+#products-filter-wrapper .buy-btn {
+  background-color: #fbbf24;
+  margin-bottom: 10px;
+  color: #1c1917;
+  transition: all 0.7s ease;
+}
+#products-filter-wrapper .buy-btn:hover {
+  background-color: #2563eb;
+  color: #f8fafc;
 }
 
 @media screen and (max-width: 720px) {
@@ -131,6 +172,16 @@ nav .desktop-menu-wrapper li:hover::after {
   }
   #products-filter-wrapper .card-desc {
     margin: 20px 0;
+  }
+  .card.horizontal .see-more-btn,
+  .buy-btn {
+    margin: 7px 0 !important;
+    width: 95% !important;
+    font-size: 13px;
+    padding: 5px 0;
+  }
+  .card.horizontal .product-name {
+    font-size: 15px;
   }
 }
 .featurs-wrapper .feature-number {
