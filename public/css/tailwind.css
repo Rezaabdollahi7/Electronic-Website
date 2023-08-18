@@ -926,6 +926,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   order: 3;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .float-right {
   float: right;
 }
@@ -1486,6 +1490,14 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 300px;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
 .max-h-\[calc\(100\%-64px\)\] {
   max-height: calc(100% - 64px);
 }
@@ -1725,6 +1737,22 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-\[500px\] {
   width: 500px;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .min-w-0 {
@@ -2103,8 +2131,28 @@ input[type="range"]:active::-webkit-slider-thumb {
           appearance: none;
 }
 
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .\!flex-row {
@@ -2139,6 +2187,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -2161,6 +2213,14 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -3009,6 +3069,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   text-align: justify;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .-indent-\[999px\] {
   text-indent: -999px;
 }
@@ -3448,6 +3512,21 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .text-\[\] {
   color: ;
+}
+
+.text-purple-400 {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity));
+}
+
+.text-purple-700 {
+  --tw-text-opacity: 1;
+  color: rgb(126 34 206 / var(--tw-text-opacity));
+}
+
+.text-purple-800 {
+  --tw-text-opacity: 1;
+  color: rgb(107 33 168 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -4068,6 +4147,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 .hover\:text-purple-600:hover {
   --tw-text-opacity: 1;
   color: rgb(147 51 234 / var(--tw-text-opacity));
+}
+
+.hover\:text-pink-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity));
 }
 
 .hover\:no-underline:hover {
