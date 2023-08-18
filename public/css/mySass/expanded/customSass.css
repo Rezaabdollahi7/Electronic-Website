@@ -199,4 +199,14 @@ nav .desktop-menu-wrapper li:hover::after {
 
 .swiper {
   z-index: -1;
+}
+
+.magnify .magnifier {
+  border-radius: 10%;
+  background-size: 500%;
+  background-repeat: no-repeat;
+  margin-left: -10px !important;
+  margin-top: -10px !important;
+  pointer-events: none;
+  display: none;
 }/*# sourceMappingURL=customSass.css.map */

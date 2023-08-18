@@ -342,7 +342,10 @@ const swiper = new Swiper('.swiper', {
         draggable: 'true',
     },
     autoplay:{
-        delay:"5000",
+        delay:"60000",
         pauseOnMouseEnter:"true",
+    },
+    Pagination:{
+        
     }
 });

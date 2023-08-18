@@ -227,3 +227,22 @@ nav {
 .swiper{
   z-index: -1;
 }
+
+// ===========================================
+//             product page styles
+// ==========================================
+
+
+
+
+.magnify .magnifier {
+ 
+  
+  border-radius: 10%;
+  background-size: 500%;
+  background-repeat: no-repeat;
+   margin-left: -10px !important;
+   margin-top: -10px !important;
+  pointer-events: none;
+  display: none;
+}
