@@ -45,6 +45,21 @@ a {
   width: 100%;
   height: auto;
 }
+.my-right-translate-animation {
+  animation: right-translate 0.5s ease;
+}
+@keyframes right-translate {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
 // ===========================================
 //             header
 // ==========================================
@@ -117,7 +132,11 @@ nav {
     .container {
       margin-right: 10%;
     }
-
+    .see-more-btn,
+    .buy-btn {
+      width: 46%;
+      margin: 10px;
+    }
   }
   .image-container {
     text-align: center;
@@ -171,8 +190,8 @@ nav {
   }
   .buy-btn {
     background-color: #fbbf24;
-    
-    margin-bottom:10px;
+
+    margin-bottom: 10px;
     color: #1c1917;
     transition: all 0.7s ease;
   }
@@ -180,9 +199,8 @@ nav {
     background-color: #2563eb;
     color: #f8fafc;
   }
-
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width: 720px) {
   #products-filter-wrapper img {
     max-width: 100%;
     object-fit: contain;
@@ -197,16 +215,15 @@ nav {
     margin: 20px 0;
   }
   .card.horizontal .see-more-btn,
-  .buy-btn{
+  .buy-btn {
     margin: 7px 0 !important;
     width: 95% !important;
     font-size: 13px;
     padding: 5px 0;
   }
-  .card.horizontal .product-name{
+  .card.horizontal .product-name {
     font-size: 15px;
   }
-
 }
 // ===========================================
 //             features
@@ -224,7 +241,7 @@ nav {
 // ===========================================
 //             swiper
 // ==========================================
-.swiper{
+.swiper {
   z-index: -1;
 }
 
@@ -232,17 +249,12 @@ nav {
 //             product page styles
 // ==========================================
 
-
-
-
 .magnify .magnifier {
- 
-  
   border-radius: 10%;
   background-size: 500%;
   background-repeat: no-repeat;
-   margin-left: -10px !important;
-   margin-top: -10px !important;
+  margin-left: -10px !important;
+  margin-top: -10px !important;
   pointer-events: none;
   display: none;
 }

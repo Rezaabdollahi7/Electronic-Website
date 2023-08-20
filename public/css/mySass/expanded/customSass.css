@@ -37,6 +37,21 @@ a {
   height: auto;
 }
 
+.my-right-translate-animation {
+  animation: right-translate 0.5s ease;
+}
+
+@keyframes right-translate {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
 nav {
   box-shadow: 0 0 25px black;
 }
@@ -97,6 +112,11 @@ nav .desktop-menu-wrapper li:hover::after {
 }
 #products-filter-wrapper .card.horizontal .container {
   margin-right: 10%;
+}
+#products-filter-wrapper .card.horizontal .see-more-btn,
+#products-filter-wrapper .card.horizontal .buy-btn {
+  width: 46%;
+  margin: 10px;
 }
 #products-filter-wrapper .image-container {
   text-align: center;
