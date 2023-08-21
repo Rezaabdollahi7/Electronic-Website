@@ -200,7 +200,7 @@ for (let i of products.data) {
     name.innerText = i.productName.toUpperCase();
     container.appendChild(nameLabel)
     container.appendChild(name);
-
+    
 
     //product desc
     let descLabel = document.createElement("span");

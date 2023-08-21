@@ -41,8 +41,8 @@
             <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto md:mr-[9%] "
                 id="navbarSupportedContent1" data-te-collapse-item>
                 <!-- Logo -->
-                <a class="mb-4 ml-2 mr-5 mt-3 hidden md:flex items-center text-black lg:mb-0 lg:mt-0" href="#">
-                    <img src="./public/icons/companyLogo/19.png" alt="Logo" class="w-12  md:h-10 md:w-10 mr-2">
+                <a class="mb-4 ml-2 mr-5 mt-3 hidden md:flex items-center text-cyan-600 lg:mb-0 lg:mt-0" href="#">
+                    <img src="./public/icons/companyLogo/19.png" alt="Logo" class="w-12  md:h-10 md:w-10 mr-2 ml-2">
                     CNC
                 </a>
                 <!-- right navigation links -->
@@ -224,10 +224,10 @@
             <div id="buttons"
                 class="my-4  flex flex-col   items-center ml-[2%] md:w-[16%] border border-white rounded-lg mt-[2%]">
                 <p
-                    class="text-xl  my-8 select-none font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                    class="text-xl  my-8 select-none font-bold text-white">
                     دسته بندی محصولات</p>
 
-                <span class="text-cyan-400  select-none font-bold text-2xl pr-2 ">Siemens </span>
+                <span class="text-cyan-400/50  select-none font-bold text-2xl pr-2 ">Siemens </span>
                 <button
                     class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer  text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950 "
                     onclick="filterProduct('all')">همه ی محصولات</button>
@@ -247,7 +247,7 @@
                     آی سی
                 </button>
                 <button
-                    class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
+                    class="button-value mr-5 mt-4 mb-5 md:mb-5 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
                     onclick="filterProduct('res')">
                     مقاومت
                 </button>
@@ -262,7 +262,7 @@
     <!-- ! end of product filters -->
 
     <!-- ! Slider main container -->
-    <h4 class="text-3xl text-white mt-30 mb-12 w-full text-center ">پر فروشترین محصولات</h4>
+    <h4 class="text-3xl text-white mt-30 mb-12 w-full text-center relative custom-tittle">پر فروشترین محصولات</h4>
     <div class="swiper w-[92%] mx-auto   -z-10">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper ">
@@ -439,7 +439,7 @@
     <!-- ! end slider -->
 
     <!-- ! articles -->
-    <h4 class="text-3xl text-white mt-30 mb-12 w-full text-center mt-28">آخرین مقالات</h4>
+    <h4 class="text-3xl text-white mt-30 mb-12 w-full text-center mt-28 custom-tittle relative">آخرین مقالات</h4>
 
     <section class="articles w-[92%] mx-auto grid  md:grid-cols-2  gap-4 ">
         <!-- right side -->
@@ -502,6 +502,7 @@
                     </ul>
                 </div>
             </div>
+            
 
             <div class="item-3 flex flex-col md:flex-row items-center p-4 border rounded-lg mt-8">
                 <div class="img-wrapper flex items-start self-start">
@@ -544,12 +545,9 @@
     <!-- ! end articles -->
 
     <!-- ! start featurs section -->
-    <section class="featurs-wrapper w-[80%] mx-auto md:w-full flex flex-col md:px-[20%] mt-24">
-        <div class="featurs-slogan text-center flex items-center justify-center">
-            <h3 class="text-4xl text-white  border-indigo-500 border-b-4 w-max pb-2 px-3"> خدمات ما</h3>
-        </div>
+    <h4 class="text-3xl text-white mt-30 mb-12 w-full text-center mt-28 custom-tittle relative mt-24"> خدمات ما</h4>
 
-
+    <section class="featurs-wrapper w-[80%] mx-auto md:w-full flex flex-col md:px-[20%] ">
 
         <!-- item 1 -->
         <div
@@ -621,11 +619,9 @@
     <!-- ! end featurs -->
 
     <!-- ! start footer -->
+    
     <footer class="w-full p-5 py-20  mt-28 bg-slate-800 border-t-2 ">
-
-
-
-        <div class="ul-items-wrapper grid grid-cols-1 md:grid-cols-4 gap-4 mt-12">
+        <div class="ul-items-wrapper grid grid-cols-1 md:grid-cols-4 gap-4 mt-12 md:mr-12">
             <!-- company info -->
             <ul class="text-center mt-6 md:mt-0 text-white">
                 <div class="company-log-wrapper flex flex-col items-center justify-center">

@@ -137,6 +137,11 @@ nav {
       width: 46%;
       margin: 10px;
     }
+    .image-container {
+      img {
+        margin-right: 3rem;
+      }
+    }
   }
   .image-container {
     text-align: center;
@@ -175,6 +180,7 @@ nav {
     margin: 5px 0;
     border: 1px solid #7e22ce;
     transition: all 0.5s;
+    display: inline;
   }
   .card-cat:hover {
     background-color: #7e22ce;
@@ -225,6 +231,11 @@ nav {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 500px) {
+  .card.horizontal .image-container img {
+    margin-right: 1rem !important;
+  }
+}
 // ===========================================
 //             features
 // ==========================================
@@ -257,4 +268,30 @@ nav {
   margin-top: -10px !important;
   pointer-events: none;
   display: none;
+}
+// ===========================================
+//             secxtions tittle styles
+// ==========================================
+@mixin custom-tittle-pos{
+  content: "";
+  position: absolute;
+  width: 95px;
+  height: 2px;
+  background-color: #ffffff78;
+  top: 54%;
+}
+.custom-tittle::before {
+  @include custom-tittle-pos();
+  margin-right: -7.5%;
+}
+.custom-tittle::after {
+  @include custom-tittle-pos();
+  margin-left: -49%;
+  margin-right: 1%;
+}
+@media screen and (max-width:500px) {
+  .custom-tittle::before {
+  @include custom-tittle-pos();
+  margin-right: -24.5%;
+}
 }
