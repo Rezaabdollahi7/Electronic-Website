@@ -108,7 +108,7 @@ nav {
 #products-filter-wrapper {
   .card {
     background-color: #ffffff;
-    max-width: 18em;
+    max-width: 17.5em;
     margin-top: 1em;
     padding: 1em;
     border-radius: 5px;
@@ -145,10 +145,13 @@ nav {
   }
   .image-container {
     text-align: center;
+    width: 16rem;
     img {
       max-width: 100%;
       object-fit: contain;
       height: 15em;
+      margin: 0 auto ; 
+      border-radius: 10px;
     }
   }
 
@@ -193,6 +196,9 @@ nav {
     margin: 10px auto;
     background-color: #f9fafb;
     border: 1px solid black;
+  }
+  .see-more-btn {
+    margin-top: 2.5rem;
   }
   .buy-btn {
     background-color: #fbbf24;
@@ -272,7 +278,7 @@ nav {
 // ===========================================
 //             secxtions tittle styles
 // ==========================================
-@mixin custom-tittle-pos{
+@mixin custom-tittle-pos {
   content: "";
   position: absolute;
   width: 95px;
@@ -289,9 +295,9 @@ nav {
   margin-left: -49%;
   margin-right: 1%;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .custom-tittle::before {
-  @include custom-tittle-pos();
-  margin-right: -24.5%;
-}
+    @include custom-tittle-pos();
+    margin-right: -24.5%;
+  }
 }

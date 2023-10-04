@@ -65,7 +65,7 @@ let products = {
             desc: "خازن"
         },
         {
-            productName: "خازن الکترولیتی دیپ 100 میکروفاراد 16 ولت",
+            productName: "خازن الکترولیتی دیپ  میکروفاراد  ",
             category: "capacitor",
             price: "30",
             image: "./public/images/product-images/capacitor/5.webp",

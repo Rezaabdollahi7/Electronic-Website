@@ -1226,14 +1226,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-top: 7%;
 }
 
-.mr-12 {
-  margin-right: 3rem;
-}
-
-.mr-7 {
-  margin-right: 1.75rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -2352,10 +2344,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-bottom-width: 2px;
 }
 
-.border-b-4 {
-  border-bottom-width: 4px;
-}
-
 .border-l-0 {
   border-left-width: 0px;
 }
@@ -2410,11 +2398,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.border-indigo-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 
 .border-lime-950 {
@@ -2984,11 +2967,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-8xl {
@@ -5260,16 +5238,12 @@ input[type="range"]:active::-webkit-slider-thumb {
     width: 40%;
   }
 
-  .md\:w-\[44vw\] {
-    width: 44vw;
-  }
-
   .md\:w-\[500px\] {
     width: 500px;
   }
 
-  .md\:w-\[80\%\] {
-    width: 80%;
+  .md\:w-\[70\%\] {
+    width: 70%;
   }
 
   .md\:w-full {
@@ -5321,6 +5295,36 @@ input[type="range"]:active::-webkit-slider-thumb {
   .md\:px-\[20\%\] {
     padding-left: 20%;
     padding-right: 20%;
+  }
+
+  .md\:px-\[16\%\] {
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+
+  .md\:px-\[1\%\] {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .md\:px-\[10\%\] {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .md\:px-\[13\%\] {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+
+  .md\:px-\[14\%\] {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+
+  .md\:px-\[15\%\] {
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .md\:pb-0 {
@@ -5432,8 +5436,8 @@ input[type="range"]:active::-webkit-slider-thumb {
     justify-content: flex-start;
   }
 
-  .lg\:gap-6 {
-    gap: 1.5rem;
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:px-2 {

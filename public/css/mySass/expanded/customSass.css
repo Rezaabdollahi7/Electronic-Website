@@ -88,7 +88,7 @@ nav .desktop-menu-wrapper li:hover::after {
 
 #products-filter-wrapper .card {
   background-color: #ffffff;
-  max-width: 18em;
+  max-width: 17.5em;
   margin-top: 1em;
   padding: 1em;
   border-radius: 5px;
@@ -123,12 +123,15 @@ nav .desktop-menu-wrapper li:hover::after {
 }
 #products-filter-wrapper .image-container {
   text-align: center;
+  width: 16rem;
 }
 #products-filter-wrapper .image-container img {
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   height: 15em;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 #products-filter-wrapper .container {
   padding-top: 1em;
@@ -171,6 +174,9 @@ nav .desktop-menu-wrapper li:hover::after {
   margin: 10px auto;
   background-color: #f9fafb;
   border: 1px solid black;
+}
+#products-filter-wrapper .see-more-btn {
+  margin-top: 2.5rem;
 }
 #products-filter-wrapper .buy-btn {
   background-color: #fbbf24;
