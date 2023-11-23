@@ -21,74 +21,121 @@
 
 
     <!--! Main navigation container -->
-    <nav class="flex-no-wrap fixed z-10 mt-4 top-[0] md:mt-0 flex w-[92%] rounded-lg mr-[4vw] items-center justify-between bg-white py-0   lg:flex-wrap lg:justify-start lg:py-4"
-        data-te-navbar-ref>
-        <div class="flex w-full flex-wrap items-center justify-between px-3">
-            <!-- Hamburger button for mobile view -->
-            <button
-                class=" border-0 bg-transparent flex items-center justify-between w-full px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-                type="button" data-te-collapse-init data-te-target="#navbarSupportedContent1"
-                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- Hamburger icon -->
-                <ion-icon name="grid-outline" size="large" style="color:black"></ion-icon>
-                <a class="my-2 lg:ml-2 lg:mr-5  flex items-center text-cyan-600 lg:mb-0 lg:mt-0 font-bold " href="#">
-                    CNC
-                    <img src="./public/icons/companyLogo/19.png" alt="Logo" class="w-12  md:h-10 md:w-10 mr-2">
-                </a>
+    <nav
+        class="relative  px-4 py-2  lg:py-3 flex justify-between items-center bg-white w-[90%]  lg:w-[80%] mx-auto rounded-lg">
+        <a class="text-3xl font-bold leading-none" href="#">
+            <img src="./public/icons/companyLogo/19.png" class="h-14" alt="logo">
+        </a>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-blue-600 p-3">
+                <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
             </button>
-
-            <!-- Collapsible navigation container -->
-            <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto md:mr-[9%] "
-                id="navbarSupportedContent1" data-te-collapse-item>
-                <!-- Logo -->
-                <a class="mb-4 ml-2 mr-5 mt-3 hidden md:flex items-center text-cyan-600 lg:mb-0 lg:mt-0" href="#">
-                    <img src="./public/icons/companyLogo/19.png" alt="Logo" class="w-12  md:h-10 md:w-10 mr-2 ml-2">
-                    CNC
+        </div>
+        <ul
+            class="desktop-menu-wrapper  hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class="text-sm  items text-blue-600 hover:text-gray-500 font-bold" href="#">خانه</a></li>
+            <li class="text-gray-300 pr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="text-sm items text-gray-700 hover:text-black " href="#"> درباره ما</a></li>
+            <li class="text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="text-sm items text-gray-700 hover:text-black" href="#">بلاگ</a></li>
+            <li class="text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="text-sm items text-gray-700 hover:text-black" href="#">تماس با ما</a></li>
+            <li class="text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="text-sm items text-gray-700 hover:text-black" href="#">محصولات</a></li>
+            <li class="text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+            </li>
+            <li><a class="text-sm items text-gray-700 hover:text-black" href="#">افتخارات</a></li>
+        </ul>
+        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6  text-sm text-cyan-600 font-bold  rounded-xl transition duration-200"
+            href="#">CNC</a>
+        <a class="hidden lg:inline-block py-2 px-6 bg-cyan-500 hover:bg-blue-600 text-sm text-white  rounded-md transition duration-200"
+            href="#">8013 549 0919</a>
+    </nav>
+    <!-- mobile nav -->
+    <div class="navbar-menu relative z-50 hidden   ">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto ">
+            <div class="flex items-center mb-8">
+                <a class="ml-auto text-3xl font-bold leading-none" href="#">
+                <img src="./public/icons/companyLogo/19.png" class="h-14" alt="logo">
                 </a>
-                <!-- right navigation links -->
-                <ul class=" desktop-menu-wrapper list-style-none flex flex-col pl-0 lg:flex-row text-black"
-                    data-te-navbar-nav-ref>
-                    <li class="text-center mb-5 lg:mr-8 pb-2 lg:mb-0 lg:pr-0" data-te-nav-item-ref>
-                        <!-- Dashboard link -->
-                        <a class=" text-black hover:text-slate-500      [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
-                            href="#" data-te-nav-link-ref>خانه</a>
+                <button class="navbar-close">
+                    <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">خانه</a>
                     </li>
-                    <!-- Team link -->
-                    <li class="text-center mb-5 pb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <a class=" text-black hover:text-slate-500     lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                            href="#" data-te-nav-link-ref>درباره ما</a>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">درباره ما</a>
                     </li>
-                    <!-- Projects link -->
-                    <li class="text-center mb-5 pb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <a class=" text-black hover:text-slate-500     lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                            href="#" data-te-nav-link-ref>محصولات</a>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">بلاگ</a>
                     </li>
-                    <li class="text-center mb-5 pb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <a class=" text-black hover:text-slate-500     lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                            href="#" data-te-nav-link-ref>تماس با ما</a>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">تماس با ما</a>
                     </li>
-                    <li class="text-center mb-5 pb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <a class=" text-black hover:text-slate-500     lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                            href="#" data-te-nav-link-ref>تازه ترین ها</a>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">محصولات</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">افتخارات</a>
                     </li>
                 </ul>
             </div>
-
-            <!-- left elements -->
-            <div class="relative flex items-center ml-[10%]">
-                <button type="button" data-te-ripple-init data-te-ripple-color="light"
-                    class="lg:inline-block rounded-md bg-cyan-500 px-4 py-2 hidden md:px-6 md:pb-2 md:pt-2.5 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                    8013 549 0919
-                    <ion-icon name="call-outline" class="align-[-3px] h-4"></ion-icon>
-                </button>
-            </div>
-        </div>
-    </nav>
+       
+        </nav>
+    </div>
     <!-- ! end nav -->
 
     <!--! start slogan content -->
     <section
-        class="slogan-wrapper  my-right-translate-animation mx-auto mt-[7%]  w-[90%] h-[80%] flex items-center justify-center  ">
+        class="slogan-wrapper  my-right-translate-animation mx-auto mt-[3%]  w-[94%] h-[80%] flex items-center justify-center  ">
         <div class="slogan-section mt-[40px] md:mt-16  flex flex-col-reverse md:flex-row h-[83%] w-[85%] md:h-[81%]">
             <div class="md:w-1/2 flex flex-col justify-center items-center pb-4 md:pb-0">
                 <h1 class="text-center pr-4 text-2xl   md:text-4xl mt-8 md:mt-0 font-extrabold text-violet-700">
@@ -699,32 +746,6 @@
             <ion-icon name="call-outline" size="large"></ion-icon>
         </div>
     </button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

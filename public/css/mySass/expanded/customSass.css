@@ -55,21 +55,21 @@ a {
 nav {
   box-shadow: 0 0 25px black;
 }
-nav .desktop-menu-wrapper li {
+nav .desktop-menu-wrapper .items {
   position: relative;
 }
-nav .desktop-menu-wrapper li::after {
+nav .desktop-menu-wrapper .items::after {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   width: 0;
   height: 2.5px;
   background-color: purple;
   transition: width 0.5s ease;
 }
-nav .desktop-menu-wrapper li:hover::after {
+nav .desktop-menu-wrapper .items:hover::after {
   width: 100%;
 }
 
