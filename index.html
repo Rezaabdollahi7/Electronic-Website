@@ -23,7 +23,7 @@
     <!--! Main navigation container -->
     <nav
         class="relative  px-4 py-2  lg:py-3 flex justify-between items-center bg-white w-[90%]  lg:w-[80%] mx-auto rounded-lg">
-        <a class="text-3xl font-bold leading-none" href="#">
+        <a class="text-3xl font-bold leading-none"  href="./index.html" target="_blank">
             <img src="./public/icons/companyLogo/19.png" class="h-14" alt="logo">
         </a>
         <div class="lg:hidden">
@@ -36,7 +36,7 @@
         </div>
         <ul
             class="desktop-menu-wrapper  hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-            <li><a class="text-sm  items text-blue-600 hover:text-gray-500 font-bold" href="#">خانه</a></li>
+            <li><a class="text-sm  items text-blue-600 hover:text-gray-500 font-bold" href="./index.html" target="_blank">خانه</a></li>
             <li class="text-gray-300 pr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                     viewBox="0 0 24 24">
@@ -44,7 +44,7 @@
                         d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                 </svg>
             </li>
-            <li><a class="text-sm items text-gray-700 hover:text-black " href="#"> درباره ما</a></li>
+            <li><a class="text-sm items text-gray-700 hover:text-black " href="./aboutUs.html" target="_blank"> درباره ما</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                     viewBox="0 0 24 24">
@@ -52,7 +52,7 @@
                         d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                 </svg>
             </li>
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="#">بلاگ</a></li>
+            <li><a class="text-sm items text-gray-700 hover:text-black" href="./articles.html" target="_blank">مقالات</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                     viewBox="0 0 24 24">
@@ -60,7 +60,7 @@
                         d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                 </svg>
             </li>
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="#">تماس با ما</a></li>
+            <li><a class="text-sm items text-gray-700 hover:text-black" href="./callUs.html" target="_blank">تماس با ما</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                     viewBox="0 0 24 24">
@@ -68,7 +68,7 @@
                         d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                 </svg>
             </li>
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="#">محصولات</a></li>
+            <li><a class="text-sm items text-gray-700 hover:text-black" href="./index.html" target="_blank">محصولات</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                     viewBox="0 0 24 24">
@@ -76,22 +76,101 @@
                         d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                 </svg>
             </li>
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="#">افتخارات</a></li>
+            <li><a class="text-sm items text-gray-700 hover:text-black" href="./honors.html" target="_blank">افتخارات</a></li>
         </ul>
         <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6  text-sm text-cyan-600 font-bold  rounded-xl transition duration-200"
-            href="#">CNC</a>
-        <a class="hidden lg:inline-block py-2 px-6 bg-cyan-500 hover:bg-blue-600 text-sm text-white  rounded-md transition duration-200"
-            href="#">8013 549 0919</a>
+            href="./index.html" target="_blank">CNC</a>
+
+        <!-- lang dropdown -->
+        <div class="hidden  bg-white lg:flex flex-col justify-center ">
+            <div class="flex items-center justify-center ">
+                <div class=" relative inline-block  dropdown">
+                    <span class="rounded-md shadow-sm"><button
+                            class="inline-flex justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white  transition  ease-in-out bg-cyan-500 border hover:bg-blue-600  duration-100 rounded-md hover:text-gray-200 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                            type="button" aria-haspopup="true" aria-expanded="true"
+                            aria-controls="headlessui-menu-items-117">
+                            <svg class="w-5 h-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="ml-auto">Lang</span>
+                        </button></span>
+                        <!-- dropdown content -->
+                    <div
+                        class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                        <div class="absolute left-0 w-44 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                            aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                       
+                            <div class="py-1 text-center flex flex-col justify-center items-center ">
+                                <a href="javascript:void(0)" tabindex="0"
+                                    class="text-gray-700 hover:bg-gray-100 text-center flex justify-center items-center  w-full px-4 py-2 text-sm leading-5 "
+                                    role="menuitem">English 
+                                <img class="h-6 mr-4" src="./public/icons/english-32.png" alt="English logo"></a>
+                              
+                                <a href="./index.html" tabindex="1"
+                                    class="text-gray-700 hover:bg-gray-100 text-center flex justify-center items-center  w-full px-4 py-2 text-sm leading-5 "
+                                    role="menuitem">Persian
+                                <img class="h-6 mr-4" src="./public/icons/iran-32.png" alt="English logo"></a>
+                   
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
     <!-- mobile nav -->
     <div class="navbar-menu relative z-50 hidden   ">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
         <nav
             class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto ">
-            <div class="flex items-center mb-8">
-                <a class="ml-auto text-3xl font-bold leading-none" href="#">
-                <img src="./public/icons/companyLogo/19.png" class="h-14" alt="logo">
+            <!-- mobile nav header section -->
+            <div class="flex items-center mb-8 ">
+                <!-- logo -->
+                <a class="ml-auto text-3xl font-bold leading-none"  href="./index.html" target="_blank">
+                    <img src="./public/icons/companyLogo/19.png" class="h-14" alt="logo">
                 </a>
+                <!-- lang dropdown  -->
+                <div class="  bg-white lg:flex flex-col justify-center mx-auto ">
+                    <div class="flex items-center justify-center ">
+                        <div class=" relative inline-block  dropdown">
+                            <span class="rounded-md shadow-sm"><button
+                                    class="inline-flex justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white  transition duration-150 ease-in-out bg-cyan-500 border hover:bg-blue-600 rounded-md hover:text-gray-200 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                                    type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
+                                    <svg class="w-5 h-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="ml-auto">Lang</span>
+                                </button></span>
+                            <!-- dropdown content -->
+                            <div
+                                class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                                <div class="absolute left-0 w-44 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                                    aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                
+                                    <div class="py-1 text-center flex flex-col justify-center items-center ">
+                                        <a href="javascript:void(0)" tabindex="0"
+                                            class="text-gray-700 hover:bg-gray-100 text-center flex justify-center items-center  w-full px-4 py-2 text-sm leading-5 "
+                                            role="menuitem">English
+                                            <img class="h-6 mr-4" src="./public/icons/english-32.png" alt="English logo"></a>
+                
+                                        <a href="./index.html" tabindex="1"
+                                            class="text-gray-700 hover:bg-gray-100 text-center flex justify-center items-center  w-full px-4 py-2 text-sm leading-5 "
+                                            role="menuitem">Persian
+                                            <img class="h-6 mr-4" src="./public/icons/iran-32.png" alt="English logo"></a>
+                
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- close button -->
                 <button class="navbar-close">
                     <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -99,36 +178,38 @@
                         </path>
                     </svg>
                 </button>
+
             </div>
+            <!-- mobile nav items section -->
             <div>
                 <ul>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="#">خانه</a>
+                           href="./index.html" target="_blank">خانه</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="#">درباره ما</a>
+                             href="./aboutUs.html" target="_blank">درباره ما</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="#">بلاگ</a>
+                           href="./articles.html" target="_blank">مقالات</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="#">تماس با ما</a>
+                            href="./callUs.html" target="_blank">تماس با ما</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="#">محصولات</a>
+                           href="./index.html" target="_blank">محصولات</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="#">افتخارات</a>
+                            href="./honors.html" target="_blank">افتخارات</a>
                     </li>
                 </ul>
             </div>
-       
+
         </nav>
     </div>
     <!-- ! end nav -->
@@ -140,44 +221,49 @@
 
             <div class="md:w-1/2 flex flex-col justify-center items-center pb-4 md:pb-0">
                 <h1 class="text-center pr-4 text-2xl   md:text-4xl mt-8 md:mt-0 font-extrabold text-violet-700">
-                    فروش و تعمیر  تخصصی قطعات الکترونیکی</h1>
-                <p class="mt-8 text-sm text-center lg:text-lg text-secondary-900"> 
-                    در دنیای پرتکنولوژی امروز، وبسایت ما یک تجربهٔ بی‌نظیر از خرید، تعمیر و سفارش قطعات الکترونیکی فراهم می‌کند. اعتماد،
+                    فروش و تعمیر تخصصی قطعات الکترونیکی</h1>
+                <p class="mt-8 text-sm text-center lg:text-lg text-secondary-900">
+                    در دنیای پرتکنولوژی امروز، وبسایت ما یک تجربهٔ بی‌نظیر از خرید، تعمیر و سفارش قطعات الکترونیکی فراهم
+                    می‌کند. اعتماد،
                     کیفیت و خدمات مطمئن، راهکارهایی که تا به امروز ما را برتر از همگان ساخته‌اند.
-                    </p>
+                </p>
                 <button
                     class="mt-6 md:mt-20 bg-purple-600  px-2 py-2 lg:px-4 lg:py-4 rounded-xl text-white lg:font-bold hover:bg-purple-500 animate-bounce duration-1000 ">دیدن
                     محصولات</button>
             </div>
-            
-            <div class="md:w-1/2 relative flex justify-center items-center rounded-lg overflow-hidden mt-8 md:mt-4 lg:mr-8">
+
+            <div
+                class="md:w-1/2 relative flex justify-center items-center rounded-lg overflow-hidden mt-8 md:mt-4 lg:mr-8">
                 <!-- Slider main container -->
-                <div class="first-swiper h-full relative  w-full"  >
+                <div class="first-swiper h-full relative  w-full">
 
                     <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper mt-4 relative "  >
+                    <div class="swiper-wrapper mt-4 relative ">
 
                         <!-- Slides -->
                         <div class="swiper-slide  " lazy="true">
-                            <img class="w-full   lg:w-[85%] lg:h-[90%] mx-auto my-auto rounded-lg "  src="./public/images/header-slider-img/1-1.jpg" alt="">
+                            <img class="w-full   lg:w-[85%] lg:h-[90%] mx-auto my-auto rounded-lg "
+                                src="./public/images/header-slider-img/1-1.jpg" alt="">
                         </div>
 
                         <div class="swiper-slide  " lazy="true">
-                            <img class="w-full   lg:w-[85%] lg:h-[90%] mx-auto my-auto rounded-lg "  src="./public/images/header-slider-img/2-2.jpg" alt="">
+                            <img class="w-full   lg:w-[85%] lg:h-[90%] mx-auto my-auto rounded-lg "
+                                src="./public/images/header-slider-img/2-2.jpg" alt="">
                         </div>
 
                         <div class="swiper-slide  " lazy="true">
-                            <img class="w-full   lg:w-[85%] lg:h-[90%] mx-auto my-auto rounded-lg "  src="./public/images/header-slider-img/3.jpg" alt="">
+                            <img class="w-full   lg:w-[85%] lg:h-[90%] mx-auto my-auto rounded-lg "
+                                src="./public/images/header-slider-img/3.jpg" alt="">
                         </div>
-                        
+
                     </div>
-                
+
                     <!-- If we need pagination -->
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev absolute top-0 "></div>
                     <div class="swiper-button-next absolute "></div>
-                    
- 
+
+
                 </div>
 
             </div>

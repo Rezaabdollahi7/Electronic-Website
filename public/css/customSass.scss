@@ -68,7 +68,7 @@ nav {
   .desktop-menu-wrapper {
     .items {
       position: relative;
-      
+
       &::after {
         content: "";
         position: absolute;
@@ -84,6 +84,11 @@ nav {
         width: 100%;
       }
     }
+  }
+  .dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    transform: translate(0) scale(1);
+    visibility: visible;
   }
 }
 
@@ -102,7 +107,6 @@ nav {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
-
 }
 // ===========================================
 //             Products
@@ -152,7 +156,7 @@ nav {
       max-width: 100%;
       object-fit: contain;
       height: 15em;
-      margin: 0 auto ; 
+      margin: 0 auto;
       border-radius: 10px;
     }
   }

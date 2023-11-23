@@ -72,6 +72,11 @@ nav .desktop-menu-wrapper .items::after {
 nav .desktop-menu-wrapper .items:hover::after {
   width: 100%;
 }
+nav .dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  transform: translate(0) scale(1);
+  visibility: visible;
+}
 
 .slogan-wrapper {
   background-position: center;
