@@ -314,5 +314,11 @@ nav {
 .about-items-main-wrapper {
   .item {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    -webkit-box-shadow: inset 3px 3px 10px 3px rgba(171, 167, 167, 0.31);
+    -moz-box-shadow: inset 3px 3px 10px 3px rgba(171, 167, 167, 0.31);
+    box-shadow: inset 3px 3px 10px 3px rgba(171, 167, 167, 0.31);
+  }
+  .hexacons {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   }
 }

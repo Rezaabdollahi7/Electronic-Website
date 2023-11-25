@@ -286,4 +286,9 @@ nav .dropdown:focus-within .dropdown-menu {
 .about-items-main-wrapper .item {
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  box-shadow: inset 3px 3px 10px 3px rgba(171, 167, 167, 0.31);
+}
+.about-items-main-wrapper .hexacons {
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }/*# sourceMappingURL=customSass.css.map */
