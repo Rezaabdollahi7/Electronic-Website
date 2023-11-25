@@ -291,4 +291,13 @@ nav .dropdown:focus-within .dropdown-menu {
 .about-items-main-wrapper .hexacons {
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.about-us-main-content-wrapper .img-wrapper img {
+  transform: scale3d(1, 1, 1);
+  transition: transform 1s ease-in-out;
+}
+.about-us-main-content-wrapper .img-wrapper :hover img {
+  transform: scale3d(1.5, 1.5, 1);
+  transition: transform 2s ease-in-out;
 }/*# sourceMappingURL=customSass.css.map */

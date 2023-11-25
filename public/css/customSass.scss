@@ -309,7 +309,7 @@ nav {
 }
 
 // ======================================
-//          about us items
+//          about us page
 //  ====================================
 .about-items-main-wrapper {
   .item {
@@ -320,5 +320,26 @@ nav {
   }
   .hexacons {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+}
+.about-us-main-content-wrapper {
+  // background: rgba(255, 255, 255, 0.27);
+  // -webkit-backdrop-filter: blur(10px);
+  // backdrop-filter: blur(10px);
+
+  
+  .img-wrapper {
+    img {
+      transform: scale3d(1, 1, 1);
+      transition: transform 1s ease-in-out;
+      
+    }
+    :hover {
+      img {
+        transform: scale3d(1.5, 1.5, 1);
+        transition: transform 2s ease-in-out;
+  
+      }
+    }
   }
 }
