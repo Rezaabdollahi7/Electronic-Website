@@ -327,18 +327,15 @@ nav {
   // -webkit-backdrop-filter: blur(10px);
   // backdrop-filter: blur(10px);
 
-  
   .img-wrapper {
     img {
       transform: scale3d(1, 1, 1);
       transition: transform 1s ease-in-out;
-      
     }
     :hover {
       img {
         transform: scale3d(1.5, 1.5, 1);
         transition: transform 2s ease-in-out;
-  
       }
     }
   }

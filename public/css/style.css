@@ -9,3 +9,27 @@
         url('../fonts/IRANSans_Bold.ttf') format('truetype'),
         url('../fonts/IRANSans_Medium.ttf') format('truetype');
 }
+
+@layer utilities {
+
+
+    .bg-callus1 {
+        background-image: url('../images/callus_bg/White Modern.png');
+    }
+
+    .bg-callus2 {
+        background-image: url('../images/callus_bg/pattern1.jpg');
+    }
+
+    .bg-callus3 {
+        background-image: url('../images/callus_bg/pattern2.jpg');
+    }
+
+    .bg-callus4 {
+        background-image: url('../images/callus_bg/pattern3.jpg');
+    }
+
+    .bg-callus5 {
+        background-image: url('../images/callus_bg/White Modern.png');
+    }
+}

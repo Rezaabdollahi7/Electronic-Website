@@ -10,7 +10,7 @@ const scroolVal = 20;
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > scroolVal || document.documentElement.scrollTop > scroolVal) {        
+    if (document.body.scrollTop > scroolVal || document.documentElement.scrollTop > scroolVal) {
         callUsbutton.style.display = "block";
         callUsBtnNumber.classList.remove("hidden")
         for (i = 0; i < callUsBtn_animate.length; i++) {
@@ -19,7 +19,7 @@ function scrollFunction() {
 
     } else {
         callUsBtnNumber.classList.add("hidden");
-        for(i=0 ; i<callUsBtn_animate.length;i++){
+        for (i = 0; i < callUsBtn_animate.length; i++) {
             callUsBtn_animate[i].classList.remove("hidden");
         }
 
@@ -192,14 +192,14 @@ for (let i of products.data) {
     //product name
     let nameLabel = document.createElement("span");
     nameLabel.classList.add("product-name-label");
-    nameLabel.innerText = "نام محصول : " ;
+    nameLabel.innerText = "نام محصول : ";
 
     let name = document.createElement("h5");
     name.classList.add("product-name");
     name.innerText = i.productName.toUpperCase();
     container.appendChild(nameLabel)
     container.appendChild(name);
-    
+
 
     //product desc
     let descLabel = document.createElement("span");
@@ -290,13 +290,13 @@ window.onload = () => {
 
 
 let pageWidth = window.innerWidth;
-if(pageWidth < 600){
+if (pageWidth < 600) {
     cardState("horizontal")
 }
 
 
-function cardState(e){
-    if(e==="horizontal"){
+function cardState(e) {
+    if (e === "horizontal") {
         let products_section = document.getElementById("products");
         products_section.classList.remove("lg:grid-cols-4")
         products_section.classList.remove("md:grid-cols-2")
@@ -306,7 +306,7 @@ function cardState(e){
         });
     }
     // ! vertical عمودی 
-    else{
+    else {
         let products_section = document.getElementById("products");
         products_section.classList.add("lg:grid-cols-4")
         products_section.classList.add("md:grid-cols-2")
@@ -340,12 +340,12 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
         draggable: 'true',
     },
-    autoplay:{
-        delay:"60000",
-        pauseOnMouseEnter:"true",
+    autoplay: {
+        delay: "60000",
+        pauseOnMouseEnter: "true",
     },
-    Pagination:{
-        
+    Pagination: {
+
     }
 });
 
