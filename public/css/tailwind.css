@@ -1105,10 +1105,6 @@ video {
   height: 100vh;
 }
 
-.h-112 {
-  height: 28rem;
-}
-
 .w-0 {
   width: 0px;
 }
@@ -1244,6 +1240,12 @@ video {
 .scale-95 {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-\[2\] {
+  --tw-scale-x: 2;
+  --tw-scale-y: 2;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1439,11 +1441,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-purple-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(192 132 252 / var(--tw-border-opacity));
-}
-
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
@@ -1547,6 +1544,10 @@ video {
 
 .fill-current {
   fill: currentColor;
+}
+
+.fill-nav-icons-color {
+  fill: #64748b;
 }
 
 .p-2 {
@@ -1770,6 +1771,10 @@ video {
   letter-spacing: 0.1em;
 }
 
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -1819,6 +1824,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-nav-items-color {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
 .text-purple-800 {
   --tw-text-opacity: 1;
   color: rgb(107 33 168 / var(--tw-text-opacity));
@@ -1862,6 +1872,31 @@ video {
 .text-yellow-300 {
   --tw-text-opacity: 1;
   color: rgb(253 224 71 / var(--tw-text-opacity));
+}
+
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.text-blue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.text-blue-900 {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+}
+
+.text-blue-950 {
+  --tw-text-opacity: 1;
+  color: rgb(23 37 84 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1931,6 +1966,10 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-75 {
+  transition-delay: 75ms;
+}
+
 .duration-100 {
   transition-duration: 100ms;
 }
@@ -1957,6 +1996,18 @@ video {
 
 .bg-callus2 {
   background-image: url('../images/callus_bg/pattern1.jpg');
+}
+
+.animate-ping {
+  animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  75%,
+        100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
 @font-face {
@@ -2059,24 +2110,12 @@ video {
   outline-style: solid;
 }
 
-.hover\:outline-1:hover {
-  outline-width: 1px;
-}
-
 .hover\:outline-2:hover {
   outline-width: 2px;
 }
 
 .hover\:outline-offset-2:hover {
   outline-offset: 2px;
-}
-
-.hover\:outline-blue-600:hover {
-  outline-color: #2563eb;
-}
-
-.hover\:outline-blue-100:hover {
-  outline-color: #dbeafe;
 }
 
 .hover\:outline-blue-300:hover {
@@ -2106,14 +2145,19 @@ video {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.active\:bg-blue-300:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
 .active\:text-gray-800:active {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:text-gray-400 {
+.group:hover .group-hover\:text-blue-400 {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-stone-900 {
@@ -2124,11 +2168,6 @@ video {
 .group:hover .group-hover\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 @media (min-width: 300px) {
@@ -2532,6 +2571,12 @@ video {
     gap: 2.5rem;
   }
 
+  .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -2680,6 +2725,12 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .xl\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .xl\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -2711,10 +2762,6 @@ video {
 }
 
 @media (min-width: 1400px) {
-  .\31 400px\:w-\[55\%\] {
-    width: 55%;
-  }
-
   .\31 400px\:w-\[58\%\] {
     width: 58%;
   }

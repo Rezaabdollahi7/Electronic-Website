@@ -18,6 +18,8 @@ module.exports = {
         'item-text-1': '#facc15',
         'item-text-2': '#030712',
         'item-text-3': '#ffffff',
+        'nav-items-color': '#64748b',
+        'nav-icons-color': '#64748b',
       },
       screens: {
         '300px': '300px',
@@ -45,6 +47,7 @@ module.exports = {
         '1400px': '1400px',
         '1450px': '1450px',
       },
+     
     },
   },
 
