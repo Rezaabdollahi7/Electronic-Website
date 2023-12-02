@@ -223,19 +223,6 @@ nav .dropdown:focus-within .dropdown-menu {
     margin-right: 1rem !important;
   }
 }
-.featurs-wrapper .feature-number {
-  color: white;
-}
-
-.featurs-wrapper .featurs-item:hover .feature-number {
-  color: rgba(0, 0, 0, 0.83);
-}
-
-.featurs-wrapper .featurs-item:hover h3,
-.feature-number {
-  color: black;
-}
-
 .swiper {
   z-index: -1;
 }
@@ -250,38 +237,6 @@ nav .dropdown:focus-within .dropdown-menu {
   display: none;
 }
 
-.custom-tittle::before {
-  content: "";
-  position: absolute;
-  width: 95px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.4705882353);
-  top: 54%;
-  margin-right: -7.5%;
-}
-
-.custom-tittle::after {
-  content: "";
-  position: absolute;
-  width: 95px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.4705882353);
-  top: 54%;
-  margin-left: -49%;
-  margin-right: 1%;
-}
-
-@media screen and (max-width: 500px) {
-  .custom-tittle::before {
-    content: "";
-    position: absolute;
-    width: 95px;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.4705882353);
-    top: 54%;
-    margin-right: -24.5%;
-  }
-}
 .about-items-main-wrapper .item {
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);

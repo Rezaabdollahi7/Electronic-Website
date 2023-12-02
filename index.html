@@ -17,7 +17,7 @@
 
 </head>
 
-<body class=" h-screen bg-slate-900">
+<body class=" h-screen bg-gray-100  dark:bg-slate-900">
 
 
     <!--! Main navigation container -->
@@ -94,6 +94,8 @@
         <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6  text-sm text-cyan-600 font-bold  rounded-xl transition duration-200"
             href="./index.html" target="_blank">CNC</a>
 
+            <img class="sun cursor-pointer" src="./public/icons/sun-32.png" alt="">
+            <img class="moon cursor-pointer" src="./public/icons/moon-32.png" alt="">
         <!-- lang dropdown -->
         <div class="hidden  bg-white lg:flex flex-col justify-center ">
             <div class="flex items-center justify-center ">
@@ -163,9 +165,9 @@
             <div class="duration-200 delay-75 transition-all">
                 <ul>
                     <li class="mb-2 flex justify-start items-center ">
-                        <img class="h-6"  src="./public/icons/language-32.png" alt="">
-                            <a class="block p-4 text-sm  text-nav-items-color hover:bg-blue-50 hover:text-blue-600 rounded tracking-wider"
-                                href="./index.html" target="_blank">Language</a>
+                        <img class="h-6" src="./public/icons/language-32.png" alt="">
+                        <a class="block p-4 text-sm  text-nav-items-color hover:bg-blue-50 hover:text-blue-600 rounded tracking-wider"
+                            href="./index.html" target="_blank">Language</a>
                         <!-- lang dropdown  -->
                         <div class="  bg-white lg:flex flex-col justify-center mx-auto ">
                             <div class="flex items-center justify-center ">
@@ -284,10 +286,19 @@
     </div>
     <!-- ! end nav -->
 
+  
     <!--! start slogan content -->
     <section
-        class="slogan-wrapper  my-right-translate-animation mx-auto mt-[3%]  w-[94%] h-[85%] 600px:h-[78%] flex items-center justify-center   ">
-        <div class="slogan-section mt-[40px] md:mt-16  flex flex-col-reverse lg:flex-row h-[83%] w-[85%] lg:h-[77%] py-4">
+        class="slogan-wrapper relative  my-right-translate-animation mx-auto mt-[3%]  w-[94%] h-[85%] 600px:h-[78%] flex items-center justify-center   ">
+        <div
+            class="dark:hidden hidden md:block w-[500px] h-[500px] lg:w-[630px] lg:h-[630px] bg-amber-400 opacity-20 blur-2xl rounded-full -z-10 absolute -top-64 -left-[320px] lg:-left-[400px] ">
+        </div>
+
+        <div
+            class="dark:hidden hidden md:block w-[500px] h-[500px] lg:w-[630px] lg:h-[630px] bg-sky-900 opacity-20 blur-2xl rounded-full -z-10 absolute top-64 -right-[320px] lg:-right-[400px] ">
+        </div>
+        <div
+            class="slogan-section mt-[40px] md:mt-16  flex flex-col-reverse lg:flex-row h-[83%] w-[85%] lg:h-[77%] py-4">
 
             <div class="lg:w-1/2 flex flex-col justify-center items-center pb-4 md:pb-0 px-2 850px:px-4">
                 <h1 class="text-center pr-4 text-2xl    mt-8 lg:mt-0 font-extrabold text-violet-700">
@@ -302,40 +313,42 @@
                     محصولات</a>
             </div>
 
-            <div
-                class="lg:w-1/2 relative flex justify-center items-center rounded-lg overflow-hidden  lg:mr-8">
-                            <div class="first-swiper h-full relative  w-full">
-                            
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper  relative  ">
-                            
-                                    <!-- Slides -->
-                                    <div class="swiper-slide flex-important justify-center items-center  overflow-hidden  " lazy="true">
-                                        <img class="h-56 750px:h-64  xl:h-80  w-120  rounded-lg "
-                                            src="./public/images/brands-logos.png" alt="">
-                                    </div>
-                            
-                                    <div class="swiper-slide flex-important justify-center items-center  overflow-hidden  " lazy="true">
-                                        <img class="h-56 750px:h-64  xl:h-80  w-120  rounded-lg "
-                                            src="./public/images/header-slider-img/2-2.jpg" alt="">
-                                    </div>
-                            
-                                    <div class="swiper-slide flex-important justify-center items-center  overflow-hidden  " lazy="true">
-                                        <img class="h-56 750px:h-64  xl:h-80  w-120  rounded-lg "
-                                            src="./public/images/header-slider-img/3.jpg" alt="">
-                                    </div>
-                            
-                                </div>
-                            
-                                <!-- If we need pagination -->
-                                <!-- If we need navigation buttons -->
-                               
-                                    <div class="swiper-button-prev absolute !hidden xl:!block  rounded-md   "></div>
-                                    <div class="swiper-button-next absolute !hidden xl:!block  rounded-md  "></div>
-                             
-                            
-                            
-                            </div>
+            <div class="lg:w-1/2 relative flex justify-center items-center rounded-lg overflow-hidden  lg:mr-8">
+                <div class="first-swiper h-full relative  w-full">
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper  relative  ">
+
+                        <!-- Slides -->
+                        <div class="swiper-slide flex-important justify-center items-center  overflow-hidden  "
+                            lazy="true">
+                            <img class="h-56 750px:h-64  xl:h-80  w-120  rounded-lg "
+                                src="./public/images/brands-logos.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide flex-important justify-center items-center  overflow-hidden  "
+                            lazy="true">
+                            <img class="h-56 750px:h-64  xl:h-80  w-120  rounded-lg "
+                                src="./public/images/header-slider-img/2-2.jpg" alt="">
+                        </div>
+
+                        <div class="swiper-slide flex-important justify-center items-center  overflow-hidden  "
+                            lazy="true">
+                            <img class="h-56 750px:h-64  xl:h-80  w-120  rounded-lg "
+                                src="./public/images/header-slider-img/3.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <!-- If we need navigation buttons -->
+
+                    <div class="swiper-button-prev absolute !hidden xl:!block  rounded-md   "></div>
+                    <div class="swiper-button-next absolute !hidden xl:!block  rounded-md  "></div>
+
+
+
+                </div>
 
             </div>
         </div>
@@ -412,7 +425,12 @@
     <!-- ! end of product filters -->
 
     <!-- ! Slider main container -->
-    <h4 class="text-3xl text-white mt-30 mb-12 w-full text-center relative custom-tittle">پر فروشترین محصولات</h4>
+    <div class="fea-tittle relative flex items-center justify-center my-24 mt-36">
+        <div class="absolute w-[10%] h-[3px] bg-yellow-300 top-[50%] right-[30%]"></div>
+        <h4 class="text-3xl text-sky-600  relative dark:text-white  w-full text-center  custom-tittle  ">
+            پرفروشترین محصولات</h4>
+        <div class="absolute w-[10%] h-[3px] bg-yellow-300 top-[50%] left-[30%]"></div>
+    </div>
     <div class="swiper w-[92%] mx-auto   -z-10">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper ">
@@ -589,25 +607,36 @@
     <!-- ! end slider -->
 
     <!-- ! articles -->
-    <h4 class="text-3xl text-white mt-30 mb-12 w-full text-center mt-28 custom-tittle relative">آخرین مقالات</h4>
+    <div class="fea-tittle relative flex items-center justify-center my-24 mt-36">
+        <div class="absolute w-[10%] h-[3px] bg-yellow-300 top-[50%] right-[36%]"></div>
+        <h4 class="text-3xl text-sky-600  relative dark:text-white  w-full text-center  custom-tittle  ">
+            مقالات</h4>
+        <div class="absolute w-[10%] h-[3px] bg-yellow-300 top-[50%] left-[36%]"></div>
+    </div>
 
-    <section class="articles w-[92%] mx-auto grid  md:grid-cols-2  gap-4 ">
+    <section class="articles relative w-[92%] mx-auto grid  md:grid-cols-2  gap-4 ">
+        <div
+            class="dark:hidden hidden md:block w-[500px] h-[500px] lg:w-[630px] lg:h-[630px] bg-green-400 opacity-20 blur-2xl rounded-full -z-10 absolute -top-15 -right-[320px] lg:-right-[400px] ">
+        </div>
         <!-- right side -->
-        <div class="article-item text-center flex flex-col items-center justify-center border p-4 rounded-lg ">
+        <div
+            class="article-item text-center flex flex-col items-center justify-center border p-4 rounded-lg  bg-sky-200/40 dark:bg-transparent  custom-shadow ">
             <img class="rounded-xl w-[30rem]" src="./public/images/21.png" alt="">
-            <h6 class="article-tittle  text-right text-xl text-white font-bold mt-8">سرمایه‌گذاری ۲۴۶ میلیون دلاری
+            <h6
+                class="article-tittle  text-right text-lg text-art-tittle bg-art-tittle-bg px-4 py-2   rounded-xl    mt-8">
+                سرمایه‌گذاری ۲۴۶ میلیون دلاری
                 فاکسکان در ویتنام </h6>
-            <p class="text-justify text-slate-400 mt-4">شرکت فاکسکان که بزرگترین تولیدکننده و مونتاژکننده قراردادی
+            <p class="text-justify text-art-desc mt-4 leading-8">شرکت فاکسکان که بزرگترین تولیدکننده و مونتاژکننده قراردادی
                 محصولات الکترونیکی در سراسر جهان است، موافقت ویتنام را برای
                 سرمایه‌گذاری ۲۴۶ میلیون دلاری در دو پروژه در شمال این کشور دریافت کرد. به گزارش ایران اکونومیست، این
                 پروژه ها که توسط
                 واحد سنگاپوری فاکسکان دنبال می شوند ...</p>
             <div class="writter-wrapper flex items-center justify-start mt-6 w-full">
                 <img class="w-16 h-16" src="./public/icons/1 (3).png" alt="">
-                <span class="text-purple-800 mr-2">یگانه جعفری</span>
+                <span class="text-art-author mr-2">یگانه جعفری</span>
                 <span class="mr-auto text-slate-500 text-[14px]">19 / 05 / 1402</span>
             </div>
-            <p class="w-full text-slate-300 my-4 ">مارا به اشتراک بگذارید</p>
+            <p class="w-full text-art-share  dark:text-slate-300 my-4 ">مارا به اشتراک بگذارید</p>
             <ul class="flex mb-4 mx-auto w-[60%] justify-center">
                 <li><ion-icon class="mr-2 text-slate-400 hover:text-blue-600 transition-all" style="font-size: 24px;"
                         name="paper-plane-outline"></ion-icon></li>
@@ -621,25 +650,29 @@
         </div>
         <!-- left side -->
         <div class="article-item text-center   rounded-lg ">
-            <div class="item-2 flex flex-col md:flex-row  items-center p-4 border rounded-lg ">
+
+            <div
+                class="item-2 flex flex-col md:flex-row  items-center p-4 border rounded-lg  custom-shadow  bg-sky-200/40  dark:bg-transparent ">
                 <div class="img-wrapper flex items-start self-start">
                     <img class="rounded-xl w-[50rem] md:mt-[4.5rem]" src="./public/images/10.png" alt="">
                 </div>
                 <div class="item-desc md:mr-6 flex flex-col items-center">
 
-                    <h6 class="article-tittle text-right text-white font-bold mt-2 text-[17px]">قطعات الکترونیکی چاپی در
+                    <h6
+                        class="article-tittle text-right  mt-2 text-[17px] text-art-tittle bg-art-tittle-bg px-4 py-2  rounded-xl  ">
+                        قطعات الکترونیکی چاپی در
                         فضا آزمایش شدند </h6>
-                    <p class="text-justify text-slate-400 mt-8 text-[15px] leading-7">به گزارش خبرگزاری مهر به نقل از
+                    <p class="text-justify text-art-desc mt-8 text-[15px] leading-7">به گزارش خبرگزاری مهر به نقل از
                         اینترستینگ انجینرینگ، مهندسان سعی دارند در گستره فضا، مرزهای نوآوری را وسیع تر کنند تا
                         با کمک تجهیزات کمتر، فعالیت های بیشتری انجام دهند. فضاپیماهای امروزی مجهز به حسگرها، سیستم های
                         ناوبری و کنترل و همچنین
                         قطعات کنترلی الکترونیک هستند</p>
                     <div class="writter-wrapper flex items-center justify-start mt-6 w-full">
                         <img class="w-12 h-12" src="./public/icons/1 (3).png" alt="">
-                        <span class="text-purple-800 mr-2">یگانه جعفری</span>
+                        <span class="text-art-author mr-2">یگانه جعفری</span>
                         <span class="mr-auto text-slate-500 text-[14px]">13 / 05 / 1402</span>
                     </div>
-                    <p class="w-full text-slate-300 my-3 ">مارا به اشتراک بگذارید</p>
+                    <p class="w-full text-art-share  dark:text-slate-300 my-3 ">مارا به اشتراک بگذارید</p>
                     <ul class="flex mb-2 mx-auto w-[60%] justify-center">
                         <li><ion-icon class="mr-2 text-slate-400 hover:text-blue-600 transition-all"
                                 style="font-size: 24px;" name="paper-plane-outline"></ion-icon></li>
@@ -653,18 +686,20 @@
                 </div>
             </div>
 
-
-            <div class="item-3 flex flex-col md:flex-row items-center p-4 border rounded-lg mt-8">
+            <div
+                class="item-3 flex flex-col md:flex-row items-center p-4 border rounded-lg mt-8  custom-shadow bg-sky-200/40   dark:bg-transparent ">
                 <div class="img-wrapper flex items-start self-start">
                     <img class="rounded-xl w-[50rem] md:mt-[4.5rem]" src="./public/images/10.png" alt="">
                 </div>
                 <div class="item-desc md:mr-6 flex flex-col items-center">
 
-                    <h6 class="article-tittle text-right text-white font-bold mt-2 text-[17px]">قطعات الکترونیکی چاپی در
+                    <h6
+                        class="article-tittle text-right mt-2 text-[17px] text-art-tittle bg-art-tittle-bg px-4 py-2  rounded-xl  ">
+                        قطعات الکترونیکی چاپی در
                         فضا آزمایش
                         شدند </h6>
 
-                    <p class="text-justify text-slate-400 mt-8 text-[15px] leading-7">به گزارش خبرگزاری مهر به نقل از
+                    <p class="text-justify text-art-desc mt-8 text-[15px] leading-7">به گزارش خبرگزاری مهر به نقل از
                         اینترستینگ
                         انجینرینگ، مهندسان سعی دارند در گستره فضا، مرزهای نوآوری را وسیع تر کنند تا
                         با کمک تجهیزات کمتر، فعالیت های بیشتری انجام دهند. فضاپیماهای امروزی مجهز به حسگرها، سیستم های
@@ -673,10 +708,10 @@
                         قطعات کنترلی الکترونیک هستند</p>
                     <div class="writter-wrapper flex items-center justify-start mt-6 w-full">
                         <img class="w-12 h-12" src="./public/icons/1 (3).png" alt="">
-                        <span class="text-purple-800 mr-2">یگانه جعفری</span>
+                        <span class="text-art-author mr-2">یگانه جعفری</span>
                         <span class="mr-auto text-slate-500 text-[14px]">13 / 05 / 1402</span>
                     </div>
-                    <p class="w-full text-slate-300 my-3 ">مارا به اشتراک بگذارید</p>
+                    <p class="w-full text-art-share  dark:text-slate-300 my-3 ">مارا به اشتراک بگذارید</p>
                     <ul class="flex mb-2 mx-auto w-[60%] justify-center">
                         <li><ion-icon class="mr-2 text-slate-400 hover:text-blue-600 transition-all"
                                 style="font-size: 24px;" name="paper-plane-outline"></ion-icon></li>
@@ -695,16 +730,25 @@
     <!-- ! end articles -->
 
     <!-- ! start featurs section -->
-    <h4 class="text-3xl text-white mt-30 mb-12 w-full text-center  custom-tittle relative mt-24"> خدمات ما</h4>
+    <div class="fea-tittle relative flex items-center justify-center my-24 mt-36">
+        <div class="absolute w-[10%] h-[3px] bg-yellow-300 top-[50%] right-[35%]"></div>
+        <h4 class="text-3xl text-sky-600  relative dark:text-white  w-full text-center  custom-tittle  ">
+            خدمات ما</h4>
+        <div class="absolute w-[10%] h-[3px] bg-yellow-300 top-[50%] left-[35%]"></div>
+    </div>
 
-    <section class="featurs-wrapper w-[80%] mx-auto md:w-full flex flex-col md:px-[16%] ">
+    <section class="featurs-wrapper relative  w-[80%] mx-auto md:w-full flex flex-col md:px-[16%] ">
+        <div
+            class="dark:hidden hidden md:block w-[500px] h-[500px] lg:w-[630px] lg:h-[630px] bg-amber-400 opacity-20 blur-2xl rounded-full -z-10 absolute top-64 -left-[320px] lg:-left-[400px] ">
+        </div>
 
         <!-- item 1 -->
         <div
-            class="featurs-item md:w-full flex flex-col md:flex-row justify-between items-center mt-12 rounded-2xl  p-4 hover:bg-stone-100 border-2 border-white">
+            class="featurs-item md:w-full flex flex-col md:flex-row group  justify-between items-center mt-12 rounded-2xl  p-4 bg-fea-bg  hover:bg-sky-200/40 border-2 border-white custom-shadow outline outline-2 outline-sky-500 outline-offset-8 hover:outline-purple-600">
 
             <div class="feature-logo flex justify-center items-center">
-                <div class="feature-number text-8xl text-slate-300 ml-3  transition-all deuration-1000 select-none">
+                <div
+                    class="feature-number text-8xl text-slate-300 group-hover:text-art-tittle ml-3  transition-all deuration-1000 select-none">
                     01</div>
 
                 <div class="feature-icon">
@@ -713,8 +757,10 @@
             </div>
 
             <div class="feature-desc flex flex-col items-center mt-5 md:mt-0 ">
-                <h3 class="text-2xl text-white hover:text-black transition-all">فروش و تعمیر تخصصی قطعات الکترونیکی</h3>
-                <p class="text-slate-600 text-center mt-2"> CNC مرجع تخصصی فروش و تعمیر انواع قطعات الکترونیکی اعم از
+                <h3 class="text-2xl text-white group-hover:text-art-tittle transition-all">فروش و تعمیر تخصصی قطعات
+                    الکترونیکی</h3>
+                <p class="text-gray-200 text-center mt-4 group-hover:text-purple-700"> CNC مرجع تخصصی فروش و تعمیر انواع
+                    قطعات الکترونیکی اعم از
                     انواع برد ، حافظه ، و قطعات کامپیوتری</p>
             </div>
 
@@ -723,11 +769,11 @@
 
         <!-- item 2 -->
         <div
-            class="featurs-item md:w-full flex flex-col md:flex-row-reverse justify-between items-center mt-20 rounded-2xl p-4 hover:bg-stone-100  border-2 border-white">
+            class="featurs-item md:w-full flex flex-col md:flex-row-reverse group justify-between items-center mt-20 rounded-2xl p-4 bg-fea-bg  hover:bg-sky-200/40 border-2 border-white custom-shadow outline outline-2 outline-sky-500 outline-offset-8 hover:outline-purple-600">
 
             <div class="feature-logo flex justify-center items-center flex-row-reverse">
                 <div
-                    class="feature-number text-8xl text-slate-300 mr-8 late-600 transition-all deuration-1000 select-none">
+                    class="feature-number text-8xl text-slate-300 group-hover:text-art-tittle mr-8 late-600 transition-all deuration-1000 select-none">
                     02</div>
 
                 <div class="feature-icon">
@@ -736,8 +782,10 @@
             </div>
 
             <div class="feature-desc flex flex-col items-center mt-5 md:mt-0 ">
-                <h3 class="text-2xl text-white hover:text-black transition-all">پشتیبانی 24 ساعته</h3>
-                <p class="text-slate-600 text-center mt-2">در هر لحظه از شبانه روز در پیام رسان واتساپ پاسخگوی سوالاتتان
+                <h3 class="text-2xl text-white group-hover:text-art-tittle hover:text-black transition-all">پشتیبانی 24
+                    ساعته</h3>
+                <p class="text-gray-200 text-center mt-2 group-hover:text-purple-700">در هر لحظه از شبانه روز در پیام
+                    رسان واتساپ پاسخگوی سوالاتتان
                     هستیم </p>
             </div>
 
@@ -746,11 +794,11 @@
 
         <!-- item 3 -->
         <div
-            class="featurs-item md:w-full flex flex-col md:flex-row justify-between items-center mt-20 rounded-2xl  p-4 hover:bg-stone-100 border-2 border-white">
+            class="featurs-item md:w-full flex flex-col md:flex-row group justify-between items-center mt-20 rounded-2xl  p-4 bg-fea-bg  hover:bg-sky-200/40 border-2 border-white custom-shadow outline outline-2 outline-sky-500 outline-offset-8 hover:outline-purple-600">
 
             <div class="feature-logo flex justify-center items-center ">
                 <div
-                    class="feature-number text-8xl text-slate-300 md:ml-3 md:mr-16 transition-all deuration-1000 select-none">
+                    class="feature-number text-8xl text-slate-300 group-hover:text-art-tittle md:ml-3 md:mr-16 transition-all deuration-1000 select-none">
                     03</div>
 
                 <div class="feature-icon mr-3 md:mr-12">
@@ -759,8 +807,10 @@
             </div>
 
             <div class="feature-desc flex flex-col items-center mt-5 md:mt-0 md:ml-28">
-                <h3 class="text-2xl text-white hover:text-black transition-all">تضمین کیفیت محصولات</h3>
-                <p class="text-slate-600 text-center mt-2">بهترین کیفیت قطعات و خدمات را با ما تجربه کنید </p>
+                <h3 class="text-2xl text-white group-hover:text-art-tittle hover:text-black transition-all">تضمین کیفیت
+                    محصولات</h3>
+                <p class="text-gray-200 text-center mt-2 group-hover:text-purple-700">بهترین کیفیت قطعات و خدمات را با
+                    ما تجربه کنید </p>
             </div>
 
         </div>
@@ -770,16 +820,17 @@
 
 
     <!-- ! start footer -->
-    <footer class="w-full p-5 py-20  mt-28 bg-slate-800 border-t-2 ">
+    <footer class="w-full p-5 py-20  mt-28 bg-sky-100 dark:bg-slate-800 border-t-2 ">
         <div class="ul-items-wrapper grid grid-cols-1 md:grid-cols-4 gap-4 mt-12 md:mr-12">
             <!-- company info -->
             <ul class="text-center mt-6 md:mt-0 text-white">
                 <div class="company-log-wrapper flex flex-col items-center justify-center">
                     <div class="company-logo-img flex items-center justify-center">
-                        <h3 class="select-none">CNC DIGITAL</h3>
+                        <h3 class="select-none text-sky-600 dark:text-white">CNC DIGITAL</h3>
                         <img class="w-20 h-20" src="./public/icons/companyLogo/19.png" alt="عکس لوگوی شرکت">
                     </div>
-                    <p class="company-text mt-4 text-justify leading-8">شرکت کنترل پردازان نو اندیش از سال ۱۳۹۰ با مدیرت
+                    <p class="company-text mt-4 text-justify leading-8 text-sky-800 dark:text-white">شرکت کنترل پردازان نو اندیش از سال
+                        ۱۳۹۰ با مدیرت
                         مهندس داود جعفری فعالیت تجاری خود را آغاز نمود و با دارا بودن یک شعبه
                         اصلی در شهر صنعتی البرز و دفتر مرکزی در قزوین در زمینه تعمیرات و تجهیزات کنترلی زیمنس ماشینهای
                         CNC تعمیرات و تجهیزات
@@ -790,37 +841,37 @@
             <!--end company info -->
 
             <ul class="text-center mt-6 md:mt-0 text-white">
-                <li class="tittle-li text-3xl pt-4"><a href="">خدمات ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400">تعمیر قطعات الکترونیکی</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400">فروش قطعات الکترونیکی</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400">پشتیبانی سریع</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400"> تضمین کیفیت محصولات</a></li>
+                <li class="tittle-li text-blue-500 dark:text-white text-3xl pt-4"><a href="">خدمات ما </a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400">تعمیر قطعات الکترونیکی</a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400">فروش قطعات الکترونیکی</a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400">پشتیبانی سریع</a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400"> تضمین کیفیت محصولات</a></li>
             </ul>
             <ul class="text-center mt-6 md:mt-0 text-white">
-                <li class="tittle-li text-3xl pt-4"><a href=""> شرایط ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400"> تماس با ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400">درباره ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400"> شرایط و قوانین</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400"> سیاست حریم خصوصی </a></li>
+                <li class="tittle-li text-blue-500 dark:text-white text-3xl pt-4"><a href=""> شرایط ما </a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400"> تماس با ما </a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400">درباره ما </a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400"> شرایط و قوانین</a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400"> سیاست حریم خصوصی </a></li>
             </ul>
             <!-- contact -->
             <ul class="text-center md:pl-[30%] mt-6 md:mt-0 text-white">
-                <li class="tittle-li text-3xl pt-4"><a href="">ارتباط با ما</a></li>
+                <li class="tittle-li text-blue-500 dark:text-white text-3xl pt-4"><a href="">ارتباط با ما</a></li>
 
                 <li class="flex items-start justify-center md:justify-end mt-10">
-                    <a class="mt-1 text-slate-400 mr-auto" href="mailto:cncmachinegroup@gmail.com"">cncmachinegroup@gmail.com</a>
-                    <ion-icon class=" lg:w-16 text-slate-400 mr-auto" size="large" name="mail-outline"></ion-icon>
+                    <a class="mt-1 text-slate-700 dark:text-slate-400 mr-auto" href="mailto:cncmachinegroup@gmail.com">cncmachinegroup@gmail.com</a>
+                    <ion-icon class=" lg:w-16 text-slate-700 dark:text-slate-400 mr-auto" size="large" name="mail-outline"></ion-icon>
                 </li>
 
                 <li class="flex items-start justify-center md:justify-end mt-10">
-                    <span class="mt-1 text-slate-400 mr-auto" href="#">0830 182 0912 </span>
-                    <ion-icon class=" text-slate-400 mr-auto" size="large" name="call-outline"></ion-icon>
+                    <span class="mt-1 text-slate-700 dark:text-slate-400 mr-auto" href="#">0830 182 0912 </span>
+                    <ion-icon class=" text-slate-700 dark:text-slate-400 mr-auto" size="large" name="call-outline"></ion-icon>
                 </li>
 
                 <li class="flex items-start justify-center md:justify-end mt-10">
-                    <span class="mt-1 text-slate-400" href="#">استان قزوین ، شهر صنعتی البرز ، خیابان زکریای رازی ، پلاک
+                    <span class="mt-1 text-slate-700 dark:text-slate-400" href="#">استان قزوین ، شهر صنعتی البرز ، خیابان زکریای رازی ، پلاک
                         ۶۰</span>
-                    <ion-icon class="lg:w-16 text-slate-400" size="large" name="location-outline"></ion-icon>
+                    <ion-icon class="lg:w-16 text-slate-700 dark:text-slate-400" size="large" name="location-outline"></ion-icon>
                 </li>
 
             </ul>
@@ -830,7 +881,7 @@
 
 
         <!-- start copy right section -->
-        <div class="w-full flex items-center justify-center text-white mt-20 my-12 lg:mb-0">
+        <div class="w-full flex items-center justify-center text-slate-700  dark:text-white mt-20 my-12 lg:mb-0">
             <span class="text-sm">کلیه حقوق این وبسایت متعلق به شرکت CNC می باشد.</span>
         </div>
     </footer>
@@ -869,6 +920,8 @@
 
     <!-- navbar codes -->
     <script src="./public/script/Navbar.js"></script>
+    <!-- theme codes -->
+    <script src="./public/script/Theme.js"></script>
 </body>
 
 </html>

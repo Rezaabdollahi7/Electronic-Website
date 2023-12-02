@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./*.{html,js}",
   ],
@@ -20,6 +21,12 @@ module.exports = {
         'item-text-3': '#ffffff',
         'nav-items-color': '#64748b',
         'nav-icons-color': '#64748b',
+        'art-tittle': '#0284c7',
+        'art-tittle-bg': '#bae6fd',
+        'art-desc': '#64748b',
+        'art-share':'#fb7185',
+        'art-author':'#4f46e5',
+        'fea-bg':'#8c52ff',
       },
       screens: {
         '300px': '300px',

@@ -248,19 +248,6 @@ nav {
   }
 }
 // ===========================================
-//             features
-// ==========================================
-.featurs-wrapper .feature-number {
-  color: white;
-}
-.featurs-wrapper .featurs-item:hover .feature-number {
-  color: rgba(0, 0, 0, 0.83);
-}
-.featurs-wrapper .featurs-item:hover h3,
-.feature-number {
-  color: black;
-}
-// ===========================================
 //             swiper
 // ==========================================
 .swiper {
@@ -279,32 +266,6 @@ nav {
   margin-top: -10px !important;
   pointer-events: none;
   display: none;
-}
-// ===========================================
-//             secxtions tittle styles
-// ==========================================
-@mixin custom-tittle-pos {
-  content: "";
-  position: absolute;
-  width: 95px;
-  height: 2px;
-  background-color: #ffffff78;
-  top: 54%;
-}
-.custom-tittle::before {
-  @include custom-tittle-pos();
-  margin-right: -7.5%;
-}
-.custom-tittle::after {
-  @include custom-tittle-pos();
-  margin-left: -49%;
-  margin-right: 1%;
-}
-@media screen and (max-width: 500px) {
-  .custom-tittle::before {
-    @include custom-tittle-pos();
-    margin-right: -24.5%;
-  }
 }
 
 // ======================================
