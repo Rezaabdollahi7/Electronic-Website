@@ -17,7 +17,7 @@
 
 </head>
 
-<body class=" h-screen bg-gray-100  dark:bg-slate-900">
+<body class="  bg-gray-100  dark:bg-slate-900 ">
 
 
     <!--! Main navigation container -->
@@ -289,7 +289,7 @@
   
     <!--! start slogan content -->
     <section
-        class="slogan-wrapper relative  my-right-translate-animation mx-auto mt-[3%]  w-[94%] h-[85%] 600px:h-[78%] flex items-center justify-center   ">
+        class="slogan-wrapper overflow-hidden relative  my-right-translate-animation mx-auto mt-[3%]  w-[94%] h-[85%] 600px:h-[78%] flex items-center justify-center   ">
         <div
             class="dark:hidden hidden md:block w-[500px] h-[500px] lg:w-[630px] lg:h-[630px] bg-amber-400 opacity-20 blur-2xl rounded-full -z-10 absolute -top-64 -left-[320px] lg:-left-[400px] ">
         </div>
@@ -364,65 +364,7 @@
     </section>
     <!--! end banners -->
 
-    <!-- ! start product filters -->
-    <div id="products-filter-wrapper" class=" wrapper w-[92%] my-32 mx-auto ">
-        <div id="search-container" class="my-4  flex justify-center items-center">
-            <div class="custom-search-container w-[88%] md:mr-[27%] md:w-[40%] relative">
-                <button id="search" class=" ml-4 absolute text-white rounded-md mt-2 right-[4%] top-[7%]">
-                    <ion-icon name="search-outline" size="large"></ion-icon>
-                </button>
-                <input
-                    class="bg-transparent border-2 border-white text-white rounded-[1.75rem] w-full py-4 pr-12 md:pr-40 focus:outline-2 focus:outline-purple-500 outline-offset-4"
-                    type="search" id="search-input" placeholder=" اسم محصول مورد نظر را وارد کنید ..." />
-            </div>
-            <section class="card-case hidden mr-[10%] md:flex items-center text-white">
-                مرتب سازی به صورت :
-                <ion-icon name="list-outline" size="large" style="color:white" class="w-8 mr-2 cursor-pointer"
-                    id="card-state-vertical" onclick="cardState('horizontal')"></ion-icon>
-                <ion-icon name="apps-outline" size="large" style="color:white" class="w-8 mr-2 cursor-pointer"
-                    id="card-state-horizontal" onclick="cardState('vertical')"></ion-icon>
-            </section>
 
-        </div>
-        <div class="category-wrapper flex flex-col md:flex-row ">
-            <div id="buttons"
-                class="my-4  flex flex-col   items-center ml-[2%] md:w-[16%] border border-white rounded-lg mt-[2%]">
-                <p class="text-xl  my-8 select-none font-bold text-white">
-                    دسته بندی محصولات</p>
-
-                <span class="text-cyan-400/50  select-none font-bold text-2xl pr-2 ">Siemens </span>
-                <button
-                    class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer  text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950 "
-                    onclick="filterProduct('all')">همه ی محصولات</button>
-                <button
-                    class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
-                    onclick="filterProduct('capacitor')">
-                    خازن
-                </button>
-                <button
-                    class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
-                    onclick="filterProduct('diod')">
-                    دیود
-                </button>
-                <button
-                    class="button-value mr-5 mt-4 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
-                    onclick="filterProduct('ic')">
-                    آی سی
-                </button>
-                <button
-                    class="button-value mr-5 mt-4 mb-5 md:mb-5 md:mt-0 w-40 cursor-pointer text-slate-500  py-2 px-2 hover:text-slate-100 hover:border-slate-200 border-r-[2px] border-lime-950"
-                    onclick="filterProduct('res')">
-                    مقاومت
-                </button>
-            </div>
-            <!-- end category buttons -->
-            <div id="products"
-                class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8  lg:grid-cols-4 lg:gap-10 py-3 px-2 md:w-[70%] ">
-            </div>
-        </div>
-
-    </div>
-    <!-- ! end of product filters -->
 
     <!-- ! Slider main container -->
     <div class="fea-tittle relative flex items-center justify-center my-24 mt-36">
@@ -613,7 +555,6 @@
             مقالات</h4>
         <div class="absolute w-[10%] h-[3px] bg-yellow-300 top-[50%] left-[36%]"></div>
     </div>
-
     <section class="articles relative w-[92%] mx-auto grid  md:grid-cols-2  gap-4 ">
         <div
             class="dark:hidden hidden md:block w-[500px] h-[500px] lg:w-[630px] lg:h-[630px] bg-green-400 opacity-20 blur-2xl rounded-full -z-10 absolute -top-15 -right-[320px] lg:-right-[400px] ">
@@ -737,18 +678,18 @@
         <div class="absolute w-[10%] h-[3px] bg-yellow-300 top-[50%] left-[35%]"></div>
     </div>
 
-    <section class="featurs-wrapper relative  w-[80%] mx-auto md:w-full flex flex-col md:px-[16%] ">
+    <section class="featurs-wrapper overflow-hidden relative  w-[80%] mx-auto md:w-full flex flex-col md:px-[16%] ">
         <div
             class="dark:hidden hidden md:block w-[500px] h-[500px] lg:w-[630px] lg:h-[630px] bg-amber-400 opacity-20 blur-2xl rounded-full -z-10 absolute top-64 -left-[320px] lg:-left-[400px] ">
         </div>
 
         <!-- item 1 -->
         <div
-            class="featurs-item md:w-full flex flex-col md:flex-row group  justify-between items-center mt-12 rounded-2xl  p-4 bg-fea-bg  hover:bg-sky-200/40 border-2 border-white custom-shadow outline outline-2 outline-sky-500 outline-offset-8 hover:outline-purple-600">
+            class="featurs-item md:w-full flex flex-col md:flex-row group  justify-between items-center mt-12 rounded-2xl  p-4 bg-fea-bg  dark:bg-transparent   hover:bg-sky-200/40 border-2 border-white custom-shadow outline outline-2 outline-sky-500 outline-offset-8 hover:outline-purple-600">
 
             <div class="feature-logo flex justify-center items-center">
                 <div
-                    class="feature-number text-8xl text-slate-300 group-hover:text-art-tittle ml-3  transition-all deuration-1000 select-none">
+                    class="feature-number text-8xl text-slate-300 group-hover:text-art-tittle dark:group-hover:text-slate-300 ml-3  transition-all deuration-1000 select-none">
                     01</div>
 
                 <div class="feature-icon">
@@ -757,9 +698,9 @@
             </div>
 
             <div class="feature-desc flex flex-col items-center mt-5 md:mt-0 ">
-                <h3 class="text-2xl text-white group-hover:text-art-tittle transition-all">فروش و تعمیر تخصصی قطعات
+                <h3 class="text-2xl text-white group-hover:text-art-tittle transition-all dark:group-hover:text-slate-400">فروش و تعمیر تخصصی قطعات
                     الکترونیکی</h3>
-                <p class="text-gray-200 text-center mt-4 group-hover:text-purple-700"> CNC مرجع تخصصی فروش و تعمیر انواع
+                <p class="text-gray-200 text-center mt-4 group-hover:text-purple-700 dark:group-hover:text-slate-300"> CNC مرجع تخصصی فروش و تعمیر انواع
                     قطعات الکترونیکی اعم از
                     انواع برد ، حافظه ، و قطعات کامپیوتری</p>
             </div>
@@ -769,11 +710,11 @@
 
         <!-- item 2 -->
         <div
-            class="featurs-item md:w-full flex flex-col md:flex-row-reverse group justify-between items-center mt-20 rounded-2xl p-4 bg-fea-bg  hover:bg-sky-200/40 border-2 border-white custom-shadow outline outline-2 outline-sky-500 outline-offset-8 hover:outline-purple-600">
+            class="featurs-item md:w-full flex flex-col md:flex-row-reverse group justify-between items-center mt-20 rounded-2xl p-4 bg-fea-bg dark:bg-transparent   hover:bg-sky-200/40 border-2 border-white custom-shadow outline outline-2 outline-sky-500 outline-offset-8 hover:outline-purple-600">
 
             <div class="feature-logo flex justify-center items-center flex-row-reverse">
                 <div
-                    class="feature-number text-8xl text-slate-300 group-hover:text-art-tittle mr-8 late-600 transition-all deuration-1000 select-none">
+                    class="feature-number text-8xl text-slate-300 group-hover:text-art-tittle dark:group-hover:text-slate-300 mr-8 late-600 transition-all deuration-1000 select-none">
                     02</div>
 
                 <div class="feature-icon">
@@ -782,9 +723,9 @@
             </div>
 
             <div class="feature-desc flex flex-col items-center mt-5 md:mt-0 ">
-                <h3 class="text-2xl text-white group-hover:text-art-tittle hover:text-black transition-all">پشتیبانی 24
+                <h3 class="text-2xl text-white group-hover:text-art-tittle dark:group-hover:text-slate-400 hover:text-black transition-all">پشتیبانی 24
                     ساعته</h3>
-                <p class="text-gray-200 text-center mt-2 group-hover:text-purple-700">در هر لحظه از شبانه روز در پیام
+                <p class="text-gray-200 text-center mt-2 group-hover:text-purple-700 dark:group-hover:text-slate-300">در هر لحظه از شبانه روز در پیام
                     رسان واتساپ پاسخگوی سوالاتتان
                     هستیم </p>
             </div>
@@ -794,11 +735,11 @@
 
         <!-- item 3 -->
         <div
-            class="featurs-item md:w-full flex flex-col md:flex-row group justify-between items-center mt-20 rounded-2xl  p-4 bg-fea-bg  hover:bg-sky-200/40 border-2 border-white custom-shadow outline outline-2 outline-sky-500 outline-offset-8 hover:outline-purple-600">
+            class="featurs-item md:w-full flex flex-col md:flex-row group justify-between items-center mt-20 rounded-2xl  p-4 bg-fea-bg dark:bg-transparent   hover:bg-sky-200/40 border-2 border-white dark:border-0 dark:border-none dark:border-transparent  custom-shadow outline outline-2 outline-sky-500 outline-offset-8 hover:outline-purple-600">
 
             <div class="feature-logo flex justify-center items-center ">
                 <div
-                    class="feature-number text-8xl text-slate-300 group-hover:text-art-tittle md:ml-3 md:mr-16 transition-all deuration-1000 select-none">
+                    class="feature-number text-8xl text-slate-300 group-hover:text-art-tittle dark:group-hover:text-slate-300  md:ml-3 md:mr-16 transition-all deuration-1000 select-none">
                     03</div>
 
                 <div class="feature-icon mr-3 md:mr-12">
@@ -807,9 +748,9 @@
             </div>
 
             <div class="feature-desc flex flex-col items-center mt-5 md:mt-0 md:ml-28">
-                <h3 class="text-2xl text-white group-hover:text-art-tittle hover:text-black transition-all">تضمین کیفیت
+                <h3 class="text-2xl text-white group-hover:text-art-tittle dark:group-hover:text-slate-400 hover:text-black transition-all">تضمین کیفیت
                     محصولات</h3>
-                <p class="text-gray-200 text-center mt-2 group-hover:text-purple-700">بهترین کیفیت قطعات و خدمات را با
+                <p class="text-gray-200 text-center mt-2 group-hover:text-purple-700 dark:group-hover:text-slate-300">بهترین کیفیت قطعات و خدمات را با
                     ما تجربه کنید </p>
             </div>
 
