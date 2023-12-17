@@ -14,7 +14,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- custom sass -->
     <link rel="stylesheet" href="./public/css/mySass/min/customSass.min.css">
-
+    <!--alpine js  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="  bg-gray-100  dark:bg-slate-900 ">
@@ -94,8 +99,8 @@
         <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6  text-sm text-cyan-600 font-bold  rounded-xl transition duration-200"
             href="./index.html" target="_blank">CNC</a>
 
-            <img class="sun cursor-pointer" src="./public/icons/sun-32.png" alt="">
-            <img class="moon cursor-pointer" src="./public/icons/moon-32.png" alt="">
+        <img class="sun cursor-pointer" src="./public/icons/sun-32.png" alt="">
+        <img class="moon cursor-pointer" src="./public/icons/moon-32.png" alt="">
         <!-- lang dropdown -->
         <div class="hidden  bg-white lg:flex flex-col justify-center ">
             <div class="flex items-center justify-center ">
@@ -286,7 +291,7 @@
     </div>
     <!-- ! end nav -->
 
-  
+
     <!--! start slogan content -->
     <section
         class="slogan-wrapper overflow-hidden relative  my-right-translate-animation mx-auto mt-[3%]  w-[94%] h-[85%] 600px:h-[78%] flex items-center justify-center   ">
@@ -364,7 +369,156 @@
     </section>
     <!--! end banners -->
 
+    <!-- ! Products -->
+    <div id="checkboxContainer" class="mt-24">
+        <h1 class="search-tittle  ">Choose Your Category : </h1>
+        <div class="cat-items-wrapper ">
 
+            <div class=" flex items-center justify-center mx-auto col-span-2 lg:col-span-1">
+                <div class="relative inline-block text-left">
+                    <button id="dropdown-button"
+                        class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+                        More Category
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu"
+                        class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                        <div class="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
+                            <a class="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer"
+                                role="menuitem" onclick="filterCourses('frontend')">
+                                Frontend
+                            </a>
+                            <a class="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer"
+                                role="menuitem" onclick="filterCourses('backend')">
+                                Backend
+                            </a>
+                            <a class="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer"
+                                role="menuitem" onclick="filterCourses('php')">
+                                PHP
+                            </a>
+                            <a class="flex block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer"
+                                role="menuitem" onclick="filterCourses('all')">
+                                all
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="cat-item" onclick="filterCourses('frontend')">Frontend</span>
+            <span class="cat-item" onclick="filterCourses('backend')">Backend</span>
+            <span class="cat-item" onclick="filterCourses('php')">PHP</span>
+            <span class="cat-item" onclick="filterCourses('all')">all</span>
+
+        </div>
+
+        <input placeholder="Type Anythings for search ..." type="text" id="searchInput" oninput="performSearch()">
+
+    </div>
+
+    <div class="products" >
+        <div class="dropdown-section-wrappper mt-8 ml-4 order-2 ">
+            <div x-data="{ dropdown1: false, dropdown2: false, dropdown3: false } "
+                class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1  justify-center items-center relative my-7">
+                <!-- Dropdown 1 -->
+                <div class="relative inline-block   text-end">
+                    <button @click="dropdown1 = !dropdown1" class=" px-4 py-2 rounded w-40">
+                        Dropdown 1
+                    </button>
+                    <div x-show="dropdown1" @click.away="dropdown1 = false"
+                        class="block mt-2  border rounded w-40 shadow-md  ">
+                        <ul>
+                            <li
+                                class="py-2  px-4 text-center flex justify-center items-center hover:bg-white hover:cursor-pointer hover:text-blue-900 ">
+                                item 1
+                                <img class="w-3 h-3  mr-4" src="./public/icons/arrow-right.png" alt="icon">
+                            </li>
+                            <li
+                                class="py-2  px-4 text-center flex justify-center items-center hover:bg-white hover:cursor-pointer hover:text-blue-900 ">
+                                item 1
+                                <img class="w-3 h-3  mr-4" src="./public/icons/arrow-right.png" alt="icon">
+                            </li>
+                            <li
+                                class="py-2  px-4 text-center flex justify-center items-center hover:bg-white hover:cursor-pointer hover:text-blue-900 ">
+                                item 1
+                                <img class="w-3 h-3  mr-4" src="./public/icons/arrow-right.png" alt="icon">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dropdown 2 -->
+                <div class="relative inline-block   text-end ">
+                    <button @click="dropdown2 = !dropdown2" class=" px-4 py-2 rounded w-40 mt-5 md:mt-0">
+                        Dropdown 2
+                    </button>
+                    <div x-show="dropdown2" @click.away="dropdown2 = false"
+                        class=" mt-2 block   border rounded w-40 shadow-md  ">
+                        <ul>
+                            <li
+                                class="py-2  px-4 text-center flex justify-center items-center hover:bg-white hover:cursor-pointer hover:text-blue-900 ">
+                                item 1
+                                <img class="w-3 h-3  mr-4" src="./public/icons/arrow-right.png" alt="icon">
+                            </li>
+                            <li
+                                class="py-2  px-4 text-center flex justify-center items-center hover:bg-white hover:cursor-pointer hover:text-blue-900 ">
+                                item 1
+                                <img class="w-3 h-3  mr-4" src="./public/icons/arrow-right.png" alt="icon">
+                            </li>
+                            <li
+                                class="py-2  px-4 text-center flex justify-center items-center hover:bg-white hover:cursor-pointer hover:text-blue-900 ">
+                                item 1
+                                <img class="w-3 h-3  mr-4" src="./public/icons/arrow-right.png" alt="icon">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dropdown 3 -->
+                <div class="relative inline-block  text-end  ">
+                    <button @click="dropdown3 = !dropdown3" class=" px-4 py-2 rounded w-40 mt-5 lg:mt-0">
+                        Dropdown 3
+                    </button>
+                    <div x-show="dropdown3" @click.away="dropdown3 = false"
+                        class="block mt-2  border rounded w-40 shadow-md  ">
+                        <ul>
+                            <li
+                                class="py-2  px-4 text-center flex justify-center items-center hover:bg-white hover:cursor-pointer hover:text-blue-900 ">
+                                item 1
+                                <img class="w-3 h-3  mr-4" src="./public/icons/arrow-right.png" alt="icon">
+                            </li>
+                            <li
+                                class="py-2  px-4 text-center flex justify-center items-center hover:bg-white hover:cursor-pointer hover:text-blue-900 ">
+                                item 1
+                                <img class="w-3 h-3  mr-4" src="./public/icons/arrow-right.png" alt="icon">
+                            </li>
+                            <li
+                                class="py-2  px-4 text-center flex justify-center items-center hover:bg-white hover:cursor-pointer hover:text-blue-900 ">
+                                item 1
+                                <img class="w-3 h-3  mr-4" src="./public/icons/arrow-right.png" alt="icon">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-items-wrapper  ">
+            <div class="list-and-pag-wrapper col-span-4 ">
+                <div id="list" class="item-cards-wrapper ">
+                </div>
+                <section class="pagination " id="pagination"></section>
+            </div>
+            <!-- end of item-cards-wrapper -->
+        </div>
+    </div>
+    <!-- ! end Products -->
 
     <!-- ! Slider main container -->
     <div class="fea-tittle relative flex items-center justify-center my-24 mt-36">
@@ -567,7 +721,8 @@
                 class="article-tittle  text-right text-lg text-art-tittle bg-art-tittle-bg px-4 py-2   rounded-xl    mt-8">
                 سرمایه‌گذاری ۲۴۶ میلیون دلاری
                 فاکسکان در ویتنام </h6>
-            <p class="text-justify text-art-desc mt-4 leading-8">شرکت فاکسکان که بزرگترین تولیدکننده و مونتاژکننده قراردادی
+            <p class="text-justify text-art-desc mt-4 leading-8">شرکت فاکسکان که بزرگترین تولیدکننده و مونتاژکننده
+                قراردادی
                 محصولات الکترونیکی در سراسر جهان است، موافقت ویتنام را برای
                 سرمایه‌گذاری ۲۴۶ میلیون دلاری در دو پروژه در شمال این کشور دریافت کرد. به گزارش ایران اکونومیست، این
                 پروژه ها که توسط
@@ -698,9 +853,12 @@
             </div>
 
             <div class="feature-desc flex flex-col items-center mt-5 md:mt-0 ">
-                <h3 class="text-2xl text-white group-hover:text-art-tittle transition-all dark:group-hover:text-slate-400">فروش و تعمیر تخصصی قطعات
+                <h3
+                    class="text-2xl text-white group-hover:text-art-tittle transition-all dark:group-hover:text-slate-400">
+                    فروش و تعمیر تخصصی قطعات
                     الکترونیکی</h3>
-                <p class="text-gray-200 text-center mt-4 group-hover:text-purple-700 dark:group-hover:text-slate-300"> CNC مرجع تخصصی فروش و تعمیر انواع
+                <p class="text-gray-200 text-center mt-4 group-hover:text-purple-700 dark:group-hover:text-slate-300">
+                    CNC مرجع تخصصی فروش و تعمیر انواع
                     قطعات الکترونیکی اعم از
                     انواع برد ، حافظه ، و قطعات کامپیوتری</p>
             </div>
@@ -723,9 +881,12 @@
             </div>
 
             <div class="feature-desc flex flex-col items-center mt-5 md:mt-0 ">
-                <h3 class="text-2xl text-white group-hover:text-art-tittle dark:group-hover:text-slate-400 hover:text-black transition-all">پشتیبانی 24
+                <h3
+                    class="text-2xl text-white group-hover:text-art-tittle dark:group-hover:text-slate-400 hover:text-black transition-all">
+                    پشتیبانی 24
                     ساعته</h3>
-                <p class="text-gray-200 text-center mt-2 group-hover:text-purple-700 dark:group-hover:text-slate-300">در هر لحظه از شبانه روز در پیام
+                <p class="text-gray-200 text-center mt-2 group-hover:text-purple-700 dark:group-hover:text-slate-300">در
+                    هر لحظه از شبانه روز در پیام
                     رسان واتساپ پاسخگوی سوالاتتان
                     هستیم </p>
             </div>
@@ -748,9 +909,12 @@
             </div>
 
             <div class="feature-desc flex flex-col items-center mt-5 md:mt-0 md:ml-28">
-                <h3 class="text-2xl text-white group-hover:text-art-tittle dark:group-hover:text-slate-400 hover:text-black transition-all">تضمین کیفیت
+                <h3
+                    class="text-2xl text-white group-hover:text-art-tittle dark:group-hover:text-slate-400 hover:text-black transition-all">
+                    تضمین کیفیت
                     محصولات</h3>
-                <p class="text-gray-200 text-center mt-2 group-hover:text-purple-700 dark:group-hover:text-slate-300">بهترین کیفیت قطعات و خدمات را با
+                <p class="text-gray-200 text-center mt-2 group-hover:text-purple-700 dark:group-hover:text-slate-300">
+                    بهترین کیفیت قطعات و خدمات را با
                     ما تجربه کنید </p>
             </div>
 
@@ -770,7 +934,8 @@
                         <h3 class="select-none text-sky-600 dark:text-white">CNC DIGITAL</h3>
                         <img class="w-20 h-20" src="./public/icons/companyLogo/19.png" alt="عکس لوگوی شرکت">
                     </div>
-                    <p class="company-text mt-4 text-justify leading-8 text-sky-800 dark:text-white">شرکت کنترل پردازان نو اندیش از سال
+                    <p class="company-text mt-4 text-justify leading-8 text-sky-800 dark:text-white">شرکت کنترل پردازان
+                        نو اندیش از سال
                         ۱۳۹۰ با مدیرت
                         مهندس داود جعفری فعالیت تجاری خود را آغاز نمود و با دارا بودن یک شعبه
                         اصلی در شهر صنعتی البرز و دفتر مرکزی در قزوین در زمینه تعمیرات و تجهیزات کنترلی زیمنس ماشینهای
@@ -783,36 +948,45 @@
 
             <ul class="text-center mt-6 md:mt-0 text-white">
                 <li class="tittle-li text-blue-500 dark:text-white text-3xl pt-4"><a href="">خدمات ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400">تعمیر قطعات الکترونیکی</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400">فروش قطعات الکترونیکی</a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400">تعمیر قطعات الکترونیکی</a>
+                </li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400">فروش قطعات الکترونیکی</a>
+                </li>
                 <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400">پشتیبانی سریع</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400"> تضمین کیفیت محصولات</a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400"> تضمین کیفیت محصولات</a>
+                </li>
             </ul>
             <ul class="text-center mt-6 md:mt-0 text-white">
                 <li class="tittle-li text-blue-500 dark:text-white text-3xl pt-4"><a href=""> شرایط ما </a></li>
                 <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400"> تماس با ما </a></li>
                 <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400">درباره ما </a></li>
                 <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400"> شرایط و قوانین</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400"> سیاست حریم خصوصی </a></li>
+                <li class="mt-10"><a href="#" class="mt-1 text-slate-700 dark:text-slate-400"> سیاست حریم خصوصی </a>
+                </li>
             </ul>
             <!-- contact -->
             <ul class="text-center md:pl-[30%] mt-6 md:mt-0 text-white">
                 <li class="tittle-li text-blue-500 dark:text-white text-3xl pt-4"><a href="">ارتباط با ما</a></li>
 
                 <li class="flex items-start justify-center md:justify-end mt-10">
-                    <a class="mt-1 text-slate-700 dark:text-slate-400 mr-auto" href="mailto:cncmachinegroup@gmail.com">cncmachinegroup@gmail.com</a>
-                    <ion-icon class=" lg:w-16 text-slate-700 dark:text-slate-400 mr-auto" size="large" name="mail-outline"></ion-icon>
+                    <a class="mt-1 text-slate-700 dark:text-slate-400 mr-auto"
+                        href="mailto:cncmachinegroup@gmail.com">cncmachinegroup@gmail.com</a>
+                    <ion-icon class=" lg:w-16 text-slate-700 dark:text-slate-400 mr-auto" size="large"
+                        name="mail-outline"></ion-icon>
                 </li>
 
                 <li class="flex items-start justify-center md:justify-end mt-10">
                     <span class="mt-1 text-slate-700 dark:text-slate-400 mr-auto" href="#">0830 182 0912 </span>
-                    <ion-icon class=" text-slate-700 dark:text-slate-400 mr-auto" size="large" name="call-outline"></ion-icon>
+                    <ion-icon class=" text-slate-700 dark:text-slate-400 mr-auto" size="large"
+                        name="call-outline"></ion-icon>
                 </li>
 
                 <li class="flex items-start justify-center md:justify-end mt-10">
-                    <span class="mt-1 text-slate-700 dark:text-slate-400" href="#">استان قزوین ، شهر صنعتی البرز ، خیابان زکریای رازی ، پلاک
+                    <span class="mt-1 text-slate-700 dark:text-slate-400" href="#">استان قزوین ، شهر صنعتی البرز ،
+                        خیابان زکریای رازی ، پلاک
                         ۶۰</span>
-                    <ion-icon class="lg:w-16 text-slate-700 dark:text-slate-400" size="large" name="location-outline"></ion-icon>
+                    <ion-icon class="lg:w-16 text-slate-700 dark:text-slate-400" size="large"
+                        name="location-outline"></ion-icon>
                 </li>
 
             </ul>
@@ -852,7 +1026,38 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+    <!-- products -->
+    <script src="./public/script/products.js"></script>
+    <!-- more catagory dropdown script -->
+    <script>
+        const dropdownButton = document.getElementById('dropdown-button');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        let isDropdownOpen = true; // Set to true to open the dropdown by default, false to close it by default
 
+        // Function to toggle the dropdown
+        function toggleDropdown() {
+            isDropdownOpen = !isDropdownOpen;
+            if (isDropdownOpen) {
+                dropdownMenu.classList.remove('hidden');
+            } else {
+                dropdownMenu.classList.add('hidden');
+            }
+        }
+
+        // Initialize the dropdown state
+        toggleDropdown();
+
+        // Toggle the dropdown when the button is clicked
+        dropdownButton.addEventListener('click', toggleDropdown);
+
+        // Close the dropdown when clicking outside of it
+        window.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+                isDropdownOpen = false;
+            }
+        });
+    </script>
     <!-- swipper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 

@@ -10,6 +10,127 @@
         url('../fonts/IRANSans_Medium.ttf') format('truetype');
 }
 
+#checkboxContainer {
+    @apply w-full xl:w-[90%] mx-auto flex justify-between flex-col
+}
+
+.search-tittle {
+    @apply text-center text-3xl font-semibold text-blue-500
+}
+
+.cat-items-wrapper {
+    @apply mt-8 w-full grid grid-cols-2 lg:grid-cols-5 gap-6 px-4
+}
+
+.cat-item {
+    @apply cursor-pointer col-span-1 hover:outline hover:outline-1 hover:outline-offset-2 hover:bg-purple-500 hover:text-white px-4 py-1 rounded-lg bg-white hover:outline-purple-400 transition-all duration-100
+}
+
+#searchInput {
+    @apply mt-8 rounded-full py-2 px-3 outline outline-1 outline-sky-300 outline-offset-2 w-max pr-32 mx-auto
+}
+
+#pagination {
+    @apply w-max mx-auto flex justify-center mt-8 bg-sky-200 rounded-2xl px-8
+}
+
+.pgbtn {
+    @apply m-4 bg-blue-600 text-white font-semibold w-8 h-8 rounded-full flex items-center justify-center border hover:bg-white hover:text-purple-600 duration-200
+}
+
+.pgbtn.active {
+    @apply bg-blue-900
+}
+
+.main-items-wrapper {
+    @apply col-span-10 flex flex-col xl:flex-row xl:w-[95%] mx-auto px-3 500px:px-6 xl:px-8 items-center justify-center
+}
+
+.item-cards-wrapper {
+    @apply w-full xl:w-full mx-auto mt-4 rounded-xl grid grid-cols-1 650px:grid-cols-2 lg:grid-cols-3 gap-4 relative overflow-hidden
+}
+
+.products {
+    @apply grid xl:grid-cols-12
+}
+
+.dropdown-section-wrappper {
+    @apply col-span-12 xl:col-span-2
+}
+
+.dropdown-section-wrappper {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.item-card {
+    @apply bg-white flex flex-col justify-center items-end rounded-b-xl mt-6 rounded-2xl
+}
+
+.item-img {
+    @apply w-[95%] rounded-xl mt-2 mx-auto
+}
+
+.card-body {
+    @apply px-2 flex flex-col items-start
+}
+
+.card-cat-wrapper {
+    @apply flex gap-4 mt-3
+}
+
+.card-cat {
+    @apply text-sky-500 bg-sky-500/10 px-2 rounded-md text-sm
+}
+
+.card-tittle {
+    @apply text-lg mt-3  h-12
+}
+
+.card-desc {
+    @apply mt-3  text-sm 350px:text-[14px] leading-7 my-4 text-gray-500
+}
+
+.card-body hr {
+    @apply bg-gray-200/10 w-full h-[1px] my-4
+}
+
+.card-extra-details {
+    @apply grid grid-cols-3 gap-3 w-full px-1 1400px:px-2
+}
+
+.card-extra-details .star-section-wrapper {
+    @apply flex justify-center w-1/3 1400px:w-[20%] text-left gap-1 text-sm items-baseline text-yellow-400 order-3 mr-auto
+}
+
+.card-extra-details .clock-section-wrapper {
+    @apply text-neutral-400 flex justify-center text-[13px] 400px:text-base 650px:text-[14px] 750px:text-base gap-2 text-sm 1400px:text-[14px] items-baseline order-2
+}
+
+.card-extra-details .author-section-wrapper {
+    @apply text-neutral-400 flex  text-[13px] 400px:text-base 650px:text-[14px] 750px:text-base gap-1 xl:gap-2 text-sm 1400px:text-[14px] items-center order-1
+}
+
+.card-footer {
+    @apply grid grid-cols-2 w-full mb-5
+}
+
+.card-footer .course-price-wrapper {
+    @apply flex gap-1 text-green-500 justify-start items-center mr-auto
+}
+
+.card-footer .course-price-wrapper .course-price {
+    @apply text-green-500
+}
+
+.card-footer .users-counter-wrapper {
+    @apply ml-auto gap-2 text-slate-600 flex justify-center items-center
+}
 @layer utilities {
     .flex-important {
         display: flex !important;
