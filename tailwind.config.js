@@ -24,9 +24,24 @@ module.exports = {
         'art-tittle': '#0284c7',
         'art-tittle-bg': '#bae6fd',
         'art-desc': '#64748b',
-        'art-share':'#fb7185',
-        'art-author':'#4f46e5',
-        'fea-bg':'#8c52ff',
+        'art-share': '#fb7185',
+        'art-author': '#4f46e5',
+        'fea-bg': '#8c52ff',
+
+        'main': {
+          '50': '#ecfcff',
+          '100': '#cff7fe',
+          '200': '#a5effc',
+          '300': '#67e4f9',
+          '400': '#22d0ee',
+          '500': '#06b6d4',
+          '600': '#0899b2',
+          '700': '#0e7d90',
+          '800': '#156775',
+          '900': '#165863',
+          '950': '#083b44',
+        },
+
       },
       screens: {
         '300px': '300px',
@@ -54,7 +69,7 @@ module.exports = {
         '1400px': '1400px',
         '1450px': '1450px',
       },
-     
+
     },
   },
 

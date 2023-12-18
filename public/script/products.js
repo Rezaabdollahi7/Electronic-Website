@@ -151,7 +151,7 @@ function filterCourses(category) {
 
 function performSearch() {
 
-    const searchText = document.getElementById('searchBox').value.toLowerCase();
+    const searchText = document.getElementById('searchInput').value.toLowerCase();
 
     const searchResults = listItems.filter(item => item.tittle.toLowerCase().includes(searchText));
 
