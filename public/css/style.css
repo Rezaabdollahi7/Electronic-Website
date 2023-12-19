@@ -135,6 +135,11 @@
 @layer base {
     html {
         font-family: "dana ", system-ui, sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        scroll-behavior: smooth;
     }
 }
 
@@ -316,7 +321,8 @@
     .font-danaLight {
         font-weight: 400;
     }
-    .font-danaDemiBold{
+
+    .font-danaDemiBold {
         font-weight: 700;
     }
 }
