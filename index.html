@@ -27,11 +27,11 @@
 
     <!--! Main navigation container -->
     <nav
-        class="relative  px-4 py-2  lg:py-3 flex justify-between items-center bg-gradient-to-tr from-main-50 to-main-100  w-[90%]  lg:w-[85%] mx-auto rounded-lg">
+        class="relative  px-4 py-2  lg:py-3 flex justify-between items-center   w-[90%]  lg:w-[85%] mx-auto rounded-lg">
         <a class="text-3xl font-bold leading-none" href="./index.html" target="_blank">
             <img src="./public/icons/companyLogo/19.png" class="h-14" alt="logo">
         </a>
-        <div class="lg:hidden">
+        <div class="lg:hidden order-1">
             <button class="navbar-burger flex items-center text-blue-600 p-3">
                 <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <title>Mobile menu</title>
@@ -39,9 +39,10 @@
                 </svg>
             </button>
         </div>
+
         <ul
             class="desktop-menu-wrapper  hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-2 xl:space-x-6">
-            <li><a class="text-sm  items text-blue-600 hover:text-gray-500 font-bold" href="./index.html"
+            <li><a class="text-sm  items text-blue-500 hover:text-gray-500 font-bold" href="./index.html"
                     target="_blank">خانه</a></li>
             <li class="text-gray-300 pr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
@@ -51,7 +52,7 @@
                 </svg>
             </li>
 
-            <li><a class="text-sm items text-gray-700 hover:text-black " href="./aboutUs.html" target="_blank"> درباره
+            <li><a class="text-sm items text-gray-700 hover:text-black dark:text-white " href="./aboutUs.html" target="_blank"> درباره
                     ما</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
@@ -61,7 +62,7 @@
                 </svg>
             </li>
 
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="./articles.html"
+            <li><a class="text-sm items text-gray-700 hover:text-black dark:text-white" href="./articles.html"
                     target="_blank">مقالات</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
@@ -71,7 +72,7 @@
                 </svg>
             </li>
 
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="./callUs2.html" target="_blank">تماس با
+            <li><a class="text-sm items text-gray-700 hover:text-black dark:text-white" href="./callUs2.html" target="_blank">تماس با
                     ما</a></li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
@@ -81,7 +82,7 @@
                 </svg>
             </li>
 
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="./index.html" target="_blank">محصولات</a>
+            <li><a class="text-sm items text-gray-700 hover:text-black dark:text-white" href="./index.html" target="_blank">محصولات</a>
             </li>
 
             <li class="text-gray-300">
@@ -92,15 +93,24 @@
                 </svg>
             </li>
 
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="./honors.html"
+            <li><a class="text-sm items text-gray-700 hover:text-black dark:text-white" href="./honors.html"
                     target="_blank">افتخارات</a></li>
 
         </ul>
-        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6  text-sm text-cyan-600 font-bold  rounded-xl transition duration-200"
+
+        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6  text-sm text-blue-500 font-bold  rounded-xl transition duration-200 "
             href="./index.html" target="_blank">CNC</a>
 
-        <img class="sun cursor-pointer" src="./public/icons/sun-32.png" alt="">
-        <img class="moon cursor-pointer" src="./public/icons/moon-32.png" alt="">
+      
+        <div class="theme-wrapper flex justify-center items-center lg:ml-8 gap-2 ">
+            <div class="moon-wrapper bg-gray-200 flex justify-center items-center w-9 h-9 rounded-full cursor-pointer">
+                <i class="fa-solid fa-moon text-gray-500 text-xl moon   "></i>
+            </div>
+            <div class="sun-wrapper bg-gray-200 flex justify-center items-center w-9 h-9 rounded-full cursor-pointer">
+                <i class="fa-solid fa-sun text-gray-500 text-xl sun   "></i>
+            </div>
+        </div>
+ 
         <!-- lang dropdown -->
         <div class="hidden  bg-white lg:flex flex-col justify-center ">
             <div class="flex items-center justify-center ">
@@ -295,10 +305,10 @@
     <section class="w-[85%]  flex flex-col mx-auto ">
         <div class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-5 xl:gap-14 md:gap-5">
             <div class="flex flex-col justify-center col-span-3 text-center lg:text-start">
-                <h1 class="my-8 text-4xl font-extrabold leading-tight lg:text-[3.5rem] text-dark-grey-900">
+                <h1 class="my-8 text-4xl font-extrabold leading-tight lg:text-[3.5rem] text-dark-grey-900 dark:text-white">
                     شرکت کنترل پردازان نو اندیش
                 </h1>
-                <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-gray-700 text-justify">
+                <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-gray-700 text-justify dark:text-gray-500">
                     “با افتخار اعلام می‌کنیم که شرکت ما به تازگی با به کارگیری جدیدترین فناوری‌ها، محدوده‌ی محصولات
                     الکترونیکی خود را گسترش
                     داده است. مشتریان عزیز اکنون می‌توانند جدیدترین و پیشرفته‌ترین دستگاه‌های الکترونیکی را که شامل
@@ -370,7 +380,7 @@
             </div>
         </div>
     </section>
-    <!--  ! end of slogan content -->  
+    <!--  ! end of slogan content -->
 
     <!-- ! company sections -->
     <div class="tittle-wrapper flex flex-col w-[85%] mx-auto mt-32 mb-12">

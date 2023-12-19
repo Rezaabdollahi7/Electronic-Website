@@ -821,6 +821,30 @@ body {
   order: 2;
 }
 
+.order-10 {
+  order: 10;
+}
+
+.-order-2 {
+  order: -2;
+}
+
+.-order-1 {
+  order: -1;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-5 {
+  order: 5;
+}
+
+.-order-5 {
+  order: -5;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -1029,6 +1053,10 @@ body {
   margin-top: auto;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1156,6 +1184,14 @@ body {
   height: 100vh;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
 .max-h-12 {
   max-height: 3rem;
 }
@@ -1247,6 +1283,14 @@ body {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .max-w-sm {
@@ -1443,6 +1487,10 @@ body {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-x-1 {
@@ -1702,6 +1750,16 @@ body {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -2060,6 +2118,10 @@ body {
   font-weight: 600;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2212,6 +2274,11 @@ body {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -3233,6 +3300,11 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-gray-500) {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:shadow-none) {
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
@@ -3571,6 +3643,10 @@ body {
 
   .lg\:mt-\[18\%\] {
     margin-top: 18%;
+  }
+
+  .lg\:ml-8 {
+    margin-left: 2rem;
   }
 
   .lg\:block {
