@@ -906,6 +906,11 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 .-mr-1 {
   margin-right: -0.25rem;
 }
