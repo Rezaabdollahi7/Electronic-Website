@@ -2076,6 +2076,10 @@ body {
   line-height: 2.5rem;
 }
 
+.leading-\[20px\] {
+  line-height: 20px;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
