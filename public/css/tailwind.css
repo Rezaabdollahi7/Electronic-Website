@@ -873,6 +873,10 @@ body {
   grid-column: span 12 / span 12;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -1338,6 +1342,22 @@ body {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-9\/12 {
+  width: 75%;
 }
 
 .max-w-sm {
@@ -1829,6 +1849,15 @@ body {
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
 }
 
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200\/50 {
+  background-color: rgb(229 231 235 / 0.5);
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -2081,6 +2110,16 @@ body {
   padding-bottom: 57px;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2099,6 +2138,22 @@ body {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .text-left {
@@ -2463,6 +2518,10 @@ body {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-75 {
+  transition-duration: 75ms;
 }
 
 .ease-in-out {
@@ -3256,6 +3315,12 @@ body {
   opacity: 0.8;
 }
 
+.hover\:shadow-xl:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .hover\:outline:hover {
   outline-style: solid;
 }
@@ -3808,6 +3873,10 @@ body {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -3818,6 +3887,10 @@ body {
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -4016,6 +4089,10 @@ body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .xl\:justify-center {
+    justify-content: center;
+  }
+
   .xl\:gap-14 {
     gap: 3.5rem;
   }
@@ -4029,6 +4106,24 @@ body {
   .xl\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .xl\:py-9 {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .xl\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xl\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .xl\:pl-4 {
+    padding-left: 1rem;
   }
 
   .xl\:text-end {
