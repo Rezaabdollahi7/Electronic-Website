@@ -809,6 +809,10 @@ body {
   bottom: 4rem;
 }
 
+.left-\[2\%\] {
+  left: 2%;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1065,6 +1069,10 @@ body {
 
 .mt-\[100px\] {
   margin-top: 100px;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .line-clamp-2 {
@@ -1324,6 +1332,14 @@ body {
   width: 22%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
@@ -1514,6 +1530,10 @@ body {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-x-1 {
