@@ -6,20 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CNC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- tailwind styles -->
     <link rel="stylesheet" href="./public/css/tailwind.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./public/icons/companyLogo/19.png" type="image/x-icon">
-    <!-- swiper js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <!-- owl script -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- custom sass -->
     <link rel="stylesheet" href="./public/css/mySass/min/customSass.min.css">
     <!--alpine js  -->
@@ -30,7 +23,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="  bg-gray-100  dark:bg-slate-900 ">
+<body class="relative  bg-gray-100  dark:bg-slate-900 font-iransansx">
 
 
     <!--! Main navigation container -->
@@ -318,12 +311,13 @@
             <!-- text section -->
             <div class="flex flex-col justify-center col-span-3 text-center lg:text-start order-2">
                 <h1
-                    class="my-8 text-4xl font-extrabold leading-tight lg:text-[3rem] text-dark-grey-900 dark:text-white lg:w-10/12 ">
+                    class="my-8 text-4xl font-extrabold leading-tight lg:text-[3rem] text-dark-grey-900 dark:text-white lg:w-10/12 font-dana">
                     با <span
                         class="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">مستر
                         کد</span> قله های برنامه نویسی رو فتح کن
                 </h1>
-                <p class="my-6 text-base font-normal leading-10 lg:w-3/4 text-gray-700 text-justify dark:text-gray-500">
+                <p
+                    class="my-6 text-base font-normal leading-10 lg:w-3/4 text-gray-700 text-justify dark:text-gray-500 font-iransansx">
                     "با گسترده‌تر شدن جهان دیجیتال، یادگیری برنامه‌نویسی تبدیل به یک نیاز ضروری می‌شود. آیا شما نیز
                     می‌خواهید به دنیایی از
                     امکانات جدید پیوسته و ایده‌های خلاقانه خود را به واقعیت تبدیل کنید؟ با ما همراه شوید و مسیری جذاب را
@@ -366,8 +360,8 @@
             </div>
             <!-- text -->
             <div class="flex flex-col mt-4">
-                <p class="text-xl text-cyan-600 font-semibold">۷۲</p>
-                <span class="w-10/12 mt-1">
+                <p class="text-xl text-cyan-600 font-semibold font-dana">۷۲</p>
+                <span class="w-10/12 mt-1 font-dana">
                     استخدام موفق در شرکت‌های برتر کشور
                 </span>
             </div>
@@ -380,8 +374,8 @@
             </div>
             <!-- text -->
             <div class="flex flex-col mt-4">
-                <p class="text-xl text-cyan-600 font-semibold">۱۴۵۱</p>
-                <span class="w-10/12  mt-1">
+                <p class="text-xl text-cyan-600 font-semibold font-dana">۱۴۵۱</p>
+                <span class="w-10/12  mt-1 font-dana">
                     ساعت تجربه تولید محتوای آموزشی
                 </span>
             </div>
@@ -394,10 +388,10 @@
             </div>
             <!-- text -->
             <div class="flex flex-col mt-4">
-                <p class="text-xl text-cyan-600 font-semibold">
+                <p class="text-xl text-cyan-600 font-semibold font-dana">
                     ۸۹۴۷
                 </p>
-                <span class="w-8/12 mt-1">
+                <span class="w-8/12 mt-1 font-dana">
                     متقاضی شرکت در بوت‌کمپ‌ها
                 </span>
             </div>
@@ -410,8 +404,8 @@
             </div>
             <!-- text -->
             <div class="flex flex-col mt-4">
-                <p class="text-xl text-cyan-600 font-semibold">۴,۹۱/۵</p>
-                <span class="w-8/12 mt-1">
+                <p class="text-xl text-cyan-600 font-semibold font-dana">۴,۹۱/۵</p>
+                <span class="w-8/12 mt-1 font-dana">
                     رضایت شرکت‌کننده‌ها از بوت‌کمپ‌ها
                 </span>
             </div>
@@ -419,10 +413,11 @@
     </section>
     <!-- ! end Achievements -->
 
+    <!-- ! teacher slider -->
     <div class="tittle-wrapper flex flex-col w-[85%] mx-auto mt-40  ">
         <div class="flex items-baseline gap-x-2.5 sm:gap-x-3.5">
             <span class="inline-block w-3.5 h-3.5 bg-blue-500 rounded-sm"></span>
-            <h3 class="search-tittle text-start w-full ">
+            <h3 class="search-tittle text-start w-full font-dana">
                 مدرسین ما </h3>
         </div>
         <p class="text-slate-500 dark:text-slate-400 sm:text-lg mt-4">
@@ -481,12 +476,13 @@
 
         </div>
     </div>
+    <!-- ! teacher slider -->
 
     <!-- ! course categories -->
     <div class="tittle-wrapper flex flex-col w-[85%] mx-auto mt-32 mb-12">
         <div class="flex items-baseline gap-x-2.5 sm:gap-x-3.5">
             <span class="inline-block w-3.5 h-3.5 bg-blue-500 rounded-sm"></span>
-            <h3 class="search-tittle text-start w-full "> نقشه راه ها </h3>
+            <h3 class="search-tittle text-start w-full font-dana"> نقشه راه ها </h3>
         </div>
         <p class="text-slate-500 dark:text-slate-400 sm:text-lg mt-4">
             نقشه های راه برای شروع اصولی یادگیری
@@ -515,10 +511,10 @@
                         <path
                             d="m52.54 21.21c-.49.49-.8 1.11-.92 1.77h-11.75v-1.32c0-.9-.73-1.63-1.63-1.63h-3.79c-.9 0-1.63.73-1.63 1.63v1.32h-11.74c-.11-.65-.42-1.27-.92-1.78-1.27-1.25-3.44-1.23-4.68.01-.63.63-.97 1.46-.97 2.34 0 .89.35 1.73.97 2.34.63.65 1.47.98 2.34.98.55 0 1.11-.13 1.64-.4.57-.29 1.04-.77 1.32-1.36.07-.15.13-.3.18-.45h8.15c-4.43 2.16-7.77 6.22-8.93 11.12h-1.3c-.9 0-1.63.73-1.63 1.63v3.79c0 .9.73 1.63 1.63 1.63h3.79c.9 0 1.63-.73 1.63-1.63v-3.79c0-.9-.73-1.63-1.63-1.63h-.76c1.4-5.28 5.63-9.42 10.94-10.7v.36c0 .9.73 1.63 1.63 1.63h3.79c.9 0 1.63-.73 1.63-1.63v-.36c5.3 1.28 9.53 5.42 10.94 10.7h-.69c-.9 0-1.63.73-1.63 1.63v3.79c0 .9.73 1.63 1.63 1.63h3.79c.9 0 1.63-.73 1.63-1.63v-3.79c0-.9-.73-1.63-1.63-1.63h-1.37c-1.17-4.9-4.51-8.97-8.93-11.12h8.17c.16.46.42.88.77 1.23.63.65 1.47.98 2.34.98.55 0 1.11-.13 1.64-.4.57-.29 1.04-.77 1.32-1.36.65-1.37.42-2.86-.61-3.91-1.31-1.24-3.48-1.23-4.73.01zm-33.29 3.19c-.12.24-.32.45-.56.57-.87.44-1.62.16-2.03-.27-.31-.3-.48-.71-.48-1.15 0-.43.17-.84.48-1.16.31-.31.72-.48 1.16-.48.43 0 .85.17 1.15.47.52.54.62 1.29.28 2.02zm3.4 16.75-3.74.05-.05-3.74h3.74zm31.26 0-3.74.05-.05-3.74h3.74zm-19.4-15.7-.02-1.26c.02-.09.02-.18.01-.28v-.01c0-.03.02-.05.02-.08 0-.05-.02-.09-.03-.13l-.03-1.97h3.74l.03 1.97c-.01.05-.03.09-.03.14 0 .03.01.05.02.08v.01c-.02.13-.01.25.02.36l.02 1.13zm21.81-1.05c-.12.24-.32.45-.56.57-.87.44-1.62.16-2.03-.27-.31-.3-.48-.71-.48-1.15 0-.43.17-.84.48-1.16.31-.31.72-.48 1.16-.48.43 0 .85.17 1.15.47.52.54.62 1.29.28 2.02z"
                             fill="#ffffff" data-original="#000000"></path>
-                    </svg> <span class="font-danaDemiBold text-2xl mt-2.5 block">فرانت اند</span>
+                    </svg> <span class=" text-2xl mt-2.5 block">فرانت اند</span>
                 </div>
                 <span
-                    class="absolute top-2.5 left-2.5 w-6 h-6 rounded-full text-center leading-[20px] text-zinc-700 dark:text-white font-danaMedium bg-white dark:bg-gray-800">27</span>
+                    class="absolute top-2.5 left-2.5 w-6 h-6 rounded-full text-center leading-[20px] text-zinc-700 dark:text-white  bg-white dark:bg-gray-800">27</span>
             </a>
         </div>
 
@@ -563,10 +559,10 @@
                         s-6.989-1.401-9.535-3.946l-63.594-63.592c-5.257-5.257-5.257-13.811-0.002-19.066c2.546-2.545,5.933-3.948,9.536-3.948
                         s6.988,1.401,9.533,3.946l46.445,46.446c2.021,2.019,4.759,3.154,7.616,3.154s5.595-1.134,7.614-3.154L344.647,180.085z"
                             fill="#ffffff" data-original="#000000"></path>
-                    </svg> <span class="font-danaDemiBold text-2xl mt-2.5 block">امنیت</span>
+                    </svg> <span class=" text-2xl mt-2.5 block">امنیت</span>
                 </div>
                 <span
-                    class="absolute top-2.5 left-2.5 w-6 h-6 rounded-full text-center leading-[20px] text-zinc-700 dark:text-white font-danaMedium bg-white dark:bg-gray-800">8</span>
+                    class="absolute top-2.5 left-2.5 w-6 h-6 rounded-full text-center leading-[20px] text-zinc-700 dark:text-white  bg-white dark:bg-gray-800">8</span>
             </a>
         </div>
 
@@ -581,10 +577,10 @@
                             d="m52 21h-6v-9c0-2.757-2.243-5-5-5h-14c-2.757 0-5 2.243-5 5v7h-10c-2.757 0-5 2.243-5 5v14c0 2.757 2.243 5 5 5h6v9c0 2.757 2.243 5 5 5h14c2.757 0 5-2.243 5-5v-7h10c2.757 0 5-2.243 5-5v-14c0-2.757-2.243-5-5-5zm-43 17v-14c0-1.654 1.346-3 3-3h22c1.323 0 1.324-2 0-2h-10v-7c0-1.654 1.346-3 3-3h14c1.654 0 3 1.346 3 3v16c0 1.654-1.346 3-3 3h-18c-2.757 0-5 2.243-5 5v5h-6c-1.654 0-3-1.346-3-3zm46 2c0 1.654-1.346 3-3 3h-22c-1.323 0-1.324 2 0 2h10v7c0 1.654-1.346 3-3 3h-14c-1.654 0-3-1.346-3-3v-10-6c0-1.654 1.346-3 3-3h18c2.757 0 5-2.243 5-5v-5h6c1.654 0 3 1.346 3 3z"
                             fill="#ffffff" data-original="#000000" class=""></path>
                         <circle cx="35" cy="50" r="2" fill="#ffffff" data-original="#000000"></circle>
-                    </svg> <span class="font-danaDemiBold text-2xl mt-2.5 block">پایتون</span>
+                    </svg> <span class=" text-2xl mt-2.5 block">پایتون</span>
                 </div>
                 <span
-                    class="absolute top-2.5 left-2.5 w-6 h-6 rounded-full text-center leading-[20px] text-zinc-700 dark:text-white font-danaMedium bg-white dark:bg-gray-800">6</span>
+                    class="absolute top-2.5 left-2.5 w-6 h-6 rounded-full text-center leading-[20px] text-zinc-700 dark:text-white  bg-white dark:bg-gray-800">6</span>
             </a>
         </div>
 
@@ -632,10 +628,10 @@
                             c-3.882-0.113-7.436,2.146-8.976,5.713c-1.54,3.567-0.751,7.701,1.995,10.446l76.001,76.001c2.941,2.941,4.399,6.772,4.412,10.711
                             C493.049,255.593,491.591,259.424,488.649,262.372z" fill="#ffffff" data-original="#000000">
                         </path>
-                    </svg> <span class="font-danaDemiBold text-2xl mt-2.5 block">مهارت های نرم</span>
+                    </svg> <span class=" text-2xl mt-2.5 block">مهارت های نرم</span>
                 </div>
                 <span
-                    class="absolute top-2.5 left-2.5 w-6 h-6 rounded-full text-center leading-[20px] text-zinc-700 dark:text-white font-danaMedium bg-white dark:bg-gray-800">6</span>
+                    class="absolute top-2.5 left-2.5 w-6 h-6 rounded-full text-center leading-[20px] text-zinc-700 dark:text-white  bg-white dark:bg-gray-800">6</span>
             </a>
         </div>
     </div>
@@ -645,7 +641,7 @@
         <div class="tittle-wrapper flex flex-col">
             <div class="flex items-baseline gap-x-2.5 sm:gap-x-3.5">
                 <span class="inline-block w-3.5 h-3.5 bg-green-500 rounded-sm"></span>
-                <h3 class="search-tittle text-start w-full ">محصول خود را انتخاب کنید : </h3>
+                <h3 class="search-tittle text-start w-full font-dana">محصول خود را انتخاب کنید : </h3>
             </div>
             <p class="text-slate-500 dark:text-slate-400 sm:text-lg mt-4">بهترین محصولات را از ما بخواهید </p>
         </div>
@@ -797,6 +793,155 @@
     </div>
     <!-- ! end Products -->
 
+    <section class="grid grid-col-12   md:grid-cols-12 md:gap-12  gap-8  w-[85%] mx-auto my-32 relative">
+        <!-- right side -->
+        <div class="col-span-12  lg:col-span-5 flex flex-col">
+            <div class="text-3xl flex font-bold mt-10 ">
+
+                <svg class="text-dark-550   lg:ml-4 lg:flex hidden mt-2" width="37" height="34" viewBox="0 0 37 34"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="24" r="10" fill="currentColor"></circle>
+                    <circle cx="30" cy="13" r="7" fill="currentColor" fill-opacity="0.4"></circle>
+                    <circle cx="15" cy="4" r="4" fill="currentColor" fill-opacity="0.7"></circle>
+                </svg>
+                <span class="text-slate-700 font-extrabold font-dana">
+                    در مورد مسترکد چه میشنویم؟
+                </span>
+            </div>
+            <span class="mt-8 text-xl  text-slate-800 text-center">
+                این‌ها، بخش خیلی کوچکی از نظراتی هستند که افراد <br>مختلف در مورد راکت دارند.
+            </span>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper mySwiper col-span-12  lg:col-span-7">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide flex flex-col items-center justify-center px-16 py-12 rounded-lg bg-sky-500">
+                    <p class="font-light text-center">
+                        راکت شاید تنها ترین مجموعه در ایران باشد، که آموزش های کاربردی، بروز و پروژه محور متناسب با نیاز
+                        بازار داخلی و جهانی ارائه میده! دمتون گرم
+                    </p>
+                    <div class="my-10 mt-14 gap-6  flex items-center justify-center">
+                        <img class="w-16  border-4 border-white  h-16 rounded-full"
+                            src="./public/images/customers-comments/customer.jpg" alt="">
+                        <div class="  ">
+                            <p class="text-xl">علی علیپور</p>
+                            <span class="font-light text-lg">طراح اندروید</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex flex-col items-center justify-center px-16 py-12 rounded-lg bg-sky-500">
+                    <p class="font-light text-center">
+                        راکت شاید تنها ترین مجموعه در ایران باشد، که آموزش های کاربردی، بروز و پروژه محور متناسب با نیاز
+                        بازار داخلی و جهانی ارائه میده! دمتون گرم
+                    </p>
+                    <div class="my-10 mt-14 gap-6  flex items-center justify-center">
+                        <img class="w-16  border-4 border-white  h-16 rounded-full"
+                            src="./public/images/customers-comments/customer.jpg" alt="">
+                        <div class="  ">
+                            <p class="text-xl">علی علیپور</p>
+                            <span class="font-light text-lg">طراح اندروید</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex flex-col items-center justify-center px-16 py-12 rounded-lg bg-sky-500">
+                    <p class="font-light text-center">
+                        راکت شاید تنها ترین مجموعه در ایران باشد، که آموزش های کاربردی، بروز و پروژه محور متناسب با نیاز
+                        بازار داخلی و جهانی ارائه میده! دمتون گرم
+                    </p>
+                    <div class="my-10 mt-14 gap-6  flex items-center justify-center">
+                        <img class="w-16  border-4 border-white  h-16 rounded-full"
+                            src="./public/images/customers-comments/customer.jpg" alt="">
+                        <div class="  ">
+                            <p class="text-xl">علی علیپور</p>
+                            <span class="font-light text-lg">طراح اندروید</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex flex-col items-center justify-center px-16 py-12 rounded-lg bg-sky-500">
+                    <p class="font-light text-center">
+                        راکت شاید تنها ترین مجموعه در ایران باشد، که آموزش های کاربردی، بروز و پروژه محور متناسب با نیاز
+                        بازار داخلی و جهانی ارائه میده! دمتون گرم
+                    </p>
+                    <div class="my-10 mt-14 gap-6  flex items-center justify-center">
+                        <img class="w-16  border-4 border-white  h-16 rounded-full"
+                            src="./public/images/customers-comments/customer.jpg" alt="">
+                        <div class="  ">
+                            <p class="text-xl">علی علیپور</p>
+                            <span class="font-light text-lg">طراح اندروید</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide flex flex-col items-center justify-center px-16 py-12 rounded-lg bg-sky-500">
+                    <p class="font-light text-center">
+                        راکت شاید تنها ترین مجموعه در ایران باشد، که آموزش های کاربردی، بروز و پروژه محور متناسب با نیاز
+                        بازار داخلی و جهانی ارائه میده! دمتون گرم
+                    </p>
+                    <div class="my-10 mt-14 gap-6  flex items-center justify-center">
+                        <img class="w-16  border-4 border-white  h-16 rounded-full"
+                            src="./public/images/customers-comments/customer.jpg" alt="">
+                        <div class="  ">
+                            <p class="text-xl">علی علیپور</p>
+                            <span class="font-light text-lg">طراح اندروید</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide flex flex-col items-center justify-center px-16 py-12 rounded-lg bg-sky-500">
+                    <p class="font-light text-center">
+                        راکت شاید تنها ترین مجموعه در ایران باشد، که آموزش های کاربردی، بروز و پروژه محور متناسب با نیاز
+                        بازار داخلی و جهانی ارائه میده! دمتون گرم
+                    </p>
+                    <div class="my-10 mt-14 gap-6  flex items-center justify-center">
+                        <img class="w-16  border-4 border-white  h-16 rounded-full"
+                            src="./public/images/customers-comments/customer.jpg" alt="">
+                        <div class="  ">
+                            <p class="text-xl">علی علیپور</p>
+                            <span class="font-light text-lg">طراح اندروید</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center mt-4">
+
+
+                    <div class="swiper-button-next bg-gradient-to-r from-sky-500 to-sky-600 ">
+                        <svg class="  h-8 w-8 rotate-0" width="23" height="16" viewBox="0 0 23 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863"
+                                fill="currentColor"></path>
+                            <path
+                                d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-button-prev bg-gradient-to-r from-sky-500 to-sky-600 ">
+                        <svg class="dark:text-white text-dark-550 h-6 w-6" width="23" height="16" viewBox="0 0 23 16"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4"
+                                d="M7.12872 6.34863L2.5608 5.94466C1.53567 5.94466 0.704529 6.7839 0.704529 7.81901C0.704529 8.85412 1.53567 9.69336 2.5608 9.69336L7.12872 9.28938C7.93292 9.28938 8.58491 8.63105 8.58491 7.81901C8.58491 7.00561 7.93292 6.34863 7.12872 6.34863"
+                                fill="currentColor"></path>
+                            <path
+                                d="M22.4681 6.42292C22.3967 6.35083 22.13 6.04614 21.8795 5.79314C20.4179 4.20852 16.6016 1.61734 14.6053 0.824345C14.3022 0.697847 13.5357 0.428528 13.1248 0.409485C12.7328 0.409485 12.3583 0.500618 12.0014 0.680164C11.5555 0.931801 11.1999 1.32898 11.0032 1.79689C10.8779 2.12061 10.6812 3.09315 10.6812 3.11084C10.4859 4.17315 10.3795 5.9006 10.3795 7.81032C10.3795 9.62754 10.4859 11.2843 10.6462 12.3643C10.6637 12.3833 10.8604 13.5898 11.0746 14.0033C11.4666 14.7596 12.2331 15.2275 13.0534 15.2275H13.1248C13.6596 15.2098 14.7831 14.7405 14.7831 14.7242C16.673 13.9312 20.399 11.4652 21.897 9.82613C21.897 9.82613 22.3199 9.40447 22.5031 9.14195C22.7887 8.76381 22.9315 8.29591 22.9315 7.828C22.9315 7.30568 22.7712 6.82009 22.4681 6.42292"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <!-- ! banner python -->
     <section class="banner-1 w-[85%] mx-auto my-32">
         <img class="rounded-md" src="./public/images/banner-img/python.png" alt="">
@@ -804,246 +949,11 @@
 
 
 
-    <!-- ! Slider main container -->
-    <div class="tittle-wrapper flex flex-col w-[85%] mx-auto  mb-12">
-        <div class="flex items-baseline gap-x-2.5 sm:gap-x-3.5">
-            <span class="inline-block w-3.5 h-3.5 bg-pink-500 rounded-sm"></span>
-            <h3 class="search-tittle text-start w-full "> پرفروشترین محصولات </h3>
-        </div>
-        <p class="text-slate-500 dark:text-slate-400 sm:text-lg mt-4"> محصولاتی که در یک ماه اخیر بیشترین فروش را داشته
-            اند : </p>
-    </div>
-
-    <div class="owl-carousel owl-theme">
-        <div class="item">
-            <h4>1</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>2</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>3</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>4</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>5</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>6</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>7</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>8</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>9</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>10</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>11</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <h4>12</h4>
-            <img src="./public/images/1.jpg" alt="">
-        </div>
-    </div>
-    <div class="swiper w-[92%] mx-auto   -z-10">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper ">
-            <!-- Slides -->
-            <div class="swiper-slide ">
-                <div class="swiper-items-wrapper flex justify-center">
-                    <!-- first card -->
-                    <div
-                        class="swiper-card  flex flex-col justify-center items-center bg-slate-50 py-4 px-10 rounded-lg mb-12">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="./public/images/12.png"
-                            alt="عکس پر فروش ترین ها">
-
-                        <span class="text-slate-500 mt-4">نام محصول :</span>
-                        <h5 class="text-xl text-slate-800">RPM300ZF1K00S</h5>
-                        <span class="text-slate-500 mt-4">دسته بندی :</span>
-                        <p class="bg-blue-600 w-max py-1 px-3 rounded-lg text-white mt-1">خازن</p>
-                        <button
-                            class="mt-8 bg-white border border-black text-[13px] md:text-[17px] py-2 px-4 rounded-lg">مشاهده
-                            جزئیات بیشتر</button>
-                        <button
-                            class="mt-4 bg-purple-600 text-white text-[13px] md:text-[17px]   py-2 px-4 rounded-lg">برای
-                            خرید تماس بگیرید</button>
-                    </div>
-                    <div
-                        class="swiper-card mr-[5%] hidden md:flex flex-col justify-center items-center bg-slate-50 py-4 px-10 rounded-lg mb-12">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="./public/images/12.png"
-                            alt="عکس پر فروش ترین ها">
-
-                        <span class="text-slate-500 mt-4">نام محصول :</span>
-                        <h5 class="text-xl text-slate-800">RPM300ZF1K00S</h5>
-                        <span class="text-slate-500 mt-4">دسته بندی :</span>
-                        <p class="bg-blue-600 w-max py-1 px-3 rounded-lg text-white mt-1">خازن</p>
-                        <button
-                            class="mt-8 bg-white border border-black text-[13px] md:text-[17px] py-2 px-4 rounded-lg">مشاهده
-                            جزئیات بیشتر</button>
-                        <button
-                            class="mt-4 bg-purple-600 text-white text-[13px] md:text-[17px]   py-2 px-4 rounded-lg">برای
-                            خرید تماس بگیرید</button>
-                    </div>
-                    <div
-                        class="swiper-card mr-[5%] hidden md:flex flex-col justify-center items-center bg-slate-50 py-4 px-10 rounded-lg mb-12">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="./public/images/12.png"
-                            alt="عکس پر فروش ترین ها">
-
-                        <span class="text-slate-500 mt-4">نام محصول :</span>
-                        <h5 class="text-xl text-slate-800">RPM300ZF1K00S</h5>
-                        <span class="text-slate-500 mt-4">دسته بندی :</span>
-                        <p class="bg-blue-600 w-max py-1 px-3 rounded-lg text-white mt-1">خازن</p>
-                        <button
-                            class="mt-8 bg-white border border-black text-[13px] md:text-[17px] py-2 px-4 rounded-lg">مشاهده
-                            جزئیات بیشتر</button>
-                        <button
-                            class="mt-4 bg-purple-600 text-white text-[13px] md:text-[17px]   py-2 px-4 rounded-lg">برای
-                            خرید تماس بگیرید</button>
-                    </div>
-                    <div
-                        class="swiper-card mr-[5%] hidden md:flex flex-col justify-center items-center bg-slate-50 py-4 px-10 rounded-lg mb-12">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="./public/images/12.png"
-                            alt="عکس پر فروش ترین ها">
-                        <span class="text-slate-500 mt-4">نام محصول :</span>
-                        <h5 class="text-xl text-slate-800">RPM300ZF1K00S</h5>
-                        <span class="text-slate-500 mt-4">دسته بندی :</span>
-                        <p class="bg-blue-600 w-max py-1 px-3 rounded-lg text-white mt-1">خازن</p>
-                        <button
-                            class="mt-8 bg-white border border-black text-[13px] md:text-[17px] py-2 px-4 rounded-lg">مشاهده
-                            جزئیات بیشتر</button>
-                        <button
-                            class="mt-4 bg-purple-600 text-white text-[13px] md:text-[17px]   py-2 px-4 rounded-lg">برای
-                            خرید تماس بگیرید</button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="swiper-slide  ">
-                <div class="swiper-items-wrapper flex justify-center ">
-                    <!-- first card -->
-                    <div
-                        class="swiper-card  flex flex-col justify-center items-center bg-slate-50 py-4 px-10 rounded-lg mb-12">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="./public/images/12.png"
-                            alt="عکس پر فروش ترین ها">
-
-                        <span class="text-slate-500 mt-4">نام محصول :</span>
-                        <h5 class="text-xl text-slate-800">RPM300ZF1K00S</h5>
-                        <span class="text-slate-500 mt-4">دسته بندی :</span>
-                        <p class="bg-blue-600 w-max py-1 px-3 rounded-lg text-white mt-1">خازن</p>
-                        <button
-                            class="mt-8 bg-white border border-black text-[13px] md:text-[17px] py-2 px-4 rounded-lg">مشاهده
-                            جزئیات بیشتر</button>
-                        <button
-                            class="mt-4 bg-purple-600 text-white text-[13px] md:text-[17px]   py-2 px-4 rounded-lg">برای
-                            خرید تماس بگیرید</button>
-                    </div>
-                    <div
-                        class="swiper-card mr-[5%] hidden md:flex flex-col justify-center items-center bg-slate-50 py-4 px-10 rounded-lg mb-12">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="./public/images/12.png"
-                            alt="عکس پر فروش ترین ها">
-                        <span class="text-slate-500 mt-4">نام محصول :</span>
-                        <h5 class="text-xl text-slate-800">RPM300ZF1K00S</h5>
-                        <span class="text-slate-500 mt-4">دسته بندی :</span>
-                        <p class="bg-blue-600 w-max py-1 px-3 rounded-lg text-white mt-1">خازن</p>
-                        <button
-                            class="mt-8 bg-white border border-black text-[13px] md:text-[17px] py-2 px-4 rounded-lg">مشاهده
-                            جزئیات بیشتر</button>
-                        <button
-                            class="mt-4 bg-purple-600 text-white text-[13px] md:text-[17px]   py-2 px-4 rounded-lg">برای
-                            خرید تماس بگیرید</button>
-                    </div>
-                    <div
-                        class="swiper-card mr-[5%] hidden md:flex flex-col justify-center items-center bg-slate-50 py-4 px-10 rounded-lg mb-12">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="./public/images/12.png"
-                            alt="عکس پر فروش ترین ها">
-                        <span class="text-slate-500 mt-4">نام محصول :</span>
-                        <h5 class="text-xl text-slate-800">RPM300ZF1K00S</h5>
-                        <span class="text-slate-500 mt-4">دسته بندی :</span>
-                        <p class="bg-blue-600 w-max py-1 px-3 rounded-lg text-white mt-1">خازن</p>
-                        <button
-                            class="mt-8 bg-white border border-black text-[13px] md:text-[17px] py-2 px-4 rounded-lg">مشاهده
-                            جزئیات بیشتر</button>
-                        <button
-                            class="mt-4 bg-purple-600 text-white text-[13px] md:text-[17px]   py-2 px-4 rounded-lg">برای
-                            خرید تماس بگیرید</button>
-                    </div>
-                    <div
-                        class="swiper-card mr-[5%] hidden md:flex flex-col justify-center items-center bg-slate-50 py-4 px-10 rounded-lg mb-12">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="./public/images/12.png"
-                            alt="عکس پر فروش ترین ها">
-                        <span class="text-slate-500 mt-4">نام محصول :</span>
-                        <h5 class="text-xl text-slate-800">RPM300ZF1K00S</h5>
-                        <span class="text-slate-500 mt-4">دسته بندی :</span>
-                        <p class="bg-blue-600 w-max py-1 px-3 rounded-lg text-white mt-1">خازن</p>
-                        <button
-                            class="mt-8 bg-white border border-black text-[13px] md:text-[17px] py-2 px-4 rounded-lg">مشاهده
-                            جزئیات بیشتر</button>
-                        <button
-                            class="mt-4 bg-purple-600 text-white text-[13px] md:text-[17px]   py-2 px-4 rounded-lg">برای
-                            خرید تماس بگیرید</button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-items-wrapper flex justify-center">
-                    <!-- first card -->
-                    <div
-                        class="swiper-card  flex flex-col justify-center items-center bg-slate-50 py-4 px-10 rounded-lg mb-12">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="./public/images/12.png"
-                            alt="عکس پر فروش ترین ها">
-
-                        <span class="text-slate-500 mt-4">نام محصول :</span>
-                        <h5 class="text-xl text-slate-800">RPM300ZF1K00S</h5>
-                        <span class="text-slate-500 mt-4">دسته بندی :</span>
-                        <p class="bg-blue-600 w-max py-1 px-3 rounded-lg text-white mt-1">خازن</p>
-                        <button
-                            class="mt-8 bg-white border border-black text-[13px] md:text-[17px] py-2 px-4 rounded-lg">مشاهده
-                            جزئیات بیشتر</button>
-                        <button
-                            class="mt-4 bg-purple-600 text-white text-[13px] md:text-[17px]   py-2 px-4 rounded-lg">برای
-                            خرید تماس بگیرید</button>
-                    </div>
-                </div>
-            </div>
-            ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
-    <!-- ! end slider -->
-
     <!-- ! articles -->
     <div class="tittle-wrapper flex flex-col w-[85%] mx-auto mt-32 mb-12">
         <div class="flex items-baseline gap-x-2.5 sm:gap-x-3.5">
             <span class="inline-block w-3.5 h-3.5 bg-blue-500 rounded-sm"></span>
-            <h3 class="search-tittle text-start w-full "> آخرین مقالات </h3>
+            <h3 class="search-tittle text-start w-full font-dana"> آخرین مقالات </h3>
         </div>
         <p class="text-slate-500 dark:text-slate-400 sm:text-lg mt-4">با ما از آخرین اخبار روز دنیای دیجیتال با خبر
             باشید
@@ -1064,13 +974,13 @@
                 <div class="relative pt-1.5">
                     <!-- Blog Category or Tag -->
                     <!-- Blog Title -->
-                    <h4 class="font-danaMedium max-h-12 line-clamp-2 text-zinc-700 dark:text-white mb-2.5">
-                        <a href="./articles.html" target="_blank" dideo-checked="true">
+                    <h4 class=" max-h-12  text-zinc-700 dark:text-white mb-2.5">
+                        <a class="font-dana font-semibold" href="./articles.html" target="_blank" dideo-checked="true">
                             امکان فروش جدیدترین محصولات زیمنس فراهم شد
                         </a>
                     </h4>
                     <!-- Blog Description -->
-                    <p class="font-danaLight text-sm h-20 line-clamp-4 text-slate-500 dark:text-slate-400">
+                    <p class=" text-sm h-20 line-clamp-4 text-slate-500 dark:text-slate-400">
                         شرکت ما با افتخار اعلام می‌کند که با تلاش‌های مستمر و تکیه بر دانش فنی تیم مهندسی خود، در
                         توسعه‌ی بردهای دیجیتال
                         نوآورانه‌ای پیشگام شده که قابلیت‌های هوشمند و اتصالات بی‌نظیری را برای کاربران فراهم می‌آورد.
@@ -1094,7 +1004,7 @@
                     <!-- Blog Link Address -->
                     <div class="flex justify-center py-3.5 border-t border-t-gray-100 dark:border-gray-700">
                         <a href="./articles.html" target="_blank"
-                            class="text-zinc-700 dark:text-white hover:text-green-500 dark:hover:text-green-500 space-x-2.5 font-danaMedium transition-colors"
+                            class="text-zinc-700 dark:text-white hover:text-green-500 dark:hover:text-green-500 space-x-2.5  transition-colors"
                             dideo-checked="true">
                             مطالعه مقاله
                             <i class="fa-solid fa-circle-arrow-left"></i>
@@ -1116,13 +1026,13 @@
                 <div class="relative pt-1.5">
                     <!-- Blog Category or Tag -->
                     <!-- Blog Title -->
-                    <h4 class="font-danaMedium max-h-12 line-clamp-2 text-zinc-700 dark:text-white mb-2.5">
-                        <a href="./articles.html" target="_blank" dideo-checked="true">
+                    <h4 class=" max-h-12  text-zinc-700 dark:text-white mb-2.5">
+                        <a class="font-dana font-semibold" href="./articles.html" target="_blank" dideo-checked="true">
                             امکان فروش جدیدترین محصولات زیمنس فراهم شد
                         </a>
                     </h4>
                     <!-- Blog Description -->
-                    <p class="font-danaLight text-sm h-20 line-clamp-4 text-slate-500 dark:text-slate-400">
+                    <p class=" text-sm h-20 line-clamp-4 text-slate-500 dark:text-slate-400">
                         شرکت ما با افتخار اعلام می‌کند که با تلاش‌های مستمر و تکیه بر دانش فنی تیم مهندسی خود، در
                         توسعه‌ی بردهای دیجیتال
                         نوآورانه‌ای پیشگام شده که قابلیت‌های هوشمند و اتصالات بی‌نظیری را برای کاربران فراهم می‌آورد.
@@ -1145,7 +1055,7 @@
                     <!-- Blog Link Address -->
                     <div class="flex justify-center py-3.5 border-t border-t-gray-100 dark:border-gray-700">
                         <a href="./articles.html" target="_blank"
-                            class="text-zinc-700 dark:text-white hover:text-green-500 dark:hover:text-green-500 space-x-2.5 font-danaMedium transition-colors"
+                            class="text-zinc-700 dark:text-white hover:text-green-500 dark:hover:text-green-500 space-x-2.5  transition-colors"
                             dideo-checked="true">
                             مطالعه مقاله
                             <i class="fa-solid fa-circle-arrow-left"></i>
@@ -1167,13 +1077,13 @@
                 <div class="relative pt-1.5">
                     <!-- Blog Category or Tag -->
                     <!-- Blog Title -->
-                    <h4 class="font-danaMedium max-h-12 line-clamp-2 text-zinc-700 dark:text-white mb-2.5">
-                        <a href="./articles.html" target="_blank" dideo-checked="true">
+                    <h4 class=" max-h-12 text-zinc-700 dark:text-white mb-2.5">
+                        <a class="font-dana font-semibold" href="./articles.html" target="_blank" dideo-checked="true">
                             امکان فروش جدیدترین محصولات زیمنس فراهم شد
                         </a>
                     </h4>
                     <!-- Blog Description -->
-                    <p class="font-danaLight text-sm h-20 line-clamp-4 text-slate-500 dark:text-slate-400">
+                    <p class=" text-sm h-20 line-clamp-4 text-slate-500 dark:text-slate-400">
                         شرکت ما با افتخار اعلام می‌کند که با تلاش‌های مستمر و تکیه بر دانش فنی تیم مهندسی خود، در
                         توسعه‌ی بردهای دیجیتال
                         نوآورانه‌ای پیشگام شده که قابلیت‌های هوشمند و اتصالات بی‌نظیری را برای کاربران فراهم می‌آورد.
@@ -1197,7 +1107,7 @@
                     <!-- Blog Link Address -->
                     <div class="flex justify-center py-3.5 border-t border-t-gray-100 dark:border-gray-700">
                         <a href="./articles.html" target="_blank"
-                            class="text-zinc-700 dark:text-white hover:text-green-500 dark:hover:text-green-500 space-x-2.5 font-danaMedium transition-colors"
+                            class="text-zinc-700 dark:text-white hover:text-green-500 dark:hover:text-green-500 space-x-2.5  transition-colors"
                             dideo-checked="true">
                             مطالعه مقاله
                             <i class="fa-solid fa-circle-arrow-left"></i>
@@ -1219,13 +1129,13 @@
                 <div class="relative pt-1.5">
                     <!-- Blog Category or Tag -->
                     <!-- Blog Title -->
-                    <h4 class="font-danaMedium max-h-12 line-clamp-2 text-zinc-700 dark:text-white mb-2.5">
-                        <a href="./articles.html" target="_blank" dideo-checked="true">
+                    <h4 class=" max-h-12  text-zinc-700 dark:text-white mb-2.5">
+                        <a class="font-dana font-semibold" href="./articles.html" target="_blank" dideo-checked="true">
                             امکان فروش جدیدترین محصولات زیمنس فراهم شد
                         </a>
                     </h4>
                     <!-- Blog Description -->
-                    <p class="font-danaLight text-sm h-20 line-clamp-4 text-slate-500 dark:text-slate-400">
+                    <p class=" text-sm h-20 line-clamp-4 text-slate-500 dark:text-slate-400">
                         شرکت ما با افتخار اعلام می‌کند که با تلاش‌های مستمر و تکیه بر دانش فنی تیم مهندسی خود، در
                         توسعه‌ی بردهای دیجیتال
                         نوآورانه‌ای پیشگام شده که قابلیت‌های هوشمند و اتصالات بی‌نظیری را برای کاربران فراهم می‌آورد.
@@ -1248,7 +1158,7 @@
                     <!-- Blog Link Address -->
                     <div class="flex justify-center py-3.5 border-t border-t-gray-100 dark:border-gray-700">
                         <a href="./articles.html" target="_blank"
-                            class="text-zinc-700 dark:text-white hover:text-green-500 dark:hover:text-green-500 space-x-2.5 font-danaMedium transition-colors"
+                            class="text-zinc-700 dark:text-white hover:text-green-500 dark:hover:text-green-500 space-x-2.5  transition-colors"
                             dideo-checked="true">
                             مطالعه مقاله
                             <i class="fa-solid fa-circle-arrow-left"></i>
@@ -1272,9 +1182,9 @@
     <div class="tittle-wrapper flex flex-col w-[85%] mx-auto mt-32 mb-12">
         <div class="flex items-baseline  gap-x-2.5 sm:gap-x-3.5">
             <span class="inline-block w-3.5 h-3.5 bg-blue-500 rounded-sm"></span>
-            <h3 class="search-tittle text-start w-full text-4xl"> خدمات ما </h3>
+            <h3 class="search-tittle text-start w-full text-4xl font-dana"> خدمات ما </h3>
         </div>
-        <p class="text-slate-500 dark:text-slate-400 sm:text-lg mt-4 fontDanaLight">
+        <p class="text-slate-500 dark:text-slate-400 sm:text-lg mt-4 ">
             ما چه کمک هایی به شما میکنیم ؟
         </p>
     </div>
@@ -1285,8 +1195,9 @@
                 class="w-20 h-20 rounded-full bg-conic-gradient from-sky-500/30 to-sky-500 dark:from-secondary to-secondary-dark rotate-45 shrink-0">
             </div>
             <div class="space-y-2.5">
-                <p class="text-zinc-700 dark:text-white font-danaDemiBold text-xl text-start"> فروش قطعات الکترونیکی</p>
-                <p class="text-slate-400 dark:text-slate-400 font-danaLight lg:pl-5  text-justify">
+                <p class="text-zinc-700 dark:text-white  text-xl text-start font-dana font-semibold"> فروش قطعات
+                    الکترونیکی</p>
+                <p class="text-slate-400 dark:text-slate-400  lg:pl-5  text-justify font-dana">
                     ما به عنوان یکی از مطرح‌ترین عرضه‌کنندگان قطعات الکترونیکی، مجموعه‌ای کامل از محصولات با کیفیت
                     و دقت بالا را به
                     مشتریان خود ارائه می‌دهد
@@ -1300,9 +1211,9 @@
                 class="w-20 h-20 rounded-full bg-conic-gradient from-green-400/30 to-green-400  rotate-[255deg] shrink-0">
             </div>
             <div class="space-y-2.5">
-                <p class="text-zinc-700 dark:text-white font-danaDemiBold text-xl text-start">تعمیر تخصصی قطعات
+                <p class="text-zinc-700 dark:text-white  text-xl text-start font-dana font-semibold">تعمیر تخصصی قطعات
                     الکترونیکی </p>
-                <p class="text-slate-400 dark:text-slate-400 font-danaLight lg:pl-5 text-justify">
+                <p class="text-slate-400 dark:text-slate-400  lg:pl-5 text-justify font-dana">
                     شرکت ما با بهره‌گیری از تیمی متخصص و مجهز به پیشرفته‌ترین ابزارها، خدمات تعمیر تخصصی قطعات
                     الکترونیکی را با بالاترین
                     استانداردهای کیفیت ارائه می‌دهد.
@@ -1316,8 +1227,9 @@
                 class="w-20 h-20 rounded-full bg-conic-gradient from-amber-400/30 to-amber-400  -rotate-[255deg] shrink-0">
             </div>
             <div class="space-y-2.5">
-                <p class="text-zinc-700 dark:text-white font-danaDemiBold text-xl text-start"> تضمین کیفیت محصولات</p>
-                <p class="text-slate-400 dark:text-slate-400 font-danaLight lg:pl-5 text-justify">
+                <p class="text-zinc-700 dark:text-white  text-xl text-start font-dana font-semibold"> تضمین کیفیت
+                    محصولات</p>
+                <p class="text-slate-400 dark:text-slate-400  lg:pl-5 text-justify font-dana">
                     شرکت ما به کیفیت و اصالت قطعات الکترونیکی‌اش اطمینان دارد و برای تضمین این امر، هر قطعه را به طور
                     دقیقی تحت آزمایش‌های
                     کیفیتی قرار می‌دهد.
@@ -1331,8 +1243,9 @@
                 class="w-20 h-20 rounded-full bg-conic-gradient from-pink-500/30 to-pink-500 dark:from-rose-500/30 dark:to-rose-500 -rotate-45 shrink-0">
             </div>
             <div class="space-y-2.5">
-                <p class="text-zinc-700 dark:text-white font-danaDemiBold text-xl text-start"> پشتیبانی 24 ساعته</p>
-                <p class="text-slate-400 dark:text-slate-400 font-danaLight lg:pl-5 text-justify">
+                <p class="text-zinc-700 dark:text-white  text-xl text-start font-dana font-semibold"> پشتیبانی ۲۴ ساعته
+                </p>
+                <p class="text-slate-400 dark:text-slate-400  lg:pl-5 text-justify font-dana">
 
                     در شرکت ما، پشتیبانی مشتریان پس از فروش نه تنها یک وعده است، بلکه بخشی اساسی از تعهد ما به تجربه‌ی
                     مطلوب مشتریان به شمار
@@ -1353,7 +1266,7 @@
         </div>
         <!-- text section -->
         <div class="lg:col-span-6 flex flex-col justify-center items-center lg:items-start">
-            <h5 class="text-3xl  lg:text-4xl text-blue-800 font-bold">تدریس در مستر کد</h5>
+            <h5 class="text-3xl  lg:text-4xl text-blue-800 font-bold font-dana">تدریس در مستر کد</h5>
             <p class="my-8 text-lg leading-9 text-justify">
                 مستر کد با ارائه‌ دوره هایی جامع و پرفروش، یکی از پیشگامان آموزش آنلاین در ایران محسوب می‌شود. اگر شما
                 هم دارای تخصص و
@@ -1378,7 +1291,7 @@
 
         <div
             class="col-span-12 md:col-span-6  xl:col-span-3 hover:cursor-pointer h-24 flex justify-center items-center text-center">
-            <h4 class="text-slate-700 text-2xl font-bold">
+            <h4 class="text-slate-700 text-2xl font-bold font-dana">
                 شما میتونید مارو در شبکه های اجتماعی دیگر هم دنبال کنید
             </h4>
         </div>
@@ -1541,7 +1454,7 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1578,17 +1491,7 @@
             }
         });
     </script>
-    <!-- swipper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <!-- owl carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./public/script/owlScript.js"></script>
+    <script src="./public/script/swiper.js"></script>
     <!-- custom js -->
     <script src="./public/script/main.js"></script>
 

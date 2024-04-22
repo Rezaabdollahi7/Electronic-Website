@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+ 
       spacing: {
         '112': '28rem',
         '128': '32rem',
@@ -69,7 +70,11 @@ module.exports = {
         '1400px': '1400px',
         '1450px': '1450px',
       },
-
+      fontFamily: {
+        dana: ["dana", "sans-serif"],
+        iransansx: ["IRANSansX", "sans-serif"],
+  
+      } 
     },
   },
 

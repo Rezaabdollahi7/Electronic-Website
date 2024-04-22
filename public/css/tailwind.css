@@ -435,7 +435,6 @@ video {
 }
 
 html {
-  font-family: "dana ", system-ui, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -805,10 +804,6 @@ body {
   top: -7%;
 }
 
-.-z-10 {
-  z-index: -10;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -856,6 +851,11 @@ body {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .my-12 {
@@ -967,10 +967,6 @@ body {
   margin-right: 1rem;
 }
 
-.mr-\[5\%\] {
-  margin-right: 5%;
-}
-
 .mr-auto {
   margin-right: auto;
 }
@@ -985,6 +981,10 @@ body {
 
 .mt-12 {
   margin-top: 3rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-16 {
@@ -1051,13 +1051,6 @@ body {
   margin-top: auto;
 }
 
-.line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
 .line-clamp-4 {
   overflow: hidden;
   display: -webkit-box;
@@ -1101,6 +1094,10 @@ body {
   height: 3.5rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-20 {
   height: 5rem;
 }
@@ -1141,12 +1138,12 @@ body {
   height: 16rem;
 }
 
-.h-9 {
-  height: 2.25rem;
+.h-8 {
+  height: 2rem;
 }
 
-.h-\[150px\] {
-  height: 150px;
+.h-9 {
+  height: 2.25rem;
 }
 
 .h-\[1px\] {
@@ -1258,16 +1255,16 @@ body {
   width: 16rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-8\/12 {
   width: 66.666667%;
 }
 
 .w-9 {
   width: 2.25rem;
-}
-
-.w-\[150px\] {
-  width: 150px;
 }
 
 .w-\[85\%\] {
@@ -1329,6 +1326,11 @@ body {
 
 .-rotate-\[255deg\] {
   --tw-rotate: -255deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-0 {
+  --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1589,6 +1591,10 @@ body {
   border-width: 2px;
 }
 
+.border-4 {
+  border-width: 4px;
+}
+
 .border-r {
   border-right-width: 1px;
 }
@@ -1599,11 +1605,6 @@ body {
 
 .border-t-2 {
   border-top-width: 2px;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-gray-200 {
@@ -1710,24 +1711,14 @@ body {
   background-color: rgb(236 252 255 / var(--tw-bg-opacity));
 }
 
-.bg-pink-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
-}
-
-.bg-purple-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
-}
-
 .bg-purple-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 33 168 / var(--tw-bg-opacity));
 }
 
-.bg-slate-50 {
+.bg-sky-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
 .bg-slate-800 {
@@ -1813,6 +1804,12 @@ body {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-sky-500 {
+  --tw-gradient-from: #0ea5e9 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(14 165 233 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-sky-500\/30 {
   --tw-gradient-from: rgb(14 165 233 / 0.3) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(14 165 233 / 0) var(--tw-gradient-to-position);
@@ -1864,6 +1861,10 @@ body {
   --tw-gradient-to: #0ea5e9 var(--tw-gradient-to-position);
 }
 
+.to-sky-600 {
+  --tw-gradient-to: #0284c7 var(--tw-gradient-to-position);
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1906,14 +1907,14 @@ body {
   padding: 1.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-3 {
@@ -2031,6 +2032,14 @@ body {
   text-align: end;
 }
 
+.font-dana {
+  font-family: dana, sans-serif;
+}
+
+.font-iransansx {
+  font-family: IRANSansX, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2044,10 +2053,6 @@ body {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-\[13px\] {
-  font-size: 13px;
 }
 
 .text-\[16px\] {
@@ -2085,6 +2090,10 @@ body {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
@@ -2378,20 +2387,8 @@ body {
   }
 }
 
-.font-danaMedium {
-  font-weight: 500;
-}
-
-.font-danaLight {
-  font-weight: 400;
-}
-
-.font-danaDemiBold {
-  font-weight: 700;
-}
-
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2405,7 +2402,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2419,7 +2416,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2433,7 +2430,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2447,7 +2444,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2461,7 +2458,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2475,7 +2472,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2489,7 +2486,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2503,7 +2500,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2517,7 +2514,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2531,7 +2528,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2545,7 +2542,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2559,7 +2556,7 @@ body {
 }
 
 @font-face {
-  font-family: dana;
+  font-family: "dana";
 
   font-style: normal;
 
@@ -2570,6 +2567,105 @@ body {
         url('../fonts/dana/woff/Dana-Regular.woff') format('woff');
 
   /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: IRANSansX;
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  src: url('../fonts/Webfonts/fonts/woff2/IRANSansX-Thin.woff2') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-thin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANSansX;
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  src: url('../fonts/Webfonts/fonts/woffIRANSansX-UltraLight.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-UltraLight.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANSansX;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: url('../fonts/Webfonts/fonts/woffIRANSansX-light.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANSansX;
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: url('../fonts/Webfonts/fonts/woffIRANSansX-medium.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANSansX;
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: url('../fonts/Webfonts/fonts/woffIRANSansX-demibold.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-demibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANSansX;
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  src: url('../fonts/Webfonts/fonts/woffIRANSansX-extrabold.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-extrabold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANSansX;
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  src: url('../fonts/Webfonts/fonts/woffIRANSansX-black.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-black.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANSansX;
+
+  font-style: normal;
+
+  font-weight: bold;
+
+  src: url('../fonts/Webfonts/fonts/woffIRANSansX-bold.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANSansX;
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('../fonts/Webfonts/fonts/woffIRANSansX-regular.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-regular.woff2') format('woff2');
 }
 
 #checkboxContainer {
@@ -3052,7 +3148,7 @@ body {
   background: #000428;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #02233fc2,  #0004282a);
+  background: linear-gradient(to top, #02233fc2, #0004282a);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -3116,6 +3212,76 @@ input:checked+label .description {
 
 .custom-slider-card[for="c4"] {
   background-image: url('../images/teachers-slider/7.jpg');
+}
+
+.swiper {
+  width: 90%;
+  /* height: 320px; */
+}
+
+/* @media (max-width:300px) {
+    .swiper {
+        width: 90%;
+    }
+} */
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 30px 30px 60px #c3c3c3,
+        -30px -30px 60px #fdfdfd;
+}
+
+/* .swiper-slide:nth-child(2n) {
+    background-color: #0c4a6e;
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: #075985;
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: #0369a1;
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: #0284c7;
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: #0ea5e9;
+} */
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: none !important;
+  border-radius: 100%;
+  position: absolute;
+  right: -53% !important;
+  top: 80% !important;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  overflow: hidden;
+  color: white !important;
+}
+
+.swiper-button-prev {
+  right: -43% !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: none !important;
+}
+
+.swiper-button-next svg {
+  transform: rotate(0deg) !important;
 }
 
 .hover\:scale-105:hover {
@@ -3492,10 +3658,6 @@ input:checked+label .description {
     margin-top: 0px;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:h-\[300px\] {
     height: 300px;
   }
@@ -3506,6 +3668,10 @@ input:checked+label .description {
 
   .md\:w-\[500px\] {
     width: 500px;
+  }
+
+  .md\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .md\:grid-cols-2 {
@@ -3526,6 +3692,10 @@ input:checked+label .description {
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
   }
 
   .md\:gap-5 {
@@ -3552,10 +3722,6 @@ input:checked+label .description {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .md\:text-\[17px\] {
-    font-size: 17px;
   }
 }
 
@@ -3637,8 +3803,16 @@ input:checked+label .description {
     grid-column: span 4 / span 4;
   }
 
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
   .lg\:col-span-6 {
     grid-column: span 6 / span 6;
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
   }
 
   .lg\:mx-auto {
@@ -3653,6 +3827,10 @@ input:checked+label .description {
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:ml-4 {
+    margin-left: 1rem;
   }
 
   .lg\:ml-8 {

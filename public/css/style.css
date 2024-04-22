@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 10;
     src: url('../fonts/dana/woff2/Dana-Hairline.woff2') format('woff2'),
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 100;
     src: url('../fonts/dana/woff2/Dana-Thin.woff2') format('woff2'),
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 200;
     src: url('../fonts/dana/woff2/Dana-UltraLight.woff2') format('woff2'),
@@ -33,7 +33,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 300;
     src: url('../fonts/dana/woff2/Dana-Light.woff2') format('woff2'),
@@ -43,7 +43,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 500;
     src: url('../fonts/dana/woff2/Dana-Medium.woff2') format('woff2'),
@@ -53,7 +53,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/dana/woff2/Dana-DemiBold.woff2') format('woff2'),
@@ -63,7 +63,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 800;
     src: url('../fonts/dana/woff2/Dana-ExtraBold.woff2') format('woff2'),
@@ -73,7 +73,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 900;
     src: url('../fonts/dana/woff2/Dana-Black.woff2') format('woff2'),
@@ -83,7 +83,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 930;
     src: url('../fonts/dana/woff2/Dana-ExtraBlack.woff2') format('woff2'),
@@ -93,7 +93,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 960;
     src: url('../fonts/dana/woff2/Dana-Heavy.woff2') format('woff2'),
@@ -103,7 +103,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: 990;
     src: url('../fonts/dana/woff2/Dana-Fat.woff2') format('woff2'),
@@ -113,7 +113,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: bold;
     src: url('../fonts/dana/woff2/Dana-ExtraBold.woff2') format('woff2'),
@@ -123,7 +123,7 @@
 }
 
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     font-style: normal;
     font-weight: normal;
     src: url('../fonts/dana/woff2/Dana-Regular.woff2') format('woff2'),
@@ -132,9 +132,80 @@
     /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/Webfonts/fonts/woff2/IRANSansX-Thin.woff2') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/Webfonts/fonts/woffIRANSansX-UltraLight.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-UltraLight.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/Webfonts/fonts/woffIRANSansX-light.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Webfonts/fonts/woffIRANSansX-medium.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Webfonts/fonts/woffIRANSansX-demibold.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-demibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/Webfonts/fonts/woffIRANSansX-extrabold.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-extrabold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/Webfonts/fonts/woffIRANSansX-black.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/Webfonts/fonts/woffIRANSansX-bold.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Webfonts/fonts/woffIRANSansX-regular.woff') format('woff'),
+        url('../fonts/Webfonts/fonts/woff2/IRANSansX-regular.woff2') format('woff2');
+}
+
 @layer base {
     html {
-        font-family: "dana ", system-ui, sans-serif;
         scroll-behavior: smooth;
     }
 
@@ -379,7 +450,7 @@
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #004e92, #000428);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #02233fc2,  #0004282a);
+    background: linear-gradient(to top, #02233fc2, #0004282a);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -443,4 +514,79 @@ input:checked+label .description {
 
 .custom-slider-card[for="c4"] {
     background-image: url('../images/teachers-slider/7.jpg');
+}
+
+.swiper {
+    width: 90%;
+    /* height: 320px; */
+}
+
+/* @media (max-width:300px) {
+    .swiper {
+        width: 90%;
+    }
+} */
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide {
+
+    box-shadow: 30px 30px 60px #c3c3c3,
+        -30px -30px 60px #fdfdfd;
+}
+
+/* .swiper-slide:nth-child(2n) {
+    background-color: #0c4a6e;
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: #075985;
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: #0369a1;
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: #0284c7;
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: #0ea5e9;
+} */
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: none !important;
+    border-radius: 100%;
+    position: absolute;
+    right: -53% !important;
+    top: 80% !important;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    overflow: hidden;
+    color: white !important;
+}
+
+.swiper-button-prev {
+    right: -43% !important;
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none !important;
+}
+
+.swiper-button-next svg {
+    transform: rotate(0deg) !important;
 }

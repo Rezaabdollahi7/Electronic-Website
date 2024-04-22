@@ -3,7 +3,6 @@
 // ==========================================
 *,
 body {
-  font-family: "IRANSans";
   direction: rtl;
   margin: 0;
   padding: 0;
@@ -244,12 +243,6 @@ nav {
   .card.horizontal .image-container img {
     margin-right: 1rem !important;
   }
-}
-// ===========================================
-//             swiper
-// ==========================================
-.swiper {
-  z-index: -1;
 }
 
 // ===========================================
