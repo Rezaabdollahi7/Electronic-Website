@@ -1288,6 +1288,10 @@ body {
   width: max-content;
 }
 
+.w-14 {
+  width: 3.5rem;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
