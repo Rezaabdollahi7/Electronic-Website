@@ -1348,91 +1348,79 @@
     </section>
     <!-- ! end social -->
 
+    <!-- email section -->
+    <div class="w-full bg-white ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" fill="#fb923c" preserveAspectRatio="none">
+            <path class="bg-orange-500" style="opacity:0.25" d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
+            <path class="bg-orange-500" d="M0 0L2600 0 2600 69.1 0 0z"></path>
+            <path class="bg-orange-400" style="opacity:0.5" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
+        </svg>
+    </div>
     <!-- ! start footer -->
-    <footer class="w-full p-5 py-20  mt-28 bg-white dark:bg-slate-800 border-t-2 ">
-        <div class="ul-items-wrapper grid grid-cols-1 md:grid-cols-4 gap-4 mt-12 md:mr-12">
-            <!-- company info -->
-            <ul class="text-center mt-6 md:mt-0 text-white">
-                <div class="company-log-wrapper flex flex-col items-center justify-center">
-                    <div class="company-logo-img flex items-center justify-center">
-                        <h3 class="select-none text-zinc-700 dark:text-white">Master Code</h3>
-                        <img class="w-14 h-14 rounded-full" src="./public/icons/companyLogo/1 (3).jpg"
-                            alt="عکس لوگوی شرکت">
-                    </div>
-                    <p class="company-text mt-4 text-justify leading-8 text-gray-500 dark:text-white">شرکت کنترل پردازان
-                        نو اندیش از سال
-                        ۱۳۹۰ با مدیرت
-                        مهندس داود جعفری فعالیت تجاری خود را آغاز نمود و با دارا بودن یک شعبه
-                        اصلی در شهر صنعتی البرز و دفتر مرکزی در قزوین در زمینه تعمیرات و تجهیزات کنترلی زیمنس ماشینهای
-                        CNC تعمیرات و تجهیزات
-                        اندازه‌گیری از قبیل خط کش ها و انکودرها و خرید و فروش تجهیزات و ماشین آلات CNC فعالیت دارد .
-                    </p>
+    <footer class="w-full p-5 pb-20  bg-white dark:bg-slate-800  ">
+        <div class="ul-items-wrapper grid grid-cols-1 md:grid-cols-2  1100px:grid-cols-11 gap-8 my-8  mx-auto w-[85%]">
+            <div class=" md:col-span-1 1100px:col-span-3 flex flex-col items-start ml-3 mt-4 ">
+                <h3 class="text-xl font-semibold font-dana text-gray-600"> مستر کد </h3>
+                <p class="mt-5 leading-8 text-justify text-gray-800 font-semibold font-dana">
+                    با مستر کد تو هر حوزه ی کامپیوتری که دلت میخواد پیشرفت کن و به بهترین فرم برنامه نویسیت برس برای
+                    شروع کافیه زبان مورد علاقت رو انتخاب کنی . بقیه اش با ما !
+                </p>
+
+            </div>
+            <div class=" md:col-span-1 1100px:col-span-2 flex flex-col items-start mt-4">
+                <ul>
+                    <h3 class="text-xl font-semibold font-dana text-gray-600">دسترسی سریع</h3>
+                    <li class="mt-5 hover:text-green-500 hover:pr-2 duration-500 transition-all "><a
+                            href="./callus.html">تماس با ما</a></li>
+                    <li class="mt-7 hover:text-green-500 hover:pr-2 duration-500 transition-all"><a
+                            href="./aboutus.html">درباره ما</a> </li>
+                    <li class="mt-7 hover:text-green-500 hover:pr-2 duration-500 transition-all "><a
+                            href="./articles.html">مقالات </a> </li>
+                    <li class="mt-7 hover:text-green-500 hover:pr-2 duration-500 transition-all "><a
+                            href="./products.html"> محصولات </a> </li>
+                </ul>
+            </div>
+            <div class=" md:col-span-1 1100px:col-span-2 flex flex-col items-start mt-4">
+                <ul>
+                    <h3 class="text-xl font-semibold font-dana text-gray-600"> بخش های سایت</h3>
+                    <li class="mt-5 hover:text-green-500 hover:pr-2 duration-500 transition-all "><a href="#">
+                            اشتراک ویژه </a></li>
+                    <li class="mt-7 hover:text-green-500 hover:pr-2 duration-500 transition-all  "><a href="#">
+                            وبلاگ</a> </li>
+                    <li class="mt-7 hover:text-green-500 hover:pr-2 duration-500 transition-all  "><a href="#">
+                            فروشگاه</a> </li>
+                    <li class="mt-7 hover:text-green-500 hover:pr-2 duration-500 transition-all  "><a href="#">
+                            پرداخت اقساطی </a> </li>
+                </ul>
+            </div>
+            <div class=" md:col-span-1 1100px:col-span-4 flex flex-col mt-4 ">
+                <h3 class="text-xl font-semibold font-dana text-gray-600 ">عضویت در خبرنامه</h3>
+                <div
+                    class="input-container flex flex-col justify-center items-center bg-white mt-5 shadow-lg rounded-md  w-full px-2 py-2">
+                    <input
+                        class="w-full bg-gray-100/90 flex px-4 py-4 rounded-md  focus-visible:border-none focus:bg-gray-200 "
+                        name="name" type="text" placeholder="نام و نام خانوادگی">
+
+                    <input
+                        class="w-full bg-gray-100/90 flex px-4 py-4 rounded-md mt-2 focus-visible:border-none focus:bg-gray-200  "
+                        name="name" type="email" placeholder=" آدرس ایمیل ">
+                    <button
+                        class="bg-blue-600 hover:bg-blue-500 duration-200 transition-all  w-full text-white py-2 mt-2 rounded-md">
+                        ارسال
+                    </button>
                 </div>
-            </ul>
-            <!--end company info -->
-
-            <ul class="text-center mt-6 md:mt-0 text-white">
-                <li class="tittle-li text-zinc-700 dark:text-white text-3xl pt-4"><a href="">خدمات ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-gray-500 font-normal dark:text-slate-400">تعمیر قطعات
-                        الکترونیکی</a>
-                </li>
-                <li class="mt-10"><a href="#" class="mt-1 text-gray-500 font-normal dark:text-slate-400">فروش قطعات
-                        الکترونیکی</a>
-                </li>
-                <li class="mt-10"><a href="#" class="mt-1 text-gray-500 font-normal dark:text-slate-400">پشتیبانی
-                        سریع</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-gray-500 font-normal dark:text-slate-400"> تضمین کیفیت
-                        محصولات</a>
-                </li>
-            </ul>
-            <ul class="text-center mt-6 md:mt-0 text-white">
-                <li class="tittle-li text-zinc-700 dark:text-white text-3xl pt-4"><a href=""> شرایط ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-gray-500 font-normal dark:text-slate-400"> تماس با ما
-                    </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-gray-500 font-normal dark:text-slate-400">درباره ما </a>
-                </li>
-                <li class="mt-10"><a href="#" class="mt-1 text-gray-500 font-normal dark:text-slate-400"> شرایط و
-                        قوانین</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-gray-500 font-normal dark:text-slate-400"> سیاست حریم
-                        خصوصی </a>
-                </li>
-            </ul>
-            <!-- contact -->
-            <ul class="text-center md:pl-[30%] mt-6 md:mt-0 text-white">
-                <li class="tittle-li text-zinc-700 dark:text-white text-3xl pt-4"><a href="">ارتباط با ما</a></li>
-
-                <li class="flex items-start justify-center md:justify-end mt-10">
-                    <a class="mt-1 text-gray-500 font-normal dark:text-slate-400 mr-auto"
-                        href="mailto:cncmachinegroup@gmail.com">cncmachinegroup@gmail.com</a>
-                    <ion-icon class=" lg:w-16 text-slate-700 dark:text-slate-400 mr-auto" size="large"
-                        name="mail-outline"></ion-icon>
-                </li>
-
-                <li class="flex items-start justify-center md:justify-end mt-10">
-                    <span class="mt-1 text-gray-500 font-normal dark:text-slate-400 mr-auto" href="#">0830 182 0912
-                    </span>
-                    <ion-icon class=" text-slate-700 dark:text-slate-400 mr-auto" size="large"
-                        name="call-outline"></ion-icon>
-                </li>
-
-                <li class="flex items-start justify-center md:justify-end mt-10">
-                    <span class="mt-1 text-gray-500 font-normal dark:text-slate-400" href="#">استان قزوین ، شهر صنعتی
-                        البرز ،
-                        خیابان زکریای رازی ، پلاک
-                        ۶۰</span>
-                    <ion-icon class="lg:w-16 text-slate-700 dark:text-slate-400" size="large"
-                        name="location-outline"></ion-icon>
-                </li>
-
-            </ul>
-            <!-- end contact -->
+            </div>
         </div>
         <!-- end footer uls wrapper -->
 
 
         <!-- start copy right section -->
-        <div class="w-full flex items-center justify-center text-slate-700  dark:text-white mt-20 my-12 lg:mb-0">
-            <span class="text-sm">کلیه حقوق این وبسایت متعلق به شرکت Master Code می باشد.</span>
+        <div
+            class=" mx-auto w-[85%] py-4 text-white flex  justify-between px-2 md:px-4  lg:px-8 items-center  dark:text-white mt-20 my-12 lg:mb-0 bg-[#20C10C] rounded-md">
+            <span class="text-sm lg:text-md font-semibold font-dana">
+                تمامی حقوق مادی و معنوی این وبسایت متعلق به مستر کد میباشد
+            </span>
+            <i aria-hidden="true" class="fas fa-fingerprint text-xl"></i>
         </div>
     </footer>
     <!-- ! end of footer -->
