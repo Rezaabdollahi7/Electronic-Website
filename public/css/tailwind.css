@@ -1199,6 +1199,10 @@ body {
   width: 3rem;
 }
 
+.w-14 {
+  width: 3.5rem;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -1286,10 +1290,6 @@ body {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-14 {
-  width: 3.5rem;
 }
 
 .max-w-sm {
@@ -3345,6 +3345,11 @@ input:checked+label .description {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blue-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -3483,6 +3488,10 @@ input:checked+label .description {
 
 :is(.dark .dark\:border) {
   border-width: 1px;
+}
+
+:is(.dark .dark\:border-0) {
+  border-width: 0px;
 }
 
 :is(.dark .dark\:border-gray-700) {
@@ -3909,6 +3918,10 @@ input:checked+label .description {
     width: auto;
   }
 
+  .lg\:w-\[32rem\] {
+    width: 32rem;
+  }
+
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -4085,6 +4098,26 @@ input:checked+label .description {
     width: 80%;
   }
 
+  .xl\:w-\[32rem\] {
+    width: 32rem;
+  }
+
+  .xl\:w-\[35rem\] {
+    width: 35rem;
+  }
+
+  .xl\:w-\[36rem\] {
+    width: 36rem;
+  }
+
+  .xl\:w-\[40rem\] {
+    width: 40rem;
+  }
+
+  .xl\:w-\[rem\] {
+    width: rem;
+  }
+
   .xl\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -4109,6 +4142,18 @@ input:checked+label .description {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:space-x-7 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .xl\:px-12 {
