@@ -1,24 +1,4 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
+const swiper = new Swiper(".customer-section", {
     effect: "cards",
     grabCursor: true,
-    cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-    },
-    loop: true,
-
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-    },
 });

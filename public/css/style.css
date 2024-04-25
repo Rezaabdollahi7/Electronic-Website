@@ -512,3 +512,26 @@ input:checked+label .description {
 .custom-slider-card[for="c4"] {
     background-image: url('../images/teachers-slider/7.jpg');
 }
+
+.customer-section {
+    /* width: 590px; */
+    /* height: 240px; */
+}
+
+.customer-section .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.customer-section .swiper-slide:nth-child(1n) {
+    background-color: white;
+    background-image: url('../images/customers-comments/bote-pattern.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
