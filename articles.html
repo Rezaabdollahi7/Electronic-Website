@@ -3,33 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- tailwind styles -->
     <link rel="stylesheet" href="./public/css/tailwind.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="./public/icons/companyLogo/19.png" type="image/x-icon">
-    <!-- swiper js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./public/icons/companyLogo/1 (3).jpg" type="image/x-icon">
     <!-- custom sass -->
     <link rel="stylesheet" href="./public/css/mySass/min/customSass.min.css">
+    <!--alpine js  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="  bg-gray-100  dark:bg-slate-900 font-iransansx">
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <!-- swipper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- more catagory dropdown script -->
+    <script>
+        const dropdownButton = document.getElementById('dropdown-button');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        let isDropdownOpen = true; // Set to true to open the dropdown by default, false to close it by default
 
+        // Function to toggle the dropdown
+        function toggleDropdown() {
+            isDropdownOpen = !isDropdownOpen;
+            if (isDropdownOpen) {
+                dropdownMenu.classList.remove('hidden');
+            } else {
+                dropdownMenu.classList.add('hidden');
+            }
+        }
+
+        // Initialize the dropdown state
+        toggleDropdown();
+
+        // Toggle the dropdown when the button is clicked
+        dropdownButton.addEventListener('click', toggleDropdown);
+
+        // Close the dropdown when clicking outside of it
+        window.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+                isDropdownOpen = false;
+            }
+        });
+    </script>
+    <script src="./public/script/swiper.js"></script>
     <!-- custom js -->
     <script src="./public/script/main.js"></script>
 
     <!-- navbar codes -->
     <script src="./public/script/Navbar.js"></script>
+    <!-- theme codes -->
+    <script src="./public/script/Theme.js"></script>
 </body>
 
 </html>

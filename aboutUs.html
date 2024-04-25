@@ -3,409 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- tailwind styles -->
     <link rel="stylesheet" href="./public/css/tailwind.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="./public/icons/companyLogo/19.png" type="image/x-icon">
-    <!-- swiper js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./public/icons/companyLogo/1 (3).jpg" type="image/x-icon">
     <!-- custom sass -->
     <link rel="stylesheet" href="./public/css/mySass/min/customSass.min.css">
+    <!--alpine js  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class=" h-screen bg-slate-900">
-
-    <!--! Main navigation container -->
-    <nav
-        class="relative  px-4 py-2  lg:py-3 flex justify-between items-center bg-white w-[90%]  lg:w-[80%] mx-auto rounded-lg">
-        <a class="text-3xl font-bold leading-none" href="./index.html" target="_blank">
-            <img src="./public/icons/companyLogo/19.png" class="h-14" alt="logo">
-        </a>
-        <div class="lg:hidden">
-            <button class="navbar-burger flex items-center text-blue-600 p-3">
-                <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Mobile menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-            </button>
-        </div>
-        <ul
-            class="desktop-menu-wrapper  hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-            <li><a class="text-sm  items text-blue-600 hover:text-gray-500 font-bold" href="./index.html"
-                    target="_blank">خانه</a></li>
-            <li class="text-gray-300 pr-4">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                </svg>
-            </li>
-            <li><a class="text-sm items text-gray-700 hover:text-black " href="./aboutUs.html" target="_blank"> درباره
-                    ما</a></li>
-            <li class="text-gray-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                </svg>
-            </li>
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="./articles.html"
-                    target="_blank">مقالات</a>
-            </li>
-            <li class="text-gray-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                </svg>
-            </li>
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="./callUs.html" target="_blank">تماس با
-                    ما</a>
-            </li>
-            <li class="text-gray-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                </svg>
-            </li>
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="./index.html" target="_blank">محصولات</a>
-            </li>
-            <li class="text-gray-300">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                </svg>
-            </li>
-            <li><a class="text-sm items text-gray-700 hover:text-black" href="./honors.html"
-                    target="_blank">افتخارات</a>
-            </li>
-        </ul>
-        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6  text-sm text-cyan-600 font-bold  rounded-xl transition duration-200"
-            href="./index.html" target="_blank">CNC</a>
-
-        <!-- lang dropdown -->
-        <div class="hidden  bg-white lg:flex flex-col justify-center ">
-            <div class="flex items-center justify-center ">
-                <div class=" relative inline-block  dropdown">
-                    <span class="rounded-md shadow-sm"><button
-                            class="inline-flex justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white  transition  ease-in-out bg-cyan-500 border hover:bg-blue-600  duration-100 rounded-md hover:text-gray-200 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-                            type="button" aria-haspopup="true" aria-expanded="true"
-                            aria-controls="headlessui-menu-items-117">
-                            <svg class="w-5 h-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="ml-auto">Lang</span>
-                        </button></span>
-                    <!-- dropdown content -->
-                    <div
-                        class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
-                        <div class="absolute left-0 w-44 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                            aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
-
-                            <div class="py-1 text-center flex flex-col justify-center items-center ">
-                                <a href="javascript:void(0)" tabindex="0"
-                                    class="text-gray-700 hover:bg-gray-100 text-center flex justify-center items-center  w-full px-4 py-2 text-sm leading-5 "
-                                    role="menuitem">English
-                                    <img class="h-6 mr-4" src="./public/icons/english-32.png" alt="English logo"></a>
-
-                                <a href="./index.html" tabindex="1"
-                                    class="text-gray-700 hover:bg-gray-100 text-center flex justify-center items-center  w-full px-4 py-2 text-sm leading-5 "
-                                    role="menuitem">Persian
-                                    <img class="h-6 mr-4" src="./public/icons/iran-32.png" alt="English logo"></a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- mobile nav -->
-    <div class="navbar-menu relative z-50 hidden   ">
-        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-        <nav
-            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto ">
-            <!-- mobile nav header section -->
-            <div class="flex items-center mb-8 ">
-                <!-- logo -->
-                <a class="ml-auto text-3xl font-bold leading-none" href="./index.html" target="_blank">
-                    <img src="./public/icons/companyLogo/19.png" class="h-14" alt="logo">
-                </a>
-                <!-- lang dropdown  -->
-                <div class="  bg-white lg:flex flex-col justify-center mx-auto ">
-                    <div class="flex items-center justify-center ">
-                        <div class=" relative inline-block  dropdown">
-                            <span class="rounded-md shadow-sm"><button
-                                    class="inline-flex justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white  transition duration-150 ease-in-out bg-cyan-500 border hover:bg-blue-600 rounded-md hover:text-gray-200 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-                                    type="button" aria-haspopup="true" aria-expanded="true"
-                                    aria-controls="headlessui-menu-items-117">
-                                    <svg class="w-5 h-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="ml-auto">Lang</span>
-                                </button></span>
-                            <!-- dropdown content -->
-                            <div
-                                class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
-                                <div class="absolute left-0 w-44 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                                    aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117"
-                                    role="menu">
-
-                                    <div class="py-1 text-center flex flex-col justify-center items-center ">
-                                        <a href="javascript:void(0)" tabindex="0"
-                                            class="text-gray-700 hover:bg-gray-100 text-center flex justify-center items-center  w-full px-4 py-2 text-sm leading-5 "
-                                            role="menuitem">English
-                                            <img class="h-6 mr-4" src="./public/icons/english-32.png"
-                                                alt="English logo"></a>
-
-                                        <a href="./index.html" tabindex="1"
-                                            class="text-gray-700 hover:bg-gray-100 text-center flex justify-center items-center  w-full px-4 py-2 text-sm leading-5 "
-                                            role="menuitem">Persian
-                                            <img class="h-6 mr-4" src="./public/icons/iran-32.png"
-                                                alt="English logo"></a>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- close button -->
-                <button class="navbar-close">
-                    <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
-
-            </div>
-            <!-- mobile nav items section -->
-            <div>
-                <ul>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="./index.html" target="_blank">خانه</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="./aboutUs.html" target="_blank">درباره ما</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="./articles.html" target="_blank">مقالات</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="./callUs.html" target="_blank">تماس با ما</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="./index.html" target="_blank">محصولات</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded"
-                            href="./honors.html" target="_blank">افتخارات</a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-    </div>
-    <!-- ! end nav -->
-
-    <main
-        class="about-us-main-content-wrapper w-[90%]  lg:w-[80%] mx-auto mt-20  lg:mt-32 rounded-2xl flex flex-col justify-center items-center p-4 border border-white bg-gradient-to-tr from-blue-400/20 to-indigo-950">
-        <!-- tittle section -->
-        <div class="flex flex-col justify-center items-center">
-            <h1 class="text-2xl text-white  xl:text-4xl mt-4">کنترل پردازان نو اندیش</h1>
-            <p class="mt-8 text-xl text-yellow-300 font-semibold ">CNC</p>
-        </div>
-        <!-- img section -->
-        <div class="img-wrapper mx-auto   lg:mt-12 grid lg:grid-cols-7 gap-4">
-            <div class="img-wrapper lg:col-span-2 block overflow-hidden relative">
-                <img class=" w-full rounded-md lg:rounded-none  mt-[18%]  mx-auto     inline-block   "
-                    src="./public/images/team.jpg" alt="company photo">
-            </div>
-            <div class="img-wrapper lg:col-span-3 block overflow-hidden relative">
-                <img class=" w-full rounded-md lg:rounded-none  mt-8      lg:mt-0     inline-block   "
-                    src="./public/images/team.jpg" alt="company photo">
-            </div>
-            <div class="img-wrapper lg:col-span-2 block overflow-hidden relative">
-                <img class=" w-full rounded-md lg:rounded-none  mt-8      lg:mt-[18%] inline-block   "
-                    src="./public/images/team.jpg" alt="company photo">
-            </div>
-        </div>
-
-        <!-- company details -->
-        <div class="company-info  flex flex-col items-center justify-center mt-16">
-            <h1 class="text-3xl text-white  lg:text-5xl font-semibold"> درباره ما</h1>
-            <p class="my-8 w-3/4  text-white mx-auto lg:text-xl leading-8 text-justify">
-                شرکت کنترل پردازان نو اندیش از سال ۱۳۹۰ با مدیرت مهندس داود جعفری فعالیت تجاری خود را آغاز نمود و با
-                دارا بودن یک شعبه
-                اصلی در شهر صنعتی البرز و  دفتر مرکزی در قزوین  در زمینه تعمیرات و تجهیزات کنترلی زیمنس ماشینهای CNC
-                تعمیرات و تجهیزات
-                اندازه‌گیری از قبیل خط کش ها و انکودرها و خرید و فروش تجهیزات و ماشین آلات CNC  فعالیت دارد .
-            </p>
-
-            <ul class=" w-3/4 mx-auto">
-
-                <li
-                    class="mt-8 group  hover:bg-sky-100/10 rounded-md transition-all duration-150 hover:cursor-default py-3 px-4  text-lg w-full flex justify-center items-center ">
-                    <span class="group-hover:text-white  text-gray-300 w-1/4 text-start">تاریخ تاسیس:</span>
-                    <span class="group-hover:text-white  text-gray-500 w-3/4  text-center">۱۳۹۰/۰۲/۰۵</span>
-                </li>
-
-                <li
-                    class="mt-8 group  hover:bg-sky-100/10 rounded-md transition-all duration-150 hover:cursor-default py-3 px-4  text-lg w-full flex justify-center items-center ">
-                    <span class="group-hover:text-white  text-gray-300 w-1/4 text-start">شناسه ملی:</span>
-                    <span class="group-hover:text-white  text-gray-500 w-3/4  text-center">۱۰۴۶۰۱۲۵۲۷۹</span>
-                </li>
-
-                <li
-                    class="mt-8 group  hover:bg-sky-100/10 rounded-md transition-all duration-150 hover:cursor-default py-3 px-4  text-lg w-full flex justify-center items-center ">
-                    <span class="group-hover:text-white  text-gray-300 w-1/4 text-start">شرکت:</span>
-                    <span class="group-hover:text-white  text-gray-500 w-3/4  text-center">کنترل پردازان نو اندیش</span>
-                </li>
-
-                <li
-                    class="mt-8 group  hover:bg-sky-100/10 rounded-md transition-all duration-150 hover:cursor-default py-3 px-4  text-lg w-full flex justify-center items-center ">
-                    <span class="group-hover:text-white  text-gray-300 w-1/4 text-start">شماره ثبت:</span>
-                    <span class="group-hover:text-white  text-gray-500 w-3/4  text-center">۹۱۴۰</span>
-                </li>
-
-                <li
-                    class="mt-8 group  hover:bg-sky-100/10 rounded-md transition-all duration-150 hover:cursor-default py-3 px-4  text-lg w-full flex justify-center items-center ">
-                    <span class="group-hover:text-white  text-gray-300 w-1/4 text-start">کدپستی:</span>
-                    <span class="group-hover:text-white  text-gray-500 w-3/4  text-center">۳۴۳۱۹۷۵۸۵۶</span>
-                </li>
-
-                <li
-                    class="mt-8 group  hover:bg-sky-100/10 rounded-md transition-all duration-150 hover:cursor-default py-3 px-4  text-lg w-full flex justify-center items-center ">
-                    <span class="group-hover:text-white  text-gray-300 w-1/4 text-start">آدرس:</span>
-                    <span class="group-hover:text-white  text-gray-500 w-3/4  text-center">استان قزوین ، شهر صنعتی البرز
-                        ، خیابان زکریای رازی ، پلاک ۶۰</span>
-                </li>
-
-                <li
-                    class="mt-8 group  hover:bg-sky-100/10 rounded-md transition-all duration-150 hover:cursor-default py-3 px-4  text-lg w-full flex justify-center items-center ">
-                    <span class="group-hover:text-white  text-gray-300 w-1/4 text-start">ایمیل:</span>
-                    <span
-                        class="group-hover:text-white  text-gray-500 w-3/4  text-center">cncmachinegroup@gmail.com</span>
-                </li>
-            </ul>
-        </div>
-
-    </main>
-
-    <!-- ! start footer -->
-    <footer class="w-full p-5 py-20  mt-28 bg-slate-800 border-t-2 ">
-        <div class="ul-items-wrapper grid grid-cols-1 md:grid-cols-4 gap-4 mt-12 md:mr-12">
-            <!-- company info -->
-            <ul class="text-center mt-6 md:mt-0 text-white">
-                <div class="company-log-wrapper flex flex-col items-center justify-center">
-                    <div class="company-logo-img flex items-center justify-center">
-                        <h3 class="select-none">CNC DIGITAL</h3>
-                        <img class="w-20 h-20" src="./public/icons/companyLogo/19.png" alt="عکس لوگوی شرکت">
-                    </div>
-                    <p class="company-text mt-4 text-justify leading-8">شرکت کنترل پردازان نو اندیش از سال ۱۳۹۰ با مدیرت
-                        مهندس داود جعفری فعالیت تجاری خود را آغاز نمود و با دارا بودن یک شعبه
-                        اصلی در شهر صنعتی البرز و دفتر مرکزی در قزوین در زمینه تعمیرات و تجهیزات کنترلی زیمنس ماشینهای
-                        CNC
-                        تعمیرات و تجهیزات
-                        اندازه‌گیری از قبیل خط کش ها و انکودرها و خرید و فروش تجهیزات و ماشین آلات CNC فعالیت دارد .
-                    </p>
-                </div>
-            </ul>
-            <!--end company info -->
-
-            <ul class="text-center mt-6 md:mt-0 text-white">
-                <li class="tittle-li text-3xl pt-4"><a href="">خدمات ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400">تعمیر قطعات الکترونیکی</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400">فروش قطعات الکترونیکی</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400">پشتیبانی سریع</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400"> تضمین کیفیت محصولات</a></li>
-            </ul>
-            <ul class="text-center mt-6 md:mt-0 text-white">
-                <li class="tittle-li text-3xl pt-4"><a href=""> شرایط ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400"> تماس با ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400">درباره ما </a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400"> شرایط و قوانین</a></li>
-                <li class="mt-10"><a href="#" class="mt-1 text-slate-400"> سیاست حریم خصوصی </a></li>
-            </ul>
-            <!-- contact -->
-            <ul class="text-center md:pl-[30%] mt-6 md:mt-0 text-white">
-                <li class="tittle-li text-3xl pt-4"><a href="">ارتباط با ما</a></li>
-
-                <li class="flex items-start justify-center md:justify-end mt-10">
-                    <a class="mt-1 text-slate-400 mr-auto" href="mailto:cncmachinegroup@gmail.com"">cncmachinegroup@gmail.com</a>
-                            <ion-icon class=" lg:w-16 text-slate-400 mr-auto" size="large"
-                        name="mail-outline"></ion-icon>
-                </li>
-
-                <li class="flex items-start justify-center md:justify-end mt-10">
-                    <span class="mt-1 text-slate-400 mr-auto" href="#">0830 182 0912 </span>
-                    <ion-icon class=" text-slate-400 mr-auto" size="large" name="call-outline"></ion-icon>
-                </li>
-
-                <li class="flex items-start justify-center md:justify-end mt-10">
-                    <span class="mt-1 text-slate-400" href="#">استان قزوین ، شهر صنعتی البرز ، خیابان زکریای رازی ، پلاک
-                        ۶۰</span>
-                    <ion-icon class="lg:w-16 text-slate-400" size="large" name="location-outline"></ion-icon>
-                </li>
-
-            </ul>
-            <!-- end contact -->
-        </div>
-        <!-- end footer uls wrapper -->
+<body class="  bg-gray-100  dark:bg-slate-900 font-iransansx">
 
 
-        <!-- start copy right section -->
-        <div class="w-full flex items-center justify-center text-white mt-20 my-12 lg:mb-0">
-            <span class="text-sm">کلیه حقوق این وبسایت متعلق به شرکت CNC می باشد.</span>
-        </div>
-    </footer>
-    <!-- ! end of footer -->
 
-    <!-- call us absolute button -->
-    <button
-        class="fixed  bottom-[7%] left-[3%] z-80  h-12 border-0  text-white bg-lime-600 cursor-pointer p-2 custom-rounded outline outline-2 outline-offset-2 outline-lime-600"
-        onclick="topFunction()" id="callUsBtn" title="Go to top">
-        <div class="wrapper flex justify-center items-center relative">
-            <span
-                class="callUsBtn-animate animate-ping absolute  h-full w-full rounded-full bg-blue-300 scale-[3] opacity-75"></span>
-            <span
-                class="callUsBtn-animate animate-ping absolute  h-full w-full rounded-full bg-blue-300 scale-[4] opacity-75"></span>
-            <span class="ml-1 hidden" id="callUsBtnNumber">
-                0830 182 0912
-            </span>
-            <ion-icon name="call-outline" size="large"></ion-icon>
-        </div>
-    </button>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <!-- swipper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- more catagory dropdown script -->
+    <script>
+        const dropdownButton = document.getElementById('dropdown-button');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        let isDropdownOpen = true; // Set to true to open the dropdown by default, false to close it by default
 
+        // Function to toggle the dropdown
+        function toggleDropdown() {
+            isDropdownOpen = !isDropdownOpen;
+            if (isDropdownOpen) {
+                dropdownMenu.classList.remove('hidden');
+            } else {
+                dropdownMenu.classList.add('hidden');
+            }
+        }
+
+        // Initialize the dropdown state
+        toggleDropdown();
+
+        // Toggle the dropdown when the button is clicked
+        dropdownButton.addEventListener('click', toggleDropdown);
+
+        // Close the dropdown when clicking outside of it
+        window.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+                isDropdownOpen = false;
+            }
+        });
+    </script>
+    <script src="./public/script/swiper.js"></script>
     <!-- custom js -->
     <script src="./public/script/main.js"></script>
 
     <!-- navbar codes -->
     <script src="./public/script/Navbar.js"></script>
+    <!-- theme codes -->
+    <script src="./public/script/Theme.js"></script>
 </body>
 
 </html>
