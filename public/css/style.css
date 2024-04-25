@@ -423,9 +423,6 @@
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.custom-slider-wrapper {
-    /* height: 100vh; */
-}
 
 
 .custom-slider-card {
@@ -514,79 +511,4 @@ input:checked+label .description {
 
 .custom-slider-card[for="c4"] {
     background-image: url('../images/teachers-slider/7.jpg');
-}
-
-.swiper {
-    width: 90%;
-    /* height: 320px; */
-}
-
-/* @media (max-width:300px) {
-    .swiper {
-        width: 90%;
-    }
-} */
-
-.swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.swiper-slide {
-
-    box-shadow: 30px 30px 60px #c3c3c3,
-        -30px -30px 60px #fdfdfd;
-}
-
-/* .swiper-slide:nth-child(2n) {
-    background-color: #0c4a6e;
-}
-
-.swiper-slide:nth-child(3n) {
-    background-color: #075985;
-}
-
-.swiper-slide:nth-child(4n) {
-    background-color: #0369a1;
-}
-
-.swiper-slide:nth-child(5n) {
-    background-color: #0284c7;
-}
-
-.swiper-slide:nth-child(6n) {
-    background-color: #0ea5e9;
-} */
-
-.swiper-button-next,
-.swiper-button-prev {
-    background-color: none !important;
-    border-radius: 100%;
-    position: absolute;
-    right: -53% !important;
-    top: 80% !important;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    overflow: hidden;
-    color: white !important;
-}
-
-.swiper-button-prev {
-    right: -43% !important;
-
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    content: none !important;
-}
-
-.swiper-button-next svg {
-    transform: rotate(0deg) !important;
 }
