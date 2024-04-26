@@ -535,3 +535,11 @@ input:checked+label .description {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.course-cat-item {
+    background-image: url('../images/roadmap/pattern-main-widget.webp');
+    background-color: #2C384B;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
