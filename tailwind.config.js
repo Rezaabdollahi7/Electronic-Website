@@ -28,6 +28,8 @@ module.exports = {
         'art-share': '#fb7185',
         'art-author': '#4f46e5',
         'fea-bg': '#8c52ff',
+        'special-item-back': '#212733',
+        'special-wrapper-back': '#081A24',
 
         'main': {
           '50': '#ecfcff',
