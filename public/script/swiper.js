@@ -3,8 +3,6 @@ var swiper = new Swiper(".customer-section", {
     grabCursor: true,
 });
 // -----------------------------------------------------
-const progressCircle = document.querySelector(".autoplay-progress svg");
-const progressContent = document.querySelector(".autoplay-progress span");
 var swiper = new Swiper(".special-offer-swiper", {
     effect: "flip",
     grabCursor: true,
@@ -13,6 +11,13 @@ var swiper = new Swiper(".special-offer-swiper", {
         dynamicBullets: true,
         
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+// ----------------------------------------------------
+var swiper = new Swiper(".banners-swiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
