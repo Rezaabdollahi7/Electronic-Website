@@ -846,16 +846,6 @@ body {
   margin-bottom: 3rem;
 }
 
-.my-24 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.my-32 {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -876,9 +866,19 @@ body {
   margin-bottom: 2rem;
 }
 
+.my-\[10rem\] {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.my-space-sections {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
 }
 
 .-mr-1 {
@@ -905,12 +905,16 @@ body {
   margin-bottom: 0.625rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-space-sections {
+  margin-bottom: 15rem;
 }
 
 .ml-2 {
@@ -985,20 +989,12 @@ body {
   margin-top: 0.75rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
 .mt-36 {
   margin-top: 9rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
 }
 
 .mt-5 {
@@ -1019,6 +1015,10 @@ body {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-space-sections {
+  margin-top: 15rem;
 }
 
 .line-clamp-4 {
@@ -1050,10 +1050,6 @@ body {
 
 .hidden {
   display: none;
-}
-
-.aspect-\[1\/1\.3\] {
-  aspect-ratio: 1/1.3;
 }
 
 .h-12 {
@@ -1124,10 +1120,6 @@ body {
   height: 217px;
 }
 
-.h-\[24rem\] {
-  height: 24rem;
-}
-
 .h-\[3rem\] {
   height: 3rem;
 }
@@ -1148,10 +1140,6 @@ body {
   height: 100%;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
 .max-h-12 {
   max-height: 3rem;
 }
@@ -1170,10 +1158,6 @@ body {
 
 .w-14 {
   width: 3.5rem;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .w-2\/3 {
@@ -1256,10 +1240,6 @@ body {
   width: 300px;
 }
 
-.w-\[320px\] {
-  width: 320px;
-}
-
 .w-\[360px\] {
   width: 360px;
 }
@@ -1276,6 +1256,10 @@ body {
   width: 85%;
 }
 
+.w-\[86\%\] {
+  width: 86%;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
@@ -1289,8 +1273,8 @@ body {
   width: max-content;
 }
 
-.w-\[86\%\] {
-  width: 86%;
+.w-mycontainer {
+  width: 85%;
 }
 
 .max-w-sm {
@@ -1391,12 +1375,6 @@ body {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 .grid-cols-1 {
@@ -1702,11 +1680,6 @@ body {
   background-color: rgb(222 126 133 / var(--tw-bg-opacity));
 }
 
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
-
 .bg-blue-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
@@ -1747,11 +1720,6 @@ body {
 
 .bg-gray-200\/50 {
   background-color: rgb(229 231 235 / 0.5);
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-gray-700 {
@@ -2785,15 +2753,9 @@ body {
   margin-right: auto;
   margin-top: 6rem;
   display: flex;
-  width: 100%;
+  width: 85%;
   flex-direction: column;
   justify-content: space-between;
-}
-
-@media (min-width: 1280px) {
-  #checkboxContainer {
-    width: 85%;
-  }
 }
 
 .search-tittle {
@@ -2849,7 +2811,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
-  width: 24rem;
   border-radius: 9999px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -3322,11 +3283,6 @@ input:checked+label .description {
   background-image: url('../images/teachers-slider/7.jpg');
 }
 
-.customer-section {
-  /* width: 590px; */
-  /* height: 240px; */
-}
-
 .customer-section .swiper-slide {
   display: flex;
   align-items: center;
@@ -3520,10 +3476,6 @@ input:checked+label .description {
   }
 }
 
-input {
-  display: block;
-}
-
 .podcasts-section .swiper-slide {
   background-image: url('../icons/podcasts/audio-waves.png');
   background-position: center;
@@ -3561,11 +3513,6 @@ input {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-blue-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
@@ -3576,11 +3523,6 @@ input {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-green-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
@@ -3589,11 +3531,6 @@ input {
 .hover\:bg-orange-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-red-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-red-700:hover {
@@ -3887,7 +3824,7 @@ input {
     display: flex;
   }
 
-  .md\:w-\[85\%\] {
+  .md\:w-mycontainer {
     width: 85%;
   }
 
@@ -4051,12 +3988,12 @@ input {
     width: 80%;
   }
 
-  .lg\:w-\[85\%\] {
-    width: 85%;
-  }
-
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-mycontainer {
+    width: 85%;
   }
 
   .lg\:grid-cols-12 {
@@ -4192,20 +4129,12 @@ input {
     height: 20rem;
   }
 
-  .xl\:h-\[24rem\] {
-    height: 24rem;
-  }
-
   .xl\:w-1\/2 {
     width: 50%;
   }
 
   .xl\:w-\[40rem\] {
     width: 40rem;
-  }
-
-  .xl\:w-\[320px\] {
-    width: 320px;
   }
 
   .xl\:grid-cols-1 {

@@ -6,8 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
- 
+      width: {
+        'mycontainer': '85%',
+      },
       spacing: {
+        'space-sections' :'15rem',
         '112': '28rem',
         '128': '32rem',
         '144': '36rem',

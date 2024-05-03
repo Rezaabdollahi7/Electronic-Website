@@ -215,7 +215,7 @@
 }
 
 #checkboxContainer {
-    @apply w-full xl:w-[85%] mt-24 mx-auto flex justify-between flex-col
+    @apply w-[85%] mt-24 mx-auto flex justify-between flex-col
 }
 
 .search-tittle {
@@ -231,7 +231,7 @@
 }
 
 #searchInput {
-    @apply mt-8 rounded-full py-2 px-3 outline outline-1 outline-sky-300 outline-offset-2 pl-32 mx-auto w-[24rem]
+    @apply mt-8 rounded-full py-2 px-3 outline outline-1 outline-sky-300 outline-offset-2 pl-32 mx-auto 
 }
 
 #pagination {
@@ -513,10 +513,6 @@ input:checked+label .description {
     background-image: url('../images/teachers-slider/7.jpg');
 }
 
-.customer-section {
-    /* width: 590px; */
-    /* height: 240px; */
-}
 
 .customer-section .swiper-slide {
     display: flex;
@@ -711,10 +707,6 @@ input:checked+label .description {
     100% {
         box-shadow: inset 160px -160px 0px 5px rgba(0, 0, 0, 0.4);
     }
-}
-
-input {
-    display: block;
 }
 
 .podcasts-section .swiper-slide {
