@@ -58,3 +58,45 @@ var swiper = new Swiper(".now-courses-swiper", {
         },
     },
 });
+// ----------------------------------------------------
+var swiper = new Swiper(".podcasts-slider", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+        },
+        770: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+function playAudio(button) {
+    var audio = button.previousElementSibling;
+    audio.play();
+}
+
+function pauseAudio(button) {
+    var audio = button.previousElementSibling.previousElementSibling;
+    audio.pause();
+}
+function formatTime(seconds) {
+    if (!seconds) {
+        return '00:00';
+    }
+
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60);
+    return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+}
