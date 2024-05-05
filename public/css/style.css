@@ -708,10 +708,3 @@ input:checked+label .description {
         box-shadow: inset 160px -160px 0px 5px rgba(0, 0, 0, 0.4);
     }
 }
-
-.podcasts-section .swiper-slide {
-    background-image: url('../icons/podcasts/audio-waves.png');
-    background-position: center;
-    background-size: inherit;
-    background-repeat: no-repeat;
-}

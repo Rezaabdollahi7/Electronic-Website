@@ -72,11 +72,7 @@ var swiper = new Swiper(".podcasts-slider", {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-        },
-        1024: {
+        1080: {
             slidesPerView: 3,
             spaceBetween: 30,
         },

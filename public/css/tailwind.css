@@ -1021,6 +1021,10 @@ body {
   margin-top: 15rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .line-clamp-4 {
   overflow: hidden;
   display: -webkit-box;
@@ -1116,6 +1120,10 @@ body {
   height: 1px;
 }
 
+.h-\[20rem\] {
+  height: 20rem;
+}
+
 .h-\[217px\] {
   height: 217px;
 }
@@ -1138,6 +1146,22 @@ body {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[18rem\] {
+  height: 18rem;
+}
+
+.h-\[16rem\] {
+  height: 16rem;
+}
+
+.h-\[14rem\] {
+  height: 14rem;
+}
+
+.h-\[12rem\] {
+  height: 12rem;
 }
 
 .max-h-12 {
@@ -1236,6 +1260,10 @@ body {
   width: 1px;
 }
 
+.w-\[20rem\] {
+  width: 20rem;
+}
+
 .w-\[300px\] {
   width: 300px;
 }
@@ -1256,10 +1284,6 @@ body {
   width: 85%;
 }
 
-.w-\[86\%\] {
-  width: 86%;
-}
-
 .w-\[90\%\] {
   width: 90%;
 }
@@ -1277,6 +1301,22 @@ body {
   width: 85%;
 }
 
+.w-\[18rem\] {
+  width: 18rem;
+}
+
+.w-\[16rem\] {
+  width: 16rem;
+}
+
+.w-\[14rem\] {
+  width: 14rem;
+}
+
+.w-\[12rem\] {
+  width: 12rem;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
@@ -1287,6 +1327,12 @@ body {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.border-spacing-4 {
+  --tw-border-spacing-x: 1rem;
+  --tw-border-spacing-y: 1rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 
 .origin-top-right {
@@ -1622,6 +1668,10 @@ body {
   border-top-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-dashed {
   border-style: dashed;
 }
@@ -1643,6 +1693,16 @@ body {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.border-blue-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(147 197 253 / var(--tw-border-opacity));
+}
+
+.border-red-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
 .border-t-gray-100 {
@@ -2371,6 +2431,21 @@ body {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.shadow-blue-600 {
+  --tw-shadow-color: #2563eb;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-purple-600 {
+  --tw-shadow-color: #9333ea;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-purple-400 {
+  --tw-shadow-color: #c084fc;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2382,6 +2457,10 @@ body {
 
 .outline-offset-4 {
   outline-offset: 4px;
+}
+
+.outline-blue-300 {
+  outline-color: #93c5fd;
 }
 
 .outline-orange-500 {
@@ -3476,13 +3555,6 @@ input:checked+label .description {
   }
 }
 
-.podcasts-section .swiper-slide {
-  background-image: url('../icons/podcasts/audio-waves.png');
-  background-position: center;
-  background-size: inherit;
-  background-repeat: no-repeat;
-}
-
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -3803,6 +3875,16 @@ input:checked+label .description {
   }
 }
 
+@media (min-width: 700px) {
+  .\37 00px\:h-\[18rem\] {
+    height: 18rem;
+  }
+
+  .\37 00px\:w-\[18rem\] {
+    width: 18rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
@@ -3824,8 +3906,16 @@ input:checked+label .description {
     display: flex;
   }
 
+  .md\:h-\[18rem\] {
+    height: 18rem;
+  }
+
   .md\:w-mycontainer {
     width: 85%;
+  }
+
+  .md\:w-\[18rem\] {
+    width: 18rem;
   }
 
   .md\:grid-cols-2 {
@@ -3846,6 +3936,10 @@ input:checked+label .description {
 
   .md\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .md\:overflow-visible {
+    overflow: visible;
   }
 
   .md\:px-4 {
